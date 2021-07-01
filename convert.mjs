@@ -2,7 +2,7 @@ import extract from "extract-zip";
 import path from 'path';
 import mammoth from 'mammoth';
 import slugify from 'slugify';
-import { readdir, writeFile, rename, rm, access } from "fs/promises";
+import * as fs from "fs/promises";
 
 
 // helper function that gets the header data from the .docx 
@@ -39,7 +39,7 @@ async function docsToHTML(source) {
   toWrite = toWrite.slice(headerEndPosition);
   toWrite = `---\nlayout: base.njk\ntitle: ${title}\nauthor: ${author}\ndate: ${date}\n---\n` + toWrite;
 
-  writeFile(source.slice(0, -5) + ".html", toWrite, (err) => {
+  fs.writeFile(source.slice(0, -5) + ".html", toWrite, (err) => {
     if (err) {
       console.error("[Error]" + err);
       return;
@@ -51,7 +51,7 @@ async function docsToHTML(source) {
 // adds metadata to each generated HTML file
 async function makeCollection(location, name) {
   var toWrite = `{"layouts": "base.njk", "tags": "${name}"}`;
-  writeFile(location, toWrite, (err) => {
+  fs.writeFile(location, toWrite, (err) => {
     if (err) {
       console.error("[Error]" + err);
       return;
@@ -63,10 +63,10 @@ async function makeCollection(location, name) {
 // converts all .docx files to .html and calls makeCollection()
 async function convert() {
   try {
-    const files = await readdir("./src/section", { withFileTypes: true });
+    const files = await fs.readdir("./src/section", { withFileTypes: true });
     for (const file of files) {
       if (file.isDirectory()) {
-        const pages = await readdir("./src/section/" + file.name);
+        const pages = await fs.readdir("./src/section/" + file.name);
         for (const page of pages) {
           if (page.endsWith(".docx")) {
             await docsToHTML("./src/section/" + file.name + "/" + page);
@@ -90,26 +90,26 @@ async function extractZip(source) {
     // rename Knightwatch to section
     var exists;
     try { 
-      await access("./src/section");
+      await fs.access("./src/section");
       exists = true; 
     } 
     catch { 
       exists = false; 
     }
-    if (exists) await rm("./src/section", { recursive: true });
-    await rename("./src/Knightwatch/", "./src/section/");
+    if (exists) await fs.rm("./src/section", { recursive: true });
+    await fs.rename("./src/Knightwatch/", "./src/section/");
 
     // slugify all filenames
-    const files = await readdir("./src/section", { withFileTypes: true });
+    const files = await fs.readdir("./src/section", { withFileTypes: true });
     for (const file of files) {
       if (file.isDirectory()) {
         const slug = slugify(file.name, { lower: true });
-        await rename("./src/section/" + file.name, "./src/section/" + slug);
+        await fs.rename("./src/section/" + file.name, "./src/section/" + slug);
 
-        const subFiles = await readdir("./src/section/" + slug, { withFileTypes: true });
+        const subFiles = await fs.readdir("./src/section/" + slug, { withFileTypes: true });
         for (const subFile of subFiles) {
           const base = "./src/section/" + slug + "/";
-          rename(
+          fs.rename(
             base + subFile.name,
             base + slugify(subFile.name, { lower: true })
           );
@@ -128,7 +128,7 @@ async function extractZip(source) {
 async function init() {
   var toUnzip = "";
   try {
-    const files = await readdir(".");
+    const files = await fs.readdir(".");
     for (const file of files) {
       if (file.startsWith("Knightwatch") && file.endsWith(".zip")) {
         toUnzip = file;
