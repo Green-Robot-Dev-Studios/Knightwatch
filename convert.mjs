@@ -1,8 +1,8 @@
-import { readdir, writeFile, rename, rm, access } from "fs/promises";
 import extract from "extract-zip";
 import path from 'path';
 import mammoth from 'mammoth';
 import slugify from 'slugify';
+import { readdir, writeFile, rename, rm, access } from "fs/promises";
 
 
 // helper function that gets the header data from the .docx 
