@@ -1,4 +1,5 @@
 ---
+layout: base.njk
 pagination:
   data: collections
   size: 1
@@ -6,11 +7,16 @@ pagination:
 permalink: /section/{{ tag }}/
 eleventyExcludeFromCollections: true
 ---
-<h1>{{ tag }} Page</h1>
+<h1>{{ tag | deslug | title }} Page</h1>
 
-<ol>
+
 {% set taglist = collections[tag] %}
 {% for post in taglist | reverse %}
-  <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+  <div class="box">
+    {% first_image post %}<br>
+    <a href="{{ post.url }}">{{ post.data.title }}</a><br>
+    {{ post.data.date.toUTCString().substring(0, 17) }}<br>
+    Written by {{ post.data.author }}<br>
+    {% blurb post %}<br>
+  </div>
 {% endfor %}
-</ol>

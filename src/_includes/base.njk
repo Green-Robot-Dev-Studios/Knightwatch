@@ -10,12 +10,15 @@
 </head>
 
 <body>
-  {% for id, collection in collections %}
-  {% if id != "all" %}
-  <a href="/section/{{ id }}">
-    <h1>{{ id }}</h1>
+  <a href="/">
+    <h1>Home</h1>
   </a>
-  {% endif %}
+  {% for id, collection in collections | dictsort %}
+    {% if id != "all" %}
+      <a href="/section/{{ id }}">
+        <h1>{{ id | deslug | title }}</h1>
+      </a>
+    {% endif %}
   {% endfor %}
   <hr>
   <body>

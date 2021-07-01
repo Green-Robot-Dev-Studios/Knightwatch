@@ -2,6 +2,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("first_image", (post) => extractFirstImage(post));
   eleventyConfig.addShortcode("blurb", (post) => extractBlurb(post));
 
+  eleventyConfig.addNunjucksFilter("deslug", (text) => deSlug(text));
+  eleventyConfig.addNunjucksFilter("limit", (arr, max) => limit(arr, max));
+
   eleventyConfig.addPassthroughCopy("./src/css/");
   eleventyConfig.addWatchTarget("./src/css/");
 
@@ -12,6 +15,14 @@ module.exports = function (eleventyConfig) {
     },
   };
 };
+
+function limit(arr, max) {
+  return arr.slice(0, max);
+}
+
+function deSlug(text) {
+  return text.replaceAll("-", " ");
+}
 
 function extractFirstImage(doc) {
   if (!doc.hasOwnProperty("templateContent")) {
