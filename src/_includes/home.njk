@@ -8,7 +8,7 @@ layout: base.njk
 {% for item in collections.all | reverse | limit(4) %}
   <div class="box">
     {% first_image item %}<br>
-    <a href="{{ item.url }}">{{ item.data.title }}</a><br>
+    <a href="{{ item.url | url }}">{{ item.data.title }}</a><br>
     {{ item.data.date.toUTCString().substring(0, 17) }}<br>
     Written by {{ item.data.author }}<br>
     {% blurb item %}<br>

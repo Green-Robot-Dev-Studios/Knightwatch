@@ -11,12 +11,12 @@
 
   <body>
     <!-- Navbar -->
-    <a href="/">
+    <a href="{{ '/' | url }}">
       <h1>Home</h1>
     </a>
     {% for id, collection in collections | dictsort %}
       {% if id != "all" %}
-        <a href="/section/{{ id }}">
+        <a href="{{ ['/section/', id] | join | url }}">
           <h1>{{ id | deslug | title }}</h1>
         </a>
       {% endif %}
