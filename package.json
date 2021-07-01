@@ -1,0 +1,17 @@
+{
+  "name": "knightwatch",
+  "version": "1.0.0",
+  "description": "School Newspaper",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "extract-zip": "^2.0.1",
+    "mammoth": "^1.4.17"
+  }
+}

@@ -1,0 +1,16 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /section/{{ tag }}/
+eleventyExcludeFromCollections: true
+---
+<h1>{{ tag }} Page</h1>
+
+<ol>
+{% set taglist = collections[tag] %}
+{% for post in taglist | reverse %}
+  <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+{% endfor %}
+</ol>

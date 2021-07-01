@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+
+{{ content | safe }}
+
+<h1>Recent Articles</h1>
+{% for item in collections.all %}
+  <div class="box">
+    {% first_image item %}<br>
+    <a href="{{ item.url }}">{{ item.data.title }}</a><br>
+    {{ item.data.date.toUTCString().substring(0, 17) }}<br>
+    Written by {{ item.data.author }}<br>
+    {% blurb item %}<br>
+  </div>
+{% endfor %}
