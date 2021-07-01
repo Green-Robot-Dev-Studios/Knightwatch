@@ -125,19 +125,22 @@ async function extractZip(source) {
 }
 
 // gets the path to the zip file and calls extractZip()
-var toUnzip = "";
-try {
-  const files = await readdir(".");
-  for (const file of files) {
-    if (file.startsWith("Knightwatch") && file.endsWith(".zip")) {
-      toUnzip = file;
+async function init() {
+  var toUnzip = "";
+  try {
+    const files = await readdir(".");
+    for (const file of files) {
+      if (file.startsWith("Knightwatch") && file.endsWith(".zip")) {
+        toUnzip = file;
+      }
     }
+    if (toUnzip === "") {
+      console.log("[Error] Please place the google drive zip in this folder.");
+    } else {
+      extractZip("./" + toUnzip);
+    }
+  } catch (err) {
+    console.error(err);
   }
-  if (toUnzip === "") {
-    console.log("[Error] Please place the google drive zip in this folder.")
-  } else {
-    extractZip("./" + toUnzip);
-  }
-} catch (err) {
-  console.error(err);
 }
+init();

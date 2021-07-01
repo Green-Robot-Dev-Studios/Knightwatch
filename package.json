@@ -12,6 +12,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "extract-zip": "^2.0.1",
+    "gh-pages": "^3.2.3",
     "mammoth": "^1.4.17"
   }
 }
