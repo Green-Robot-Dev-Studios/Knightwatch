@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
         with:
-          node-version: 12
+          node-version: 16
       - run: npm ci
       - run: node convert.mjs
       - run: npm run build
