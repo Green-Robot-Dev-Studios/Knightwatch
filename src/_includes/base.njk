@@ -7,20 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knightwatch</title>
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/icons/apple-touch-icon.png' | url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/icons/favicon-32x32.png' | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/icons/favicon-16x16.png' | url }}">
+    <link rel="manifest" href="{{ '/icons/manifest.webmanifest' | url }}">
+    <link rel="mask-icon" href="{{ '/icons/safari-pinned-tab.svg' | url }}" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ '/icons/favicon.ico' | url }}">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="{{ '/icons/browserconfig.xml' | url }}">
+    <meta name="theme-color" content="#0b0b0b">
+
   </head>
 
   <body>
     <!-- Navbar -->
-    <a href="{{ '/' | url }}">
-      <h1>Home</h1>
-    </a>
-    {% for id, collection in collections | dictsort %}
-      {% if id != "all" %}
-        <a href="{{ ['/section/', id] | join | url }}">
-          <h1>{{ id | deslug | title }}</h1>
+    <div style="display:flex">
+      <img src="{{ '/assets/logo.png' | url }}" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="{{ '/' | url }}">
+          <h1>Home</h1>
         </a>
-      {% endif %}
-    {% endfor %}
+        {% for id, collection in collections | dictsort %}
+          {% if id != "all" %}
+            <a href="{{ ['/section/', id] | join | url }}">
+              <h1>{{ id | deslug | title }}</h1>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
 
     <!-- Seperation -->
     <hr>
@@ -29,5 +45,7 @@
     <main>
       {{ content | safe }}
     </main>
+
+    <script src="./index.js"></script>
   </body>
 </html>

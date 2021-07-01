@@ -8,6 +8,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/css/");
   eleventyConfig.addWatchTarget("./src/css/");
 
+  eleventyConfig.addPassthroughCopy("./src/assets/");
+  eleventyConfig.addWatchTarget("./src/assets/");
+
+  eleventyConfig.addPassthroughCopy("./src/icons/");
+  eleventyConfig.addWatchTarget("./src/icons/");
+
+  eleventyConfig.addPassthroughCopy("./src/*.js");
+  eleventyConfig.addWatchTarget("./src/*.js");
+
   return {
     pathPrefix: "/Knightwatch/",
     dir: {
