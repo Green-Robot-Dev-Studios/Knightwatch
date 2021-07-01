@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/css/");
 
   return {
+    pathPrefix: "/Knightwatch/",
     dir: {
       input: "src",
       output: "dist",

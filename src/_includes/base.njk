@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Knightwatch</title>
-  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  </head>
 
-<body>
-  <a href="/">
-    <h1>Home</h1>
-  </a>
-  {% for id, collection in collections | dictsort %}
-    {% if id != "all" %}
-      <a href="/section/{{ id }}">
-        <h1>{{ id | deslug | title }}</h1>
-      </a>
-    {% endif %}
-  {% endfor %}
-  <hr>
   <body>
+    <!-- Navbar -->
+    <a href="/">
+      <h1>Home</h1>
+    </a>
+    {% for id, collection in collections | dictsort %}
+      {% if id != "all" %}
+        <a href="/section/{{ id }}">
+          <h1>{{ id | deslug | title }}</h1>
+        </a>
+      {% endif %}
+    {% endfor %}
+
+    <!-- Seperation -->
+    <hr>
+    
+    <!-- Main content -->
     <main>
       {{ content | safe }}
     </main>
