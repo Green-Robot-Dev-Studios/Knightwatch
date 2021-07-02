@@ -7,9 +7,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: hashFiles('Knightwatch*') != ''
     steps:
       - uses: actions/checkout@master
+      - name: Checking if Knightwatch Zip file exists
+        if: ${{ hashFiles('Knightwatch*') == '' }}
+        run: exit 1
       - uses: actions/setup-node@master
         with:
           node-version: 16
