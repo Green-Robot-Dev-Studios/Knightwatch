@@ -13,6 +13,7 @@
     "@11ty/eleventy": "^0.12.1",
     "extract-zip": "^2.0.1",
     "gh-pages": "^3.2.3",
-    "mammoth": "^1.4.17"
+    "mammoth": "^1.4.17",
+    "unused-filename": "^3.0.0"
   }
 }

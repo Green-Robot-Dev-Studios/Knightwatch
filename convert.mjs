@@ -3,6 +3,7 @@ import extract from "extract-zip";
 import path from "path";
 import mammoth from "mammoth";
 import slugify from "slugify";
+import unusedFilename from "unused-filename"
 
 // helper function that gets the header data from the .docx
 function getParameter(text, parameter) {
@@ -14,9 +15,26 @@ function getParameter(text, parameter) {
 }
 
 // conversion function
-async function docsToHTML(source) {
+async function docsToHTML(source, docName) {
   console.log("[Info] Converting " + source);
-  const options = ["p[style-name='Title'] => h1:fresh"];
+  const options = {
+    styleMap: ["p[style-name='Title'] => h1:fresh"],
+    convertImage: mammoth.images.imgElement(async function (element) {
+      const imageBuffer = await element.read();
+      const directory = source.substring(0, source.lastIndexOf("/"));
+      const imageLocation = await unusedFilename(directory + "/" + docName.replace(".docx", ".png"));
+
+      try {
+        await writeFile(imageLocation, imageBuffer);
+      } catch {
+        throw "Image could not be processed";
+      }
+
+      const imageSrc = imageLocation.replace("./src/", "/Knightwatch/").replace("src", "Knightwatch");
+
+      return { src: imageSrc, class: "content-image" };
+    })
+  };
   const result = await mammoth.convertToHtml({ path: source }, options);
   for (const msg of result.messages) {
     console.log("[Warning] " + msg.message);
@@ -68,7 +86,7 @@ async function convert() {
         const pages = await readdir("./src/section/" + file.name);
         for (const page of pages) {
           if (page.endsWith(".docx")) {
-            await docsToHTML("./src/section/" + file.name + "/" + page);
+            await docsToHTML("./src/section/" + file.name + "/" + page, page);
           }
         }
         makeCollection(

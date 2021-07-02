@@ -1,9 +1,10 @@
-img {
-  width: 300px;
-}
-
 .box {
   border-width: 3px;
   border-style: solid;
   margin-bottom: 10px;
+}
+
+.content-image {
+  width: 300px;
+  height: 300px;
 }
