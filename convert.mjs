@@ -30,8 +30,8 @@ async function docsToHTML(source, docName) {
         throw "Image could not be processed";
       }
 
-      const imageSrc = imageLocation.replace("./src/", "/Knightwatch/").replace("src", "Knightwatch");
-
+      const imageSrc = imageLocation.replace("./src/", "/Knightwatch/").replace("src", "/Knightwatch");
+      console.log(imageSrc);
       return { src: imageSrc, class: "content-image" };
     })
   };
@@ -53,7 +53,7 @@ async function docsToHTML(source, docName) {
   const headerEndPosition = toWrite.indexOf("</p>", toWrite.indexOf("---")) + 4;
   toWrite = toWrite.slice(headerEndPosition);
   toWrite =
-    `---\nlayout: base.njk\ntitle: ${title}\nauthor: ${author}\ndate: ${date}\n---\n` +
+    `---\nlayout: article.njk\ntitle: ${title}\nauthor: ${author}\ndate: ${date}\n---\n` +
     toWrite;
 
   writeFile(source.slice(0, -5) + ".html", toWrite, (err) => {

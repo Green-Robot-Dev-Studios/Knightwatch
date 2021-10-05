@@ -20,6 +20,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/section/**/*.png");
   eleventyConfig.addWatchTarget("./src/section/**/*.png");
 
+  eleventyConfig.setUseGitIgnore(false);
+
   return {
     pathPrefix: "/Knightwatch/",
     dir: {
@@ -67,8 +69,8 @@ function extractBlurb(doc) {
 
   const content = doc.templateContent;
 
-  const pTagBegin = content.indexOf("<p>");
+  const pTagBegin = content.indexOf("<p>")+3;
   const pTagEnd = content.indexOf("</p>");
 
-  return content.substring(pTagBegin, pTagEnd).split(" ").slice(0, 100).join(" ") + " ...</p>";
+  return content.substring(pTagBegin, pTagEnd).split(" ").slice(0, 100).join(" ");
 }

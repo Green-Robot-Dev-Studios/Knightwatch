@@ -7,16 +7,20 @@ pagination:
 permalink: /section/{{ tag }}/
 eleventyExcludeFromCollections: true
 ---
-<h1>{{ tag | deslug | title }} Page</h1>
+<!-- <h1>{{ tag | deslug | title }} Page</h1> -->
 
 
 {% set taglist = collections[tag] %}
 {% for post in taglist | reverse %}
-  <div class="box">
-    {% first_image post %}<br>
-    <a href="{{ post.url | url }}">{{ post.data.title }}</a><br>
-    {{ post.data.date.toUTCString().substring(0, 17) }}<br>
-    Written by {{ post.data.author }}<br>
-    {% blurb post %}<br>
+  <div class="card">
+    <div class="card-info">
+      <a class="card-title times" href="{{ post.url | url }}">{{ post.data.title }}</a>
+      <div class="card-meta">
+        <span class="card-author">{{ post.data.author }}</span>&nbsp;/&nbsp;
+        <span class="card-date">{{ post.data.date.toUTCString().substring(0, 17) }}</span>
+      </div>
+      <p class="card-blurb">{% blurb post %}</p>
+    </div>
+    {% first_image post %}
   </div>
 {% endfor %}

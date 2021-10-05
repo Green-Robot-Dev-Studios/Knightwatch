@@ -4,13 +4,17 @@ layout: base.njk
 
 {{ content | safe }}
 
-<h1>Recent Articles</h1>
+<!-- <h1>Recent Articles</h1> -->
 {% for item in collections.all | reverse | limit(4) %}
-  <div class="box">
-    {% first_image item %}<br>
-    <a href="{{ item.url | url }}">{{ item.data.title }}</a><br>
-    {{ item.data.date.toUTCString().substring(0, 17) }}<br>
-    Written by {{ item.data.author }}<br>
-    {% blurb item %}<br>
+  <div class="card">
+    <div class="card-info">
+      <a class="card-title times" href="{{ item.url | url }}">{{ item.data.title }}</a>
+      <div class="card-meta">
+        <span class="card-author">{{ item.data.author }}</span>&nbsp;/&nbsp;
+        <span class="card-date">{{ item.data.date.toUTCString().substring(0, 17) }}</span>
+      </div>
+      <p class="card-blurb">{% blurb item %}</p>
+    </div>
+    {% first_image item %}
   </div>
 {% endfor %}

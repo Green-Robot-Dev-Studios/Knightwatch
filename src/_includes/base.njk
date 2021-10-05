@@ -17,12 +17,42 @@
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="msapplication-config" content="{{ '/icons/browserconfig.xml' | url }}">
     <meta name="theme-color" content="#0b0b0b">
-
   </head>
 
   <body>
+
+    <!-- <nav class="navbar"> -->
+      <div class="navbar-top">
+        <div class="mobile-menu" style="user-select: none;">
+          <span class="menu-icon open" onclick="openMenu()">&#x2261;</span>
+          <span class="menu-icon close" onclick="closeMenu()" hidden>&#x2715;</span>
+        </div>
+        <a class="title times" href="{{ '/' | url }}">
+          <!-- <img src="{{ '/assets/logo.png' | url }}" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+          Knightwatch
+        </a>
+        <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+      </div>
+      <div class="navbar-bottom" hidden>
+        <ul class="topic-list">
+          <!-- <li class="nav-item">
+                    <a class="nav-link {{ 'active' if '/' in page.url }}" aria-current="page" href="{{ '/' | url }}">Home</a>
+                  </li> -->
+          {% for id, collection in collections | dictsort %}
+          {% if id != "all" %}
+          <li class="">
+            <a class="nav-link {{ 'active' if id in page.url }}" href="{{ ['/section/', id] | join | url }}">{{ id | deslug |
+              title }}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    <!-- </nav> -->
+
     <!-- Navbar -->
-    <div style="display:flex">
+    <!-- <div style="display:flex">
       <img src="{{ '/assets/logo.png' | url }}" class="content-image" style="background: purple; margin-right: 30px;" />
       <div>
         <a href="{{ '/' | url }}">
@@ -36,16 +66,26 @@
           {% endif %}
         {% endfor %}
       </div>
-    </div>
+    </div> -->
 
     <!-- Seperation -->
-    <hr>
+    <!-- <hr> -->
     
     <!-- Main content -->
     <main>
       {{ content | safe }}
     </main>
 
+    <footer class="footer">
+      <ul class="footer-list">
+        <li><a href="/about">About Knightwatch</a></li>
+        <li><a href="">How to Submit an Article</a></li>
+        <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+        <li><a href="https://www.nepeanknightwatch.com/">Archives</a></li>
+      </ul>
+    </footer>
+
     <script src="./index.js"></script>
+    <script src="{{ '/navbar.js' | url }}"></script>
   </body>
 </html>
