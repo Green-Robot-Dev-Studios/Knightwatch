@@ -20,7 +20,9 @@
   </head>
 
   <body>
+    <div class="page-container">
 
+    <div class="content-wrap">
     <!-- <nav class="navbar"> -->
       <div class="navbar-top">
         <div class="mobile-menu" style="user-select: none;">
@@ -76,14 +78,18 @@
       {{ content | safe }}
     </main>
 
+    </div>
+
     <footer class="footer">
       <ul class="footer-list">
-        <li><a href="/about">About Knightwatch</a></li>
-        <li><a href="">How to Submit an Article</a></li>
+        <li><a href="/">About Knightwatch</a></li>
+        <li><a href="https://forms.gle/QN5razRkG1Nj19ft8">How to Submit an Article</a></li>
         <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
-        <li><a href="https://www.nepeanknightwatch.com/">Archives</a></li>
+        <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
       </ul>
     </footer>
+
+    </div>
 
     <script src="./index.js"></script>
     <script src="{{ '/navbar.js' | url }}"></script>
