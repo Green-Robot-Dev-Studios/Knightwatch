@@ -8,6 +8,15 @@ body {
   background-color: #E5DFF4;
 }
 
+.page-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.content-wrap {
+  min-height: 100vh;
+}
+
 .content-image {
   width: 100%;
 }
@@ -121,6 +130,8 @@ body {
 
 .footer {
   background-color: #484848;
+  position: absolute;
+  width: 100%;
 }
 
 .footer-list {
