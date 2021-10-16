@@ -23,7 +23,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
 
   return {
-    pathPrefix: "/Knightwatch/",
     dir: {
       input: "src",
       output: "dist",

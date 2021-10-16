@@ -15,7 +15,7 @@
   ],
   "name": "Knightwatch",
   "short_name": "KW",
-  "start_url": "/Knightwatch/index.html",
+  "start_url": "/index.html",
   "theme_color": "#0b0b0b",
   "background_color": "#0b0b0b"
 }

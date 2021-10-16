@@ -30,7 +30,7 @@ async function docsToHTML(source, docName) {
         throw "Image could not be processed";
       }
 
-      const imageSrc = imageLocation.replace("./src/", "/Knightwatch/").replace("src", "/Knightwatch");
+      const imageSrc = imageLocation.replace("./src/", "/").replace("src", "/");
       console.log(imageSrc);
       return { src: imageSrc, class: "content-image" };
     })
