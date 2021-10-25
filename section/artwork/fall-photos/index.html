@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knightwatch</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
@@ -23,7 +27,7 @@
     <div class="page-container">
 
     <div class="content-wrap">
-    <!-- <nav class="navbar"> -->
+      <!-- <nav class="navbar"> -->
       <div class="navbar-top">
         <div class="mobile-menu" style="user-select: none;">
           <span class="menu-icon open" onclick="openMenu()">&#x2261;</span>
@@ -32,7 +36,10 @@
         <a class="title times" href="/">
           <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
             class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
-          Knightwatch
+            <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+            Knightwatch
         </a>
         <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
       </div>
@@ -45,14 +52,44 @@
           
           
           
-          <li class="">
-            <a class="nav-link active" href="/section/events">Events</a>
+          <li class="list-style">
+            <a class="nav-link active" href="/section/artwork">Artwork</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/opinion">Opinion</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/prompts">Prompts</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/recipes">Recipes</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/social-issues">Social Issues</a>
           </li>
           
           
         </ul>
       </div>
-    <!-- </nav> -->
+      <!-- </nav> -->
 
     <!-- Navbar -->
     <!-- <div style="display:flex">
@@ -65,8 +102,38 @@
           
         
           
-            <a href="/section/events">
-              <h1>Events</h1>
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
             </a>
           
         
@@ -80,13 +147,13 @@
     <main>
       
 <div class="page">
-  <span class="card-title times">October Issue Coming Soon</span>
+  <span class="card-title times" style="font-weight: 500;">Fall Photos</span>
   <div class="card-meta">
-    <span class="card-author">Site Management</span>&nbsp;/&nbsp;
-    <span class="card-date">Fri, 15 Oct 2021 </span>
+    <span class="card-author">Noiya Katell</span>&nbsp;/&nbsp;
+    <span class="card-date">Mon, 11 Oct 2021 </span>
   </div>
 
-  <p>Check back soon for our first articles!</p><p><img src="/section/events/site-under-construction.png" class="content-image" /></p>
+  <p>A collection of photos.</p><p><img src="/section/artwork/fall-photos.jpeg" class="content-image" /></p><p><img src="/section/artwork/fall-photos (1).jpeg" class="content-image" /></p><p><img src="/section/artwork/fall-photos (2).jpeg" class="content-image" /></p>
 </div>
     </main>
 
@@ -94,7 +161,7 @@
 
     <footer class="footer">
       <ul class="footer-list">
-        <li><a href="/">About Knightwatch</a></li>
+        <li><a href="/about">About Knightwatch</a></li>
         <li><a href="https://forms.gle/QN5razRkG1Nj19ft8">How to Submit an Article</a></li>
         <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
         <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
@@ -103,6 +170,13 @@
 
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        anchorPlacement: 'top',
+        once: 'true'
+      });
+    </script>
     <script src="./index.js"></script>
     <script src="/navbar.js"></script>
   </body>

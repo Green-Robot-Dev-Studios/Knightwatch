@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knightwatch</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
@@ -23,7 +27,7 @@
     <div class="page-container">
 
     <div class="content-wrap">
-    <!-- <nav class="navbar"> -->
+      <!-- <nav class="navbar"> -->
       <div class="navbar-top">
         <div class="mobile-menu" style="user-select: none;">
           <span class="menu-icon open" onclick="openMenu()">&#x2261;</span>
@@ -32,7 +36,10 @@
         <a class="title times" href="/">
           <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
             class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
-          Knightwatch
+            <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+            Knightwatch
         </a>
         <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
       </div>
@@ -45,14 +52,44 @@
           
           
           
-          <li class="">
-            <a class="nav-link " href="/section/events">Events</a>
+          <li class="list-style">
+            <a class="nav-link " href="/section/artwork">Artwork</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/opinion">Opinion</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/prompts">Prompts</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/recipes">Recipes</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/social-issues">Social Issues</a>
           </li>
           
           
         </ul>
       </div>
-    <!-- </nav> -->
+      <!-- </nav> -->
 
     <!-- Navbar -->
     <!-- <div style="display:flex">
@@ -65,8 +102,38 @@
           
         
           
-            <a href="/section/events">
-              <h1>Events</h1>
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
             </a>
           
         
@@ -82,27 +149,230 @@
 
 
 
-
-  <div class="card">
-    <div class="card-info">
-      <a class="card-title times" href="/section/events/site-under-construction/">October Issue Coming Soon</a>
-      <div class="card-meta">
-        <span class="card-author">Site Management</span>&nbsp;/&nbsp;
-        <span class="card-date">Fri, 15 Oct 2021 </span>
+<div class="articles">
+  <div class="col">
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/opinion/no-edit_-nina-beck/">Books I’ve Found in Nepean’s Library: Am I Blue?</a>
+      <img src="/section/opinion/no-edit_-nina-beck.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Nina Beck</span>
+          </div>
+          <p class="card-blurb line-clamp">The Nepean High School library has a wonderful array of books available to students that a lot of people don’t really know about. The school library has a website that is accessible through the NHS website itself, in there is a link to alexandria, an online database of all the books in the nepean library. Alexandria is great, and not just because of the excellent name choice, it lets you browse books easily and find works that could be helpful for school or just for recreational reading without having to browse shelves for a long time (not that that isn’t ...</p>
+        </div>
       </div>
-      <p class="card-blurb">Check back soon for our first articles!</p>
-    </div>
-    <img src="/section/events/site-under-construction.png" class="content-image" />
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/artwork/fall-photos/">Fall Photos</a>
+      <img src="/section/artwork/fall-photos.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Noiya Katell</span>
+          </div>
+          <p class="card-blurb line-clamp">A collection of photos. ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/prompts/october-prompts/">October Writing Prompts</a>
+      <img src="/section/prompts/october-prompts.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Knightwatch Editors</span>
+          </div>
+          <p class="card-blurb line-clamp">How are you feeling about being back at school? What do you think of your classes so far?<br>Share your personal experiences of these two important days:<br>	September 7,8 — Rosh Hashanah (Jewish New Year) <br>September 30 — the first National Day for Truth and Reconciliation, and Orange Shirt Day.<br>Halloween is coming! Tell us your favourite scary story, or write your own. 🦇🕷🍬 ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/opinion/knightwatch-tier-list/">Kids TV Tier List</a>
+      <img src="/section/opinion/knightwatch-tier-list.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Sebastien Davidson</span>
+          </div>
+          <p class="card-blurb line-clamp">All ratings are objective fact, also I haven’t seen all kids TV so cut me some slack.<br>S - Tier:<br>A - Tier:<br>B - Tier:<br>C - Tier:<br>D - Tier:<br>F - Tier: ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/artwork/no-edit_-nicholas-ficara/">Fall Photography</a>
+      <img src="/section/artwork/no-edit_-nicholas-ficara.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Nicholas Ficara</span>
+          </div>
+          <p class="card-blurb line-clamp">Enjoy these images I took this fall during tech class! ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/artwork/spongebob-and-patrick-from-spongebob-squarepants/">Spongebob and Patrick from Spongebob Squarepants</a>
+      <img src="/section/artwork/spongebob-and-patrick-from-spongebob-squarepants.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Khanh Nguyen</span>
+          </div>
+          <p class="card-blurb line-clamp">Painting, acrylic on canvas. ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/artwork/biking-to-the-falls/">Biking to the Falls</a>
+      <img src="/section/artwork/biking-to-the-falls.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Ella Zubec</span>
+          </div>
+          <p class="card-blurb line-clamp">A collection of photos. ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/social-issues/students-reflect-on-homes_-a-refugee-story/">Students Reflect on Homes: A Refugee Story</a>
+      <img src="/section/social-issues/students-reflect-on-homes_-a-refugee-story.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Ms. Hamer’s Grade 10 English Class</span>
+          </div>
+          <p class="card-blurb line-clamp">Students in Ms. Hamer’s Grade 10 English class read Homes: A Refugee Story by Abu Bakr al Rabeeah and Winnie Yeung. They also listened to parts of the audiobook, narrated by Ali Momen. This book tells the true story of the al Rabeeah family’s journey from Iraq to Syria, and ultimately, to Canada, and explores the issues of childhood disrupted by war, and the strength and resilience of family in overcoming the effects of displacement. <br>After finishing the book, students reflected on the impact of the book, how it had deepened their understanding of the experiences of immigrants and refugees, ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/creative-writing/edit_-natasha-mazerolle/">The Ballad Of A Very Confusing Afternoon</a>
+      
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Natasha Mazerolle</span>
+          </div>
+          <p class="card-blurb line-clamp">On a Thursday, the sun shone bright,<br>A cool breeze drifted through the air.<br>The students sat in their school,<br>A half hour left, they could hardly bear.<br>A loud screech ripped into ears<br>And all of the students stood.<br>They walked outside calmly,<br>They did what they should.<br>For autumn, it was too hot.<br>The day felt rather wry.<br>It felt worse when a cop<br>And a fire truck stopped by.<br>The students blocked the road,<br>A woman was trapped.<br>The crowd parted like a river,<br>Then everyone clapped.<br>In front of the school,<br>Something zany was on display.<br>For an old woman had hit someone’s car <br>And then drove away.<br>Finally, the event reached its end.<br>The students ...</p>
+        </div>
+      </div>
+    
   </div>
-
-
+  <div class="col">
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/social-issues/no-edit_-olivia-milley/">Celebrating Islamic Heritage Month at Nepean High School: An interview with Ms. Ibrahim</a>
+      <img src="/section/social-issues/no-edit_-olivia-milley.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Olivia Milley</span>
+          </div>
+          <p class="card-blurb line-clamp">Despite only being in her first year of teaching at Nepean High School, Ms. Ibrahim has already had an impressive impact on our school community. She founded the Nepean Muslim Student Association (MSA) and has been instrumental in the celebration of Islamic Heritage Month. I talked to her to find out what the MSA does, more about what makes this month important, and how our school is celebrating it.<br>Ms. Ibrahim told me she started the Muslim Student Association as a space for Muslim students to have a chance to express their beliefs, culture, and religion in a safe and friendly ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/creative-writing/untitled-haikus/">Untitled Haikus</a>
+      
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Grade 10 Student</span>
+          </div>
+          <p class="card-blurb line-clamp">three lines say so much <br>freedom found within the limits<br>somehow less is more<br>the fan is too loud<br>soft words surrender their shape <br>to the rush of air <br>it seems so foolish <br>to cherish ink on paper <br>yet you are precious<br>posters fill my class<br>their garish colours wound my eyes<br>i prefer blank walls ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/creative-writing/only-a-small-motion/">Only a Small Motion</a>
+      
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Ella Zubec</span>
+          </div>
+          <p class="card-blurb line-clamp">A drop of water makes a ripple in the ocean<br>A soft breeze<br>And comes falling a beautiful leaf<br>A small motion<br>Isn’t it crazy<br>How much power we hold?<br>Only few words told<br>Yet a kind person now they see<br>A word<br>To a smile<br>A smile<br>Can mean the world<br>Isn’t it scary<br>How much power we hold?<br>Some things should have been left untold<br>Yet still a kind person they see<br>A word<br>To a frown<br>A frown<br>Can change the world<br>A drop of water makes a ripple in the ocean<br>A soft breeze<br>And comes falling a dead leaf<br>Only a small motion ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/creative-writing/the-girls-with-the-same-name/">The Girls With The Same Name</a>
+      
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Ella Zubec</span>
+          </div>
+          <p class="card-blurb line-clamp">There were girls with the same name<br>And they ran through the rain<br>Their feet patted quietly<br>Their voices echoed loudly<br>With the same name, two girls ran<br>Under the quiet night they rant<br>The cool misty night<br>The deafening street lights<br>The smell of dew<br>I knew<br>For the world may suck<br>I can see its beauty<br>Rain symbolises sadness<br>And it's then I see clearly<br>When the sky screams<br>They can’t hear, so I speak<br>When the world is inside<br>So I am alone<br>I needn’t to hide<br>Because it’s heaven I see<br>When I dance in the rain<br>Because it’s hell I feel<br>When rain dances in me<br>Rain can be painful<br>When filled with bitter emotion<br>What we do when we’re ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/creative-writing/a-visit-from-the-sluagh/">A Visit From The Sluagh</a>
+      <img src="/section/creative-writing/a-visit-from-the-sluagh.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Natasha Mazerolle</span>
+          </div>
+          <p class="card-blurb line-clamp">The cold breeze was the first shocking thing that night. The Equinox had come and gone, chilling the earth and blackening the sky in the early hours of the night. The emerald leaves bled yellow and red, the most sure sign that Autumn was arriving.<br>There was nothing wrong with that of course, many people love the season. Several adore the liminal time of the year, how the transition has a certain vibe to it no other season can match. The feeling of knowing something sits in the air, just beyond our touch.<br>For the inhabitants of Oak Grove, that was only ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/artwork/no-edit_-jacob-nusbaum/">New Metal Idea</a>
+      <img src="/section/artwork/no-edit_-jacob-nusbaum.jpeg" class="content-image" alt="Drum Set, Drums, Musical Instruments" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Jacob Nusbaum</span>
+          </div>
+          <p class="card-blurb line-clamp">An original song.<br> ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/opinion/the-pernicious-prolonged-problematic-pandemic/">The Pernicious Prolonged Problematic Pandemic</a>
+      <img src="/section/opinion/the-pernicious-prolonged-problematic-pandemic.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Grade 12 Student</span>
+          </div>
+          <p class="card-blurb line-clamp">Remember March 2020? I'm sure you do. It was the moment the world changed as we know it.<br>Three days before March break: there was one thing on everyone’s mind. This new virus called Sars Cov-2, Covid-19 from Wuhan, China, was making its way through the media. There were discussions about whether or not they would extend our March break. The news was broken on Thursday, two days before the break would start. They made the decision to extend it by an extra two weeks. Which would mean we would be back on April 5th. Back to school like normal, right? ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/social-issues/no-edit_-hugh-kelly/">Back to School – Nepean Students Have Mixed Feelings</a>
+      <img src="/section/social-issues/no-edit_-hugh-kelly.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Hugh Kelly</span>
+          </div>
+          <p class="card-blurb line-clamp">Nepean High School students have been back in classrooms for a few weeks now, with kids and teachers adjusting to yet another new system for learning. I talked to students to hear their thoughts on returning to school, the current restrictions and their experiences so far in classes. Overwhelmingly, they said things are “better than last year,” but, unfortunately, that was a low bar to pass. <br>We are now back to a semester model, meaning students have four courses until February, when everyone gets a new four. However, there are only two classes a day, both lasting 2.5 hours. To ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/recipes/fall-recipes/">Fall Recipes Collection</a>
+      <img src="/section/recipes/fall-recipes.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Brianna L., Sophie M., and Alex P.</span>
+          </div>
+          <p class="card-blurb line-clamp">The first assignment of Ms. Hamer’s Grade 10 English Class was to create a procedural text. Many students chose to write recipes which are perfect for making during the cozy fall season. Let us know if you try any of them!<br>Apple Strudel Muffins by Brianna L. <br>Raspberry Scones by Sophie M. <br>Chomeur Pudding by Alex P.  ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="/section/artwork/focus/">Focus</a>
+      <img src="/section/artwork/focus.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Sophie Milley</span>
+          </div>
+          <p class="card-blurb line-clamp">A collection of photos. ...</p>
+        </div>
+      </div>
+    
+  </div>
+</div>
     </main>
 
     </div>
 
     <footer class="footer">
       <ul class="footer-list">
-        <li><a href="/">About Knightwatch</a></li>
+        <li><a href="/about">About Knightwatch</a></li>
         <li><a href="https://forms.gle/QN5razRkG1Nj19ft8">How to Submit an Article</a></li>
         <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
         <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
@@ -111,6 +381,13 @@
 
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        anchorPlacement: 'top',
+        once: 'true'
+      });
+    </script>
     <script src="./index.js"></script>
     <script src="/navbar.js"></script>
   </body>
