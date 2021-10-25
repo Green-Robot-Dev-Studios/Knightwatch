@@ -1,3 +1,4 @@
 /node_modules
 /dist
 /src/section
+.DS_Store

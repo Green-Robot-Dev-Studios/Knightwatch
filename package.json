@@ -11,9 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^1.0.0",
+    "aos": "^2.3.4",
     "extract-zip": "^2.0.1",
     "gh-pages": "^3.2.3",
     "mammoth": "^1.4.17",
+    "sharp": "^0.29.2",
     "unused-filename": "^3.0.0"
   }
 }

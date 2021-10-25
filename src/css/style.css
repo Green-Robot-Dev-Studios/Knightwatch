@@ -2,10 +2,27 @@ html,
 body, ul {
   margin: 0;
   padding: 0;
+  font-family: proxima-nova,Arial,Helvetica Neue,Helvetica,sans-serif;
 }
 
 body {
   background-color: #E5DFF4;
+}
+
+body {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  /* letter-spacing: 0.01rem; */
+}
+
+.purple {
+  color: #5e00b5;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
 }
 
 .page-container {
@@ -17,43 +34,93 @@ body {
   min-height: 100vh;
 }
 
+.articles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.headshot {
+  width: 100%;
+  margin-top: 4vh;
+  margin-top: 2vh;
+}
+
+.school-shot {
+  object-fit: contain;
+  width: 100%;
+  margin-top: 2vw;
+}
+
 .content-image {
   width: 100%;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  padding: 4vh;
+  background-color: white;
+  margin: 3vh;
+}
+
+.small-card {
+  padding: 3vh;
+  background-color: white;
+  margin: 3vh;
+}
+
+.full-card {
+  display: flex;
+  flex-direction: column;
   padding: 3vh;
   background-color: white;
   margin: 3vh;
 }
 
 .card-title {
-  font-size: xx-large;
+  /* margin-bottom: 2vh; */
+  font-size: 2.1rem;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
+  padding-bottom: 4px;
+  line-height: 5.5vh;
+  font-weight: 100;
 }
 
 .card-blurb {
+  font-size: large;
   overflow: hidden;
   margin-bottom: 0;
+  margin-top: 1.2vh;
 }
 
 .card-meta {
+  margin-top: 2.1vh;
   display: flex;
   flex-wrap: wrap;
+  font-size: large;
 }
 
 .card-author {
   color: #7402d8;
   font-weight: bold;
+  /* margin-top: 4vh; */
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 1.5em;
   font-weight: bolder;
   color: white;
   text-decoration: none;
+  margin-left: 2vw;
+}
+
+.list-style {
+  list-style: none;
+  padding: 3px;
 }
 
 .subtitle {
@@ -63,10 +130,11 @@ body {
   max-width: 50%;
   text-align: right;
   margin: 0;
+  margin-right: 2vw;
 }
 
 .times {
-  font-family: "Times New Roman", serif;
+  font-family: 'Merriweather', serif;
 }
 
 /* .navbar {
@@ -81,19 +149,23 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2vh;
-  background-color: #9c41eb;
+  background-color: #5e00b5;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .navbar-bottom {
   background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
-  font-size: large;
+  font-size: 1.2rem;
 }
 
 .mobile-menu {
@@ -123,9 +195,10 @@ body {
 
 .topic-list {
   display:flex; 
+  font-size: large;
   flex-direction: column;
   align-items: center;
-  padding: 1vh;
+  padding: 0.3vh;
 }
 
 .footer {
@@ -137,11 +210,14 @@ body {
 .footer-list {
   list-style: none;
   width: fit-content;
+  padding-left: 0px !important;
 }
 
 .footer-list li {
-  padding: 4vh;
+  padding: 2vh;
   width: fit-content;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .footer-list a {
@@ -151,18 +227,57 @@ body {
 }
 
 .page {
+  max-width: 800px;
+  margin: 5vh;
+  background-color: white;
+  margin: 0 auto;
+  
+  padding-top: 9vh;
+  padding-right: 3vw;
+  padding-left: 3vw;
+}
+
+.page-blurbs {
   max-width: 1000px;
   margin: 5vh;
   background-color: white;
   margin: 0 auto;
   padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav {
-  background-color: #9c41eb;
+  background-color: #5e00b5;
 }
 
-@media only screen and (min-width: 768px) {
+.col-2 {
+  width: 30vw;
+}
+
+ul {
+  padding-left: 4vw;
+}
+
+@media only screen and (min-width: 1000px) {
+  .school-shot {
+    width: 50%;
+    margin-top: 4vh;
+    padding-left: 4vw;
+  }
+
+  .page {
+    padding: 16vh;
+    padding-top: 9vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .title {
+    font-size: 2.2em;
+  }
+
   .subtitle {
     display: block;
   }
@@ -185,13 +300,25 @@ nav {
   }
   .card {
     display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .small-card {
+    display: flex;
     height: 30vh;
-    width: 60vw;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .full-card {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
     justify-content: space-between;
     overflow: hidden;
   }
   .card-info {
-    width: 50%;
     display: flex;
     flex-direction: column;
   }
@@ -199,15 +326,15 @@ nav {
     width: 50%;
   }
   .content-image {
-    width: 50%;
-    max-height: 30vh;
-    object-fit: cover;
-    padding-left: 2vh;
-    min-width: 50%;
+    max-height: 90vh;
+    object-fit: contain;
+    margin-top: 2vh;
   }
 
   .footer-list li {
     display: inline-block;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
   }
 
   .footer-list {

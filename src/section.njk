@@ -11,16 +11,33 @@ eleventyExcludeFromCollections: true
 
 
 {% set taglist = collections[tag] %}
-{% for post in taglist | reverse %}
-  <div class="card">
-    <div class="card-info">
-      <a class="card-title times" href="{{ post.url | url }}">{{ post.data.title }}</a>
-      <div class="card-meta">
-        <span class="card-author">{{ post.data.author }}</span>&nbsp;/&nbsp;
-        <span class="card-date">{{ post.data.date.toUTCString().substring(0, 17) }}</span>
+<div class="articles">
+  <div class="col">
+    {% for post in taglist | shuffle | splitInto(0) %}
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="{{ post.url | url }}">{{ post.data.title }}</a>
+      {% first_image post %}
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">{{ post.data.author }}</span>
+          </div>
+          <p class="card-blurb line-clamp">{% blurb post %}</p>
+        </div>
       </div>
-      <p class="card-blurb">{% blurb post %}</p>
-    </div>
-    {% first_image post %}
+    {% endfor %}
   </div>
-{% endfor %}
+  <div class="col">
+    {% for post in taglist | shuffle | splitInto(1) %}
+    <div class="card" data-aos="fade-up">
+      <a class="card-title" href="{{ post.url | url }}">{{ post.data.title }}</a>
+      {% first_image post %}
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">{{ post.data.author }}</span>
+          </div>
+          <p class="card-blurb line-clamp">{% blurb post %}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
