@@ -3,6 +3,8 @@ name: Convert and Push to Github Pages
 on:
   push:
     branches: [ master ]
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   deploy:
