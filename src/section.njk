@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
 <div class="articles">
   <div class="col">
     {% for post in taglist | shuffle | splitInto(0) %}
-    <div class="card" data-aos="fade-up">
+    <div class="card" data-aos="fade-up" onclick="location.href='{{ item.url | url }}'">
       <a class="card-title times" href="{{ post.url | url }}">{{ post.data.title }}</a>
       {% first_image post %}
         <div class="card-info">
@@ -28,8 +28,8 @@ eleventyExcludeFromCollections: true
   </div>
   <div class="col">
     {% for post in taglist | shuffle | splitInto(1) %}
-    <div class="card" data-aos="fade-up">
-      <a class="card-title" href="{{ post.url | url }}">{{ post.data.title }}</a>
+    <div class="card" data-aos="fade-up" onclick="location.href='{{ item.url | url }}'">
+      <a class="card-title times" href="{{ post.url | url }}">{{ post.data.title }}</a>
       {% first_image post %}
         <div class="card-info">
           <div class="card-meta">

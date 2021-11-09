@@ -24,7 +24,7 @@ layout: base.njk
   </div>
   <div class="col">
     {% for item in collections.all | shuffle | splitInto(1) %}
-      <div class="card" data-aos="fade-up">
+      <div class="card" data-aos="fade-up" onclick="location.href='{{ item.url | url }}'">
         <a class="card-title times" href="{{ item.url | url }}">{{ item.data.title }}</a>
         {% first_image item %}
         <div class="card-info">
