@@ -36,6 +36,7 @@ function allIndexOf(str, toSearch) {
 async function docsToHTML(source, docName) {
     console.log("[Info] Converting " + source);
     const options = {
+        ignoreEmptyParagraphs: false,
         styleMap: ["p[style-name='Title'] => h1:fresh"],
         convertImage: mammoth.images.imgElement(async function (element) {
             const imageBuffer = await element.read();

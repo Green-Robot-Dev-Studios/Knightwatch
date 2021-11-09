@@ -15,7 +15,7 @@ eleventyExcludeFromCollections: true
   <div class="col">
     {% for post in taglist | shuffle | splitInto(0) %}
     <div class="card" data-aos="fade-up">
-      <a class="card-title" href="{{ post.url | url }}">{{ post.data.title }}</a>
+      <a class="card-title times" href="{{ post.url | url }}">{{ post.data.title }}</a>
       {% first_image post %}
         <div class="card-info">
           <div class="card-meta">
