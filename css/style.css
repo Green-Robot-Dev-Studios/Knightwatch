@@ -17,6 +17,10 @@ body {
   /* letter-spacing: 0.01rem; */
 }
 
+p {
+  margin: 0;
+}
+
 .purple {
   color: #5e00b5;
 }
@@ -79,7 +83,7 @@ body {
   flex-direction: column;
   padding: 3vh;
   background-color: white;
-  margin: 3vh;
+  box-shadow: 1px 1px 8px 4px #cec5db;
 }
 
 .card-title {
