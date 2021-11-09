@@ -2,7 +2,9 @@ html,
 body, ul {
   margin: 0;
   padding: 0;
-  font-family: proxima-nova,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  word-break: break-word;
+  /* font-weight: 300; */
 }
 
 body {
@@ -11,7 +13,7 @@ body {
 
 body {
   font-size: 1.3rem;
-  line-height: 2rem;
+  line-height: 1.4;
   /* letter-spacing: 0.01rem; */
 }
 
@@ -63,6 +65,7 @@ body {
   padding: 4vh;
   background-color: white;
   margin: 3vh;
+  box-shadow: 1px 1px 8px 4px #cec5db;
 }
 
 .small-card {
@@ -82,12 +85,12 @@ body {
 .card-title {
   /* margin-bottom: 2vh; */
   font-size: 2.1rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: none;
   color: black;
   padding-bottom: 4px;
-  line-height: 5.5vh;
-  font-weight: 100;
+  line-height: 1.3;
+  font-weight: normal;
 }
 
 .card-blurb {
@@ -134,7 +137,7 @@ body {
 }
 
 .times {
-  font-family: 'Merriweather', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 /* .navbar {
@@ -232,9 +235,10 @@ body {
   background-color: white;
   margin: 0 auto;
   
-  padding-top: 9vh;
-  padding-right: 3vw;
-  padding-left: 3vw;
+  padding-top: 4vh;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  padding-bottom: 4vh;
 }
 
 .page-blurbs {
@@ -269,6 +273,7 @@ ul {
 
   .page {
     padding: 16vh;
+    padding-bottom: 12vh;
     padding-top: 9vh;
     margin-top: 2vh;
     margin-bottom: 2vh;
