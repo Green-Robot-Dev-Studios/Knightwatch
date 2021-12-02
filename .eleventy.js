@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksFilter("imagesOnly", (arr) => imagesOnly(arr));
   eleventyConfig.addNunjucksFilter("textOnly", (arr) => textOnly(arr));
   eleventyConfig.addNunjucksFilter("shuffle", (arr) => shuffle(arr));
+  eleventyConfig.addNunjucksFilter("clean", (arr) => clean(arr));
   eleventyConfig.addNunjucksFilter("splitInto", (arr, part) => split(arr, part));
 
   eleventyConfig.addPassthroughCopy("./src/css/");
@@ -34,6 +35,16 @@ module.exports = function (eleventyConfig) {
   };
 };
 
+function clean(arr) {
+  return arr.filter((i) => {
+    if (i.data.tags.includes("prompts") || i.data.tags.includes("club-page")) {
+      return false;
+    } else {
+      return true;
+    }
+  })
+}
+
 function limit(arr, max) {
   return arr.slice(0, max);
 }
@@ -47,10 +58,10 @@ function split(arr, part) {
   const part2 = arr.slice(Math.floor(arr.length/2))
 
   if (part === 0) {
-    console.log("Part1")
+    //console.log("Part1")
     return part1;
   } else if (part === 1) {
-    console.log("Part2")
+    //console.log("Part2")
     return part2;
   } else {
     return [];
@@ -73,6 +84,10 @@ function shuffleArray(array, seed) {                // <-- ADDED ARGUMENT
     ++seed                                     // <-- ADDED LINE
   }
 
+  array.sort((x, y) => {
+    return x.date < y.date ? 1 : -1;
+  })
+
   return array;
 }
 
@@ -82,14 +97,14 @@ function random(seed) {
 }
 
 function shuffle(arr) {
-  console.log(arr[0]["data"]["page"])
-  console.log(arr[0]["data"]["collections"])
+  //console.log(arr[0]["data"]["page"])
+  //console.log(arr[0]["data"]["collections"])
   const seed = new Date().getDate();
-  console.log("SEED", seed)
+  //console.log("SEED", seed)
   arr = Array.from(arr);
-  console.log(arr.toString())
+  //console.log(arr.toString())
   arr = shuffleArray(arr, seed+1);
-  console.log(arr.toString())
+  //console.log(arr.toString())
 
   return arr;
 }
@@ -149,7 +164,7 @@ function extractFirstImage(doc) {
   if (content.includes("<img")) {
     const imgTagBegin = content.indexOf("<img");
     const imgTagEnd = content.indexOf(">", imgTagBegin);
-    console.log(content.substring(imgTagBegin, imgTagEnd + 1))
+    //console.log(content.substring(imgTagBegin, imgTagEnd + 1))
     return content.substring(imgTagBegin, imgTagEnd + 1);
   }
 

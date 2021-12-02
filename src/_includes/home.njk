@@ -8,9 +8,9 @@ layout: base.njk
 
 
 <div class="articles">
-  <div class="col">
-    {% for item in collections.all | shuffle | splitInto(0) %}
-      <div class="card" data-aos="fade-up" onclick="location.href='{{ item.url | url }}'">
+  <div class="col" data-columns>
+    {% for item in collections.all | clean | shuffle %}
+      <div class="card item" data-aos="fade-up" onclick="location.href='{{ item.url | url }}'">
         <a class="card-title times" href="{{ item.url | url }}">{{ item.data.title }}</a>
         {% first_image item %}
         <div class="card-info">
@@ -22,48 +22,4 @@ layout: base.njk
       </div>
     {% endfor %}
   </div>
-  <div class="col">
-    {% for item in collections.all | shuffle | splitInto(1) %}
-      <div class="card" data-aos="fade-up" onclick="location.href='{{ item.url | url }}'">
-        <a class="card-title times" href="{{ item.url | url }}">{{ item.data.title }}</a>
-        {% first_image item %}
-        <div class="card-info">
-          <div class="card-meta">
-            <span class="card-author">{{ item.data.author }}</span>
-          </div>
-          <p class="card-blurb line-clamp">{% blurb item %}</p>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-
-  <!-- <div class="col">
-    {% for item in collections.all | reverse | limit(100) %}
-      <div class="small-card" data-aos="fade-up">
-        {% first_image item %}
-        <div class="card-info">
-          <a class="card-title" href="{{ item.url | url }}">{{ item.data.title }}</a>
-          <div class="card-meta">
-            <span class="card-author">{{ item.data.author }}</span>
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-  </div> -->
 </div>
-  
-  <!-- <div class="col-2">
-    {% for item in collections.all | textOnly | reverse | limit(20) %}
-      <div class="small-card">
-        <div class="card-info">
-          <a class="card-title times" href="{{ item.url | url }}">{{ item.data.title }}</a>
-          <div class="card-meta">
-            <span class="card-author">{{ item.data.author }}</span>
-          </div>
-          <p class="card-blurb">{% blurb item %}</p>
-        </div>
-        {% first_image item %}
-      </div>
-    {% endfor %}
-  </div> -->
-<!-- </div> -->

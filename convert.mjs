@@ -78,6 +78,9 @@ async function docsToHTML(source, docName) {
         title = getParameter(toWrite, "Title:");
         author = getParameter(toWrite, "Author:");
         date = getParameter(toWrite, "Date:");
+
+        title = title.replace("&amp;", "&");
+        author = author.replace("&amp;", "&");
     } catch (e) {
         console.log("[Error] " + e);
         throw "Could not complete " + source + " due to: " + e;
