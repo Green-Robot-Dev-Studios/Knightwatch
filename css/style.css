@@ -81,7 +81,7 @@ p {
 .full-card {
   display: flex;
   flex-direction: column;
-  padding: 3vh;
+  padding: 4vh;
   background-color: white;
   box-shadow: 1px 1px 8px 4px #cec5db;
 }
@@ -260,15 +260,39 @@ nav {
   background-color: #5e00b5;
 }
 
-.col-2 {
-  width: 30vw;
-}
-
 ul {
   padding-left: 4vw;
 }
 
+.size-1of2 {
+  /* width: 45%;
+  float: left; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 45vw;
+  align-content: flex-start;
+}
+
 @media only screen and (min-width: 1000px) {
+  /* Render items as columns */
+  .col[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+
+  .col {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .school-shot {
     width: 50%;
     margin-top: 4vh;
@@ -308,11 +332,14 @@ ul {
     flex-direction: row;
   }
   .card {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
-    width: 40vw;
+    width: 45vw;
     justify-content: space-between;
     overflow: hidden;
+    height: fit-content;
+    margin-right: 0;
+    margin-left: 0;
   }
   .small-card {
     display: flex;

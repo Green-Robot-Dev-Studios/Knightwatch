@@ -21,6 +21,16 @@
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <meta name="theme-color" content="#0b0b0b">
+
+    <!-- I'm sorry, I was forced ;( -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Z1KRCWE0R3');
+    </script>
   </head>
 
   <body>
@@ -54,6 +64,12 @@
           
           <li class="list-style">
             <a class="nav-link " href="/section/artwork">Artwork</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/club-page">Club Page</a>
           </li>
           
           
@@ -108,6 +124,12 @@
           
         
           
+            <a href="/section/club-page">
+              <h1>Club Page</h1>
+            </a>
+          
+        
+          
             <a href="/section/creative-writing">
               <h1>Creative Writing</h1>
             </a>
@@ -149,8 +171,9 @@
 
 
 
+
 <div class="articles">
-  <div class="col">
+  <div class="col" data-columns>
     
     <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/december-prompts/'">
       <a class="card-title times" href="/section/prompts/december-prompts/">December Writing Prompts</a>
@@ -162,9 +185,6 @@
           <p class="card-blurb line-clamp">Share your favourite holiday recipe with us! It can be one your family makes every year for special occasions or just something you enjoy eating.<br>Tell us about your holiday and winter break traditions!<br>What winter activities do you enjoy? Skiing, sledding, skating, etc. Did you try anything new last winter that you enjoyed?<br>Everyone loves good recommendations! Write us a review of a movie.<br>Happy Holidays Nepean :) ...</p>
         </div>
       </div>
-    
-  </div>
-  <div class="col">
     
     <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/november-prompts/'">
       <a class="card-title times" href="/section/prompts/november-prompts/">November Writing Prompts</a>
@@ -212,6 +232,7 @@
         once: 'true'
       });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./index.js"></script>
     <script src="/navbar.js"></script>
   </body>
