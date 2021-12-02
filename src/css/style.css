@@ -350,7 +350,7 @@ ul {
   .full-card {
     display: flex;
     flex-direction: row;
-    width: 40vw;
+    /* width: 40vw; */
     justify-content: space-between;
     overflow: hidden;
   }
