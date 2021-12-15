@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- I'm sorry, I was forced ;( -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Z1KRCWE0R3');
+    </script>
+  </head>
+
+  <body>
+    <div class="page-container">
+
+    <div class="content-wrap">
+      <!-- <nav class="navbar"> -->
+      <div class="navbar-top">
+        <div class="mobile-menu" style="user-select: none;">
+          <span class="menu-icon open" onclick="openMenu()">&#x2261;</span>
+          <span class="menu-icon close" onclick="closeMenu()" hidden>&#x2715;</span>
+        </div>
+        <a class="title times" href="/">
+          <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+            <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+            Knightwatch
+        </a>
+        <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+      </div>
+      <div class="navbar-bottom" hidden>
+        <ul class="topic-list">
+          <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li> -->
+          
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/artwork">Artwork</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/club-page">Club Page</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link active" href="/section/opinion">Opinion</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/prompts">Prompts</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/recipes">Recipes</a>
+          </li>
+          
+          
+          
+          <li class="list-style">
+            <a class="nav-link " href="/section/social-issues">Social Issues</a>
+          </li>
+          
+          
+        </ul>
+      </div>
+      <!-- </nav> -->
+
+    <!-- Navbar -->
+    <!-- <div style="display:flex">
+      <img src="/assets/logo.png" class="content-image" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="/">
+          <h1>Home</h1>
+        </a>
+        
+          
+        
+          
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/club-page">
+              <h1>Club Page</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
+            </a>
+          
+        
+      </div>
+    </div> -->
+
+    <!-- Seperation -->
+    <!-- <hr> -->
+    
+    <!-- Main content -->
+    <main>
+      <!-- <h1>Opinion Page</h1> -->
+
+
+
+
+<div class="articles">
+  <div class="col" data-columns>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/techies-take-note/'">
+      <a class="card-title times" href="/section/opinion/techies-take-note/">Techies Take Note!</a>
+      <img src="/section/opinion/techies-take-note.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Adriana Cule</span>
+          </div>
+          <p class="card-blurb line-clamp">Have you ever wondered what goes on behind the scenes at Nepean? Behind the curtains of the school productions, before assemblies, during fun events like Coffee House and talent shows? The answer to that is NTEK: a group of students, led by the amazing Mr. Carter. With weekly meetings at lunch to expand learning about microphones, basic sound systems, and lighting, NTEK is a very hands-on class. It lasts year long since it doesn’t take up any class time and even earns you a credit. The inclusive atmosphere allows for students of any grade level to come together and learn ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/book-review_-fake-i.d.-by-lamar-giles/'">
+      <a class="card-title times" href="/section/opinion/book-review_-fake-i.d.-by-lamar-giles/">Book Review: Fake I.D. by Lamar Giles</a>
+      <img src="/section/opinion/book-review_-fake-i.d.-by-lamar-giles.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Rami Badran</span>
+          </div>
+          <p class="card-blurb line-clamp">Here is my project!<br><br>Lamar Giles is an African-American who started writing books at the age of 14. He wrote a book called Fake I.D. which is a murder mystery adventure that takes place in a small town called Stepton. This book draws your attention and takes you deep in a scary and adventurous murder mystery. This book has a mafia behind this crime and sadly Nick’s dad was a part of his friends murder. Devastating. Nick spends his days searching and risking his life to find the criminals that killed his friend. Talking about friends, he couldn't trust anybody after ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/film-review-venom/'">
+      <a class="card-title times" href="/section/opinion/film-review-venom/">Film Review: Venom: Let There Be Carnage</a>
+      <img src="/section/opinion/film-review-venom.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">William Haslett</span>
+          </div>
+          <p class="card-blurb line-clamp">If it’s a rainy day or you’re just looking for something to do, you’re probably going to go see a movie. I would too as it’s a great way to spend a miserable day or a brisk evening. The theatres always have a wide variety of movies, some good, some bad. Few are bad; however, those that are, are made very obvious. One of which is Sony’s Venom: Let There Be Carnage. This movie was a complete and utter waste of my and my family's time. Not one of us enjoyed it.  <br>       ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/film-review_-ghostbusters-(1984)/'">
+      <a class="card-title times" href="/section/opinion/film-review_-ghostbusters-(1984)/">Film Review: Ghostbusters (1984)</a>
+      <img src="/section/opinion/film-review_-ghostbusters-(1984).jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Brianna</span>
+          </div>
+          <p class="card-blurb line-clamp">Peter Venkman, Ray Stanz and Egon Spegler work at Columbia University as parapsychologists who didn’t have enough funding from the university for conducting their experiments. They set up shop as a ghost removal service in New York City where terrified customers call on their service. A dead Gozer Worshiper erected a downtown apartment building which could potentially end all humanity by bringing to life the Hittite god Gozer. They stumble upon another dimension that has evil intentions and the mayor needs their help to save the city.<br>The film is rated PG incorporating the adventure, fantasy and comedy genre and it ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/s_g-fries-and-burgers-review/'">
+      <a class="card-title times" href="/section/opinion/s_g-fries-and-burgers-review/">S&amp;G Fries and Burgers Review</a>
+      <img src="/section/opinion/s_g-fries-and-burgers-review.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Khalid Filali</span>
+          </div>
+          <p class="card-blurb line-clamp">If you’ve ever gone out for lunch during school, you’ve probably passed by S&amp;G Fries and Burgers, the shack right beside the Produce Depot. For the past three years I’ve been at Nepean High School and I always passed by, but I never bought anything. I recently decided to take a chance and try out what is so highly regarded by students at Nepean.<br> S&amp;G Fries has the typical “shack menu”: fries, poutine, burgers, hot dogs, and chicken fingers, along with egg rolls from the Golden Bowl. I chose to get a small poutine.<br>I received my order very quickly, and ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/the-nepean-playlist-vol.-1/'">
+      <a class="card-title times" href="/section/opinion/the-nepean-playlist-vol.-1/">The Nepean Playlist Vol. 1</a>
+      <img src="/section/opinion/the-nepean-playlist-vol.-1.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Hugh Kelly and Kevin Pham</span>
+          </div>
+          <p class="card-blurb line-clamp">Here is the playlist on Spotify!<br>It’s currently November, a somewhat dreary time of the year. We at Knightwatch wanted to give people a little bit of excitement, and get them involved in something fun and unique. So we asked students a simple question: What are your three favorite songs right now?<br>We got a stupendous response: one-hundred and twenty five songs, which combine to make one incredible eight hour playlist. You can listen to it right now on Spotify, using the link at the top of this article.<br>The most remarkable thing about this collection is the sheer variety of genres, styles, ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/sushi-kan-review/'">
+      <a class="card-title times" href="/section/opinion/sushi-kan-review/">Sushi Kan Review</a>
+      <img src="/section/opinion/sushi-kan-review.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Olivia Milley</span>
+          </div>
+          <p class="card-blurb line-clamp">Rated 9.0 on Skip the Dishes, Sushi Kan boasts a plentiful menu of over a hundred and fifty different options. On top of sushi, they also serve other Japanese and Korean dishes, so if you’re not a fan of raw fish, there are many other items that will surely appeal to you, from soups, to tempura (deep fried meat, fish or vegetables), to noodles, and a variety of other foods. My personal favourites to order include salmon and avocado rolls, edamame soybeans, calamari, miso soup, and salmon sashimi. When I eat at the restaurant I always order the mango ice ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/suya-joint-(african-grill)-review/'">
+      <a class="card-title times" href="/section/opinion/suya-joint-(african-grill)-review/">Suya Joint (African Grill) Review</a>
+      <img src="/section/opinion/suya-joint-(african-grill)-review.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Jennifer G</span>
+          </div>
+          <p class="card-blurb line-clamp">I’ve eaten at an African grill and I have to say it is severely underrated. Whenever I go, I usually treat myself to their beef Suya, a dish that can be ordered spicy if you’d like. Now what is Suya? It originated in Nigeria and is a popular street food which is typically pieces of thinly sliced meat with seasonings. There are different types of Suya sold from beef to chicken to goat. Although all the flavours are different they all are extremely delicious. My first experience there, I was in awe. The food was so delicious that when I ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/one-of-us-is-lying-book-review/'">
+      <a class="card-title times" href="/section/opinion/one-of-us-is-lying-book-review/">One of Us is Lying Book Review</a>
+      <img src="/section/opinion/one-of-us-is-lying-book-review.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Julia</span>
+          </div>
+          <p class="card-blurb line-clamp">Image credits: (2017). One Of Us Is Lying. [cover art]. Delacorte Press/Random House. <br>Karen McManus's One of Us is Lying is an engaging murder mystery novel about a murder in a high school where four students are the main suspects. This is her debut novel which was published on May 30th, 2017. Each chapter focuses on a character's point of view and is told from their perspective.  <br>It all starts on a Monday afternoon when five senior students, Simon Kelleher, Bronwyn Rojas, Nate Macauley, Cooper Clay, and Addy Prentiss, arrive in the science lab for detention. Simon goes to ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/bowman_s-crispy-chicken-sandwich-review/'">
+      <a class="card-title times" href="/section/opinion/bowman_s-crispy-chicken-sandwich-review/">Bowman&#39;s Crispy Chicken Sandwich — Review</a>
+      <img src="/section/opinion/bowman_s-crispy-chicken-sandwich-review.jpeg" class="content-image" alt="Finger, Feedback, Report Back" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Nola</span>
+          </div>
+          <p class="card-blurb line-clamp">Rated 5 stars<br>I have been to Bowman’s restaurant four times in the past year and a half. Every time, I order the same thing: the crispy chicken sandwich. Each time, I find myself craving it more and more. Words cannot describe the majesty of this sandwich. It’s like taking a bite out of the cosmos, as if with every swallow, infinite power flashes before your eyes. If anyone ever asks what is the meaning of the universe, there is only one answer: the crispy chicken sandwich. If you have not tasted it, you have not lived. If you have not ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/am-i-blue/'">
+      <a class="card-title times" href="/section/opinion/am-i-blue/">Books I’ve Found in Nepean’s Library: Am I Blue?</a>
+      <img src="/section/opinion/am-i-blue.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Nina Beck</span>
+          </div>
+          <p class="card-blurb line-clamp">The Nepean High School library has a wonderful array of books available to students that a lot of people don’t really know about. The school library has a website that is accessible through the NHS website itself, in there is a link to alexandria, an online database of all the books in the nepean library. Alexandria is great, and not just because of the excellent name choice, it lets you browse books easily and find works that could be helpful for school or just for recreational reading without having to browse shelves for a long time (not that that isn’t ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/knightwatch-tier-list/'">
+      <a class="card-title times" href="/section/opinion/knightwatch-tier-list/">Kids TV Tier List</a>
+      <img src="/section/opinion/knightwatch-tier-list.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Sebastien Davidson</span>
+          </div>
+          <p class="card-blurb line-clamp">All ratings are objective fact, also I haven’t seen all kids TV so cut me some slack.<br>S - Tier:<br>A - Tier:<br>B - Tier:<br>C - Tier:<br>D - Tier:<br>F - Tier: ...</p>
+        </div>
+      </div>
+    
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/opinion/the-pernicious-prolonged-problematic-pandemic/'">
+      <a class="card-title times" href="/section/opinion/the-pernicious-prolonged-problematic-pandemic/">The Pernicious Prolonged Problematic Pandemic</a>
+      <img src="/section/opinion/the-pernicious-prolonged-problematic-pandemic.jpeg" class="content-image" />
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Grade 12 Student</span>
+          </div>
+          <p class="card-blurb line-clamp">Remember March 2020? I'm sure you do. It was the moment the world changed as we know it.<br>Three days before March break: there was one thing on everyone’s mind. This new virus called Sars Cov-2, Covid-19 from Wuhan, China, was making its way through the media. There were discussions about whether or not they would extend our March break. The news was broken on Thursday, two days before the break would start. They made the decision to extend it by an extra two weeks. Which would mean we would be back on April 5th. Back to school like normal, right? ...</p>
+        </div>
+      </div>
+    
+  </div>
+</div>
+    </main>
+
+    </div>
+
+    <footer class="footer">
+      <ul class="footer-list">
+        <li><a href="/about">About Knightwatch</a></li>
+        <li><a href="https://forms.gle/QN5razRkG1Nj19ft8">How to Submit an Article</a></li>
+        <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+        <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
+      </ul>
+    </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        anchorPlacement: 'top',
+        once: 'true'
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+    <script src="/navbar.js"></script>
+  </body>
+</html>
