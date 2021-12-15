@@ -17,6 +17,7 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 16
+          lfs: 'true'
       - run: npm ci
       - run: node convert.mjs
       - run: npm run build
