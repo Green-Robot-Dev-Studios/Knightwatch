@@ -18,6 +18,8 @@ jobs:
         with:
           node-version: 16
           lfs: 'true'
+      - name: Checkout LFS objects
+        run: git lfs checkout
       - run: npm ci
       - run: node convert.mjs
       - run: npm run build
