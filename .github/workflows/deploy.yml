@@ -1,30 +1,30 @@
-name: Convert and Push to Github Pages
+# name: Convert and Push to Github Pages
 
-on:
-  push:
-    branches: [ master ]
-  schedule:
-    - cron: "0 0 * * *"
+# on:
+#   push:
+#     branches: [ master ]
+#   schedule:
+#     - cron: "0 0 * * *"
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - name: Checking if Knightwatch Zip file exists
-        if: ${{ hashFiles('Knightwatch*') == '' }}
-        run: exit 1
-      - uses: actions/setup-node@master
-        with:
-          node-version: 16
-          lfs: 'true'
-      - name: Checkout LFS objects
-        run: git lfs pull
-      - run: npm ci
-      - run: node convert.mjs
-      - run: npm run build
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          cname: nepeanknightwatch.com
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@master
+#       - name: Checking if Knightwatch Zip file exists
+#         if: ${{ hashFiles('Knightwatch*') == '' }}
+#         run: exit 1
+#       - uses: actions/setup-node@master
+#         with:
+#           node-version: 16
+#           lfs: 'true'
+#       - name: Checkout LFS objects
+#         run: git lfs pull
+#       - run: npm ci
+#       - run: node convert.mjs
+#       - run: npm run build
+#       - uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./dist
+#           cname: nepeanknightwatch.com
