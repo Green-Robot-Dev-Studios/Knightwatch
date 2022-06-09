@@ -37,7 +37,7 @@ async function docsToHTML(source, docName) {
     console.log("[Info] Converting " + source);
     const options = {
         ignoreEmptyParagraphs: false,
-        styleMap: ["p[style-name='Title'] => h1:fresh"],
+        styleMap: ["p[style-name='Title'] => h1:fresh", "u => u"],
         convertImage: mammoth.images.imgElement(async function (element) {
             const imageBuffer = await element.read();
             const directory = source.substring(0, source.lastIndexOf("/"));

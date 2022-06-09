@@ -1,4 +1,10 @@
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(lazyImagesPlugin, {
+    'setWidthAndHeightAttrs': false
+  });
+
   eleventyConfig.addShortcode("first_image", (post) => extractFirstImage(post));
   eleventyConfig.addShortcode("blurb", (post) => extractBlurb(post));
 
@@ -178,26 +184,29 @@ function extractBlurb(doc) {
     );
     return;
   }
+  try {
+    const content = doc.templateContent;
+    //console.log(doc)
+    let position = 0;
+    let blurbs = [];
+    while (true) {
+      // no more paragraphs
+      if (content.indexOf("<p>", position) === -1) {
+        // console.log(blurbs)
+        return blurbs.join("<br>").split(" ").slice(0, 100).join(" ") + " ...";
+      } 
 
-  const content = doc.templateContent;
-  //console.log(doc)
-  let position = 0;
-  let blurbs = [];
-  while (true) {
-    // no more paragraphs
-    if (content.indexOf("<p>", position) === -1) {
-      // console.log(blurbs)
-      return blurbs.join("<br>").split(" ").slice(0, 100).join(" ") + " ...";
-    } 
+      const pTagBegin = content.indexOf("<p>", position);
+      const pTagEnd = content.indexOf("</p>", position);
+      position = pTagEnd + 1;
+      
+      if (content.substring(pTagBegin + 3, pTagEnd).includes("<img")) continue;
 
-    const pTagBegin = content.indexOf("<p>", position);
-    const pTagEnd = content.indexOf("</p>", position);
-    position = pTagEnd + 1;
-    
-    if (content.substring(pTagBegin + 3, pTagEnd).includes("<img")) continue;
+      var regex = /(<([^>]+)>)/ig;
 
-    var regex = /(<([^>]+)>)/ig;
-
-    blurbs.push(content.substring(pTagBegin + 3, pTagEnd).replace(regex, ""));
+      blurbs.push(content.substring(pTagBegin + 3, pTagEnd).replace(regex, ""));
+    }
+  } catch (e) {
+    console.log("[Warning] Unhandled error during blurb")
   }
 }

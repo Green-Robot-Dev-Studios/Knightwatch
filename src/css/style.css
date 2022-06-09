@@ -157,6 +157,7 @@ p {
   align-items: center;
   padding: 2vh;
   background-color: #5e00b5;
+  /* background-color: #000; #blm */
   position: sticky;
   top: 0;
   z-index: 2;
