@@ -2,4 +2,6 @@
 /dist
 /src/section
 .DS_Store
-Knightswatch*.zip
+.lazyimages.json
+Knightwatch*.zip
+Knightwatch*

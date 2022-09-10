@@ -1,10 +1,25 @@
-import { readdir, writeFile, rename, rm, access } from "fs/promises";
+import {
+    readdir,
+    writeFile,
+    rename,
+    rm,
+    access
+} from "fs/promises";
 import extract from "extract-zip";
 import path from "path";
 import mammoth from "mammoth";
 import sharp from "sharp";
 import slugify from "slugify";
 import unusedFilename from "unused-filename";
+
+// ====================================================
+// Here lies the name of the google drive folder
+// I should be able to figure this our programatically, but that's too much work,
+// So it's a const
+// let ARCHIVE_NAME = "Knightwatch Content 2022-2023";
+let ARCHIVE_NAME = "Knightwatch Content";
+// ====================================================
+
 
 // helper function that gets the header data from the .docx
 function getParameter(text, parameter) {
@@ -23,9 +38,7 @@ function getParameter(text, parameter) {
 function allIndexOf(str, toSearch) {
     var indices = [];
     for (
-        var pos = str.indexOf(toSearch);
-        pos !== -1;
-        pos = str.indexOf(toSearch, pos + 1)
+        var pos = str.indexOf(toSearch); pos !== -1; pos = str.indexOf(toSearch, pos + 1)
     ) {
         indices.push(pos);
     }
@@ -38,7 +51,7 @@ async function docsToHTML(source, docName) {
     const options = {
         ignoreEmptyParagraphs: false,
         styleMap: ["p[style-name='Title'] => h1:fresh", "u => u"],
-        convertImage: mammoth.images.imgElement(async function (element) {
+        convertImage: mammoth.images.imgElement(async function(element) {
             const imageBuffer = await element.read();
             const directory = source.substring(0, source.lastIndexOf("/"));
             const imageLocation = await unusedFilename(
@@ -64,10 +77,15 @@ async function docsToHTML(source, docName) {
                 .replace("./src/", "/")
                 .replace("src/", "/");
             console.log(imageSrc);
-            return { src: imageSrc, class: "content-image" };
+            return {
+                src: imageSrc,
+                class: "content-image"
+            };
         }),
     };
-    const result = await mammoth.convertToHtml({ path: source }, options);
+    const result = await mammoth.convertToHtml({
+        path: source
+    }, options);
     for (const msg of result.messages) {
         console.log("[Warning] " + msg.message);
     }
@@ -133,7 +151,9 @@ async function makeCollection(location, name) {
 // converts all .docx files to .html and calls makeCollection()
 async function convert() {
     try {
-        const files = await readdir("./src/section", { withFileTypes: true });
+        const files = await readdir("./src/section", {
+            withFileTypes: true
+        });
         for (const file of files) {
             if (file.isDirectory()) {
                 const pages = await readdir("./src/section/" + file.name);
@@ -160,7 +180,9 @@ async function convert() {
 async function extractZip(source) {
     console.log("[Info] Extracting " + source);
     try {
-        await extract(source, { dir: path.resolve("./src/") });
+        await extract(source, {
+            dir: path.resolve("./src/")
+        });
         console.log("[Info] Extraction complete");
 
         // rename Knightwatch to section
@@ -171,14 +193,21 @@ async function extractZip(source) {
         } catch {
             exists = false;
         }
-        if (exists) await rm("./src/section", { recursive: true });
-        await rename("./src/Knightwatch Content/", "./src/section/");
+        if (exists) await rm("./src/section", {
+            recursive: true
+        });
+
+        await rename(`./src/${ARCHIVE_NAME}/`, "./src/section/");
 
         // slugify all filenames
-        const files = await readdir("./src/section", { withFileTypes: true });
+        const files = await readdir("./src/section", {
+            withFileTypes: true
+        });
         for (const file of files) {
             if (file.isDirectory()) {
-                const slug = slugify(file.name, { lower: true });
+                const slug = slugify(file.name, {
+                    lower: true
+                });
                 await rename(
                     "./src/section/" + file.name,
                     "./src/section/" + slug
@@ -191,7 +220,9 @@ async function extractZip(source) {
                     const base = "./src/section/" + slug + "/";
                     rename(
                         base + subFile.name,
-                        base + slugify(subFile.name, { lower: true })
+                        base + slugify(subFile.name, {
+                            lower: true
+                        })
                     );
                 }
             }
