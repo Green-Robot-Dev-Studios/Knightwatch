@@ -1,10 +1,16 @@
 import {
     readdir,
     writeFile,
+    readFile,
+    stat,
     rename,
     rm,
-    access
+    access,
 } from "fs/promises";
+import {
+    move,
+    remove
+} from "fs-extra";
 import extract from "extract-zip";
 import path from "path";
 import mammoth from "mammoth";
@@ -46,8 +52,40 @@ function allIndexOf(str, toSearch) {
 }
 
 // conversion function
-async function docsToHTML(source, docName) {
+async function docsToHTML(source, docName, cache) {
     console.log("[Info] Converting " + source);
+    cache = {
+        ...cache
+    };
+
+    // Check cache to see if we have to re-generate it
+    const stats = await stat(source);
+    if (source.replace("src_new", "src") in cache) {
+        // We have a cache entry
+        // Check against cahe data
+        const entry = cache[source.replace("src_new", "src")];
+        if (stats.size == entry.size) {
+            console.log("[Info] Re-using " + source);
+            // Move in the old file
+            await rename(source.replace("src_new", "src").replace("docx", "html"), source.replace("docx", "html"));
+
+            // Move in companion files
+            for (let im of entry.images) {
+                await rename(im, im.replace("src", "src_new"));
+            }
+
+            return cache;
+        }
+    }
+
+    console.log("[Info] Generating " + source);
+
+    let entry = {
+        size: stats.size,
+        mtime: stats.mtime,
+        images: []
+    };
+
     const options = {
         ignoreEmptyParagraphs: false,
         styleMap: ["p[style-name='Title'] => h1:fresh", "u => u"],
@@ -74,18 +112,27 @@ async function docsToHTML(source, docName) {
             }
 
             const imageSrc = imageLocation
-                .replace("./src/", "/")
-                .replace("src/", "/");
-            console.log(imageSrc);
+                .replace("./src_new/", "/")
+                .replace("src_new/", "/");
+            console.log("[Info] Processed image " + imageLocation);
+
+            // Add the image file to the cache
+            entry = {
+                ...entry,
+                images: entry.images.concat([imageLocation.replace("src_new", "src")])
+            };
+
             return {
                 src: imageSrc,
                 class: "content-image"
             };
         }),
     };
+
     const result = await mammoth.convertToHtml({
         path: source
     }, options);
+
     for (const msg of result.messages) {
         console.log("[Warning] " + msg.message);
     }
@@ -134,6 +181,11 @@ async function docsToHTML(source, docName) {
         }
         console.log("[Info] Done converting " + source);
     });
+
+    // Add entry to cache
+    cache[source.replace("src_new", "src")] = entry;
+
+    return cache;
 }
 
 // adds metadata to each generated HTML file
@@ -148,59 +200,88 @@ async function makeCollection(location, name) {
     });
 }
 
+async function loadCache() {
+    let data;
+    try {
+        data = await readFile('./.cache.json');
+    } catch (e) {
+        return {
+            "": {}
+        };
+    }
+
+    return JSON.parse(data);
+}
+
+async function saveCache(cache) {
+    await writeFile("./.cache.json", JSON.stringify(cache));
+}
+
 // converts all .docx files to .html and calls makeCollection()
 async function convert() {
+    // Load cache
+    let cache = await loadCache();
+
     try {
-        const files = await readdir("./src/section", {
+        const files = await readdir("./src_new/section", {
             withFileTypes: true
         });
         for (const file of files) {
             if (file.isDirectory()) {
-                const pages = await readdir("./src/section/" + file.name);
+                const pages = await readdir("./src_new/section/" + file.name);
                 for (const page of pages) {
                     if (page.endsWith(".docx")) {
-                        await docsToHTML(
-                            "./src/section/" + file.name + "/" + page,
-                            page
+                        cache = await docsToHTML(
+                            "./src_new/section/" + file.name + "/" + page,
+                            page,
+                            cache
                         );
                     }
                 }
                 makeCollection(
-                    "./src/section/" + file.name + "/" + file.name + ".json",
-                    file.name
+                    "./src_new/section/" + file.name + "/" + file.name + ".json",
+                    file.name,
                 );
             }
         }
     } catch (e) {
         console.error("[Error] " + e);
     }
+
+    await saveCache(cache);
+
+    console.log("[Info] Cleaning up");
+
+    await remove("./src/section");
+    await move("./src_new/section", "./src/section");
+    await remove("./src_new");
 }
 
-// extracts zip file to ./src/section/ and calls convert
+// extracts zip file to ./src_new/section/ and calls convert
 async function extractZip(source) {
     console.log("[Info] Extracting " + source);
     try {
         await extract(source, {
-            dir: path.resolve("./src/")
+            dir: path.resolve("./src_new/")
         });
         console.log("[Info] Extraction complete");
 
         // rename Knightwatch to section
         var exists;
         try {
-            await access("./src/section");
+            await access("./src_new/section");
             exists = true;
         } catch {
             exists = false;
         }
-        if (exists) await rm("./src/section", {
+        if (exists) await rm("./src_new/section", {
             recursive: true
         });
 
-        await rename(`./src/${ARCHIVE_NAME}/`, "./src/section/");
+        await rename(`./src_new/${ARCHIVE_NAME}/`, "./src_new/section/");
 
         // slugify all filenames
-        const files = await readdir("./src/section", {
+        const files = await readdir("./src_new/section", {
             withFileTypes: true
         });
         for (const file of files) {
@@ -209,15 +290,15 @@ async function extractZip(source) {
                     lower: true
                 });
                 await rename(
-                    "./src/section/" + file.name,
-                    "./src/section/" + slug
+                    "./src_new/section/" + file.name,
+                    "./src_new/section/" + slug
                 );
 
-                const subFiles = await readdir("./src/section/" + slug, {
+                const subFiles = await readdir("./src_new/section/" + slug, {
                     withFileTypes: true,
                 });
                 for (const subFile of subFiles) {
-                    const base = "./src/section/" + slug + "/";
+                    const base = "./src_new/section/" + slug + "/";
                     rename(
                         base + subFile.name,
                         base + slugify(subFile.name, {
