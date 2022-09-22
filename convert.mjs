@@ -6,6 +6,7 @@ import {
     rename,
     rm,
     access,
+    mkdir
 } from "fs/promises";
 import {
     move,
@@ -66,17 +67,32 @@ async function docsToHTML(source, docName, cache) {
         const entry = cache[source.replace("src_new", "src")];
         if (stats.size == entry.size) {
             console.log("[Info] Re-using " + source);
-            // Move in the old file
-            await rename(source.replace("src_new", "src").replace("docx", "html"), source.replace("docx", "html"));
 
-            // Move in companion files
-            for (let im of entry.images) {
-                await rename(im, im.replace("src", "src_new"));
+            let failed = false;
+
+            // Move in the old file
+            try {
+                await rename(source.replace("src_new", "src").replace("docx", "html"), source.replace("docx", "html"));
+            } catch (e) {
+                console.log("[Warning] Finn is lazy");
+                console.log("[Info] Cache invalid, rebuilding");
+                failed = true;
+
+                // Remove it from cache
+                cache[source.replace("src_new", "src")] = undefined;
             }
 
-            return cache;
+            if (!failed) {
+                // Move in companion files
+                for (let im of entry.images) {
+                    await rename(im, im.replace("src", "src_new"));
+                }
+
+                return cache;
+            }
         }
     }
+
 
     console.log("[Info] Generating " + source);
 
@@ -217,6 +233,20 @@ async function saveCache(cache) {
     await writeFile("./.cache.json", JSON.stringify(cache));
 }
 
+async function better_readdir(dir) {
+    const files = await readdir(dir, {
+        withFileTypes: true
+    });
+
+    return files.map((v) => {
+        return {
+            name: v.name,
+            dir: v.isDirectory(),
+            fullname: dir + "/" + v.name
+        }
+    });
+}
+
 // converts all .docx files to .html and calls makeCollection()
 async function convert() {
     // Load cache
@@ -228,14 +258,19 @@ async function convert() {
         });
         for (const file of files) {
             if (file.isDirectory()) {
-                const pages = await readdir("./src_new/section/" + file.name);
-                for (const page of pages) {
-                    if (page.endsWith(".docx")) {
+                // Flatten contents of directory
+                let queue = [];
+                queue = queue.concat(await better_readdir("./src_new/section/" + file.name));
+                while (queue.length > 0) {
+                    const page = queue.pop();
+                    if (page.name.endsWith(".docx")) {
                         cache = await docsToHTML(
-                            "./src_new/section/" + file.name + "/" + page,
-                            page,
+                            page.fullname,
+                            page.name,
                             cache
                         );
+                    } else if (page.dir) {
+                        queue = (await better_readdir(page.fullname)).concat(queue);
                     }
                 }
                 makeCollection(
@@ -245,7 +280,8 @@ async function convert() {
             }
         }
     } catch (e) {
-        console.error("[Error] " + e);
+        throw e;
+        // console.error("[Error] " + e);
     }
 
     await saveCache(cache);
@@ -258,12 +294,25 @@ async function convert() {
 }
 
 // extracts zip file to ./src_new/section/ and calls convert
-async function extractZip(source) {
+async function extractZip(source, archiveZip) {
     console.log("[Info] Extracting " + source);
     try {
         await extract(source, {
             dir: path.resolve("./src_new/")
         });
+
+        if (archiveZip !== "") {
+            // Extract the archive as well 
+            // Since it has probably been built before, it should be identical
+            // And cached versions will be used
+            console.log("[Info] Extracting " + archiveZip);
+            await mkdir("./src_new/archive");
+            await extract(archiveZip, {
+                dir: path.resolve("./src_new/archive/archive")
+            });
+
+        }
+
         console.log("[Info] Extraction complete");
 
         // rename Knightwatch to section
@@ -279,6 +328,7 @@ async function extractZip(source) {
         });
 
         await rename(`./src_new/${ARCHIVE_NAME}/`, "./src_new/section/");
+        await move(`./src_new/archive/`, "./src_new/section/archive/");
 
         // slugify all filenames
         const files = await readdir("./src_new/section", {
@@ -289,10 +339,13 @@ async function extractZip(source) {
                 const slug = slugify(file.name, {
                     lower: true
                 });
-                await rename(
-                    "./src_new/section/" + file.name,
-                    "./src_new/section/" + slug
-                );
+
+                if (file.name !== "archive") {
+                    await rename(
+                        "./src_new/section/" + file.name,
+                        "./src_new/section/" + slug
+                    );
+                }
 
                 const subFiles = await readdir("./src_new/section/" + slug, {
                     withFileTypes: true,
@@ -319,11 +372,15 @@ async function extractZip(source) {
 // gets the path to the zip file and calls extractZip()
 async function init() {
     var toUnzip = "";
+    var archiveZip = "";
     try {
         const files = await readdir(".");
         for (const file of files) {
             if (file.startsWith("Knightwatch") && file.endsWith(".zip")) {
                 toUnzip = file;
+            }
+            if (file.startsWith("Archive") && file.endsWith(".zip")) {
+                archiveZip = file;
             }
         }
         if (toUnzip === "") {
@@ -331,7 +388,7 @@ async function init() {
                 "[Error] Please place the google drive zip in this folder."
             );
         } else {
-            extractZip("./" + toUnzip);
+            extractZip("./" + toUnzip, archiveZip);
         }
     } catch (err) {
         console.error(err);
