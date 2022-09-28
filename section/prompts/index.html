@@ -1,14 +1,17 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knightwatch</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
@@ -20,7 +23,7 @@
     <meta name="theme-color" content="#0b0b0b">
 
     <!-- I'm sorry, I was forced ;( -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -40,8 +43,8 @@
             <!-- <nav class="navbar"> -->
             <div class="navbar-top">
                 <div class="mobile-menu" style="user-select: none;">
-                    <span class="menu-icon open" onclick="openMenu()">≡</span>
-                    <span class="menu-icon close" onclick="closeMenu()" hidden="">✕</span>
+                    <span class="menu-icon open" onclick="openMenu()">&#x2261;</span>
+                    <span class="menu-icon close" onclick="closeMenu()" hidden>&#x2715;</span>
                 </div>
                 <a class="title times" href="/">
                     <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
@@ -53,7 +56,7 @@
                 </a>
                 <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
             </div>
-            <div class="navbar-bottom" hidden="">
+            <div class="navbar-bottom" hidden>
                 <ul class="topic-list">
                     <!-- <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -63,13 +66,7 @@
                     
                     
                     <li class="list-style">
-                        <a class="nav-link " href="/section/artwork">Artwork</a>
-                    </li>
-                    
-                    
-                    
-                    <li class="list-style">
-                        <a class="nav-link " href="/section/club-page">Club Page</a>
+                        <a class="nav-link " href="/section/archive">Archive</a>
                     </li>
                     
                     
@@ -99,6 +96,12 @@
                     
                     
                     <li class="list-style">
+                        <a class="nav-link " href="/section/school-news">School News</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
                         <a class="nav-link " href="/section/social-issues">Social Issues</a>
                     </li>
                     
@@ -118,14 +121,8 @@
           
         
           
-            <a href="/section/artwork">
-              <h1>Artwork</h1>
-            </a>
-          
-        
-          
-            <a href="/section/club-page">
-              <h1>Club Page</h1>
+            <a href="/section/archive">
+              <h1>Archive</h1>
             </a>
           
         
@@ -154,6 +151,12 @@
           
         
           
+            <a href="/section/school-news">
+              <h1>School News</h1>
+            </a>
+          
+        
+          
             <a href="/section/social-issues">
               <h1>Social Issues</h1>
             </a>
@@ -173,7 +176,7 @@
 
 
 <div class="articles">
-  <div class="col" data-columns="">
+  <div class="col" data-columns>
     
     <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/september-prompts/'">
       <a class="card-title times" href="/section/prompts/september-prompts/">September Prompts</a>
@@ -183,105 +186,6 @@
             <span class="card-author">Knightwatch Editors</span>
           </div>
           <p class="card-blurb line-clamp">What are you looking forward to in this coming school year?<br>Summer is a great time to unwind with a good book; write a review of a book you read over the break!<br>September 30th is National Day for Truth and Reconciliation, write about your experience of the day and its importance.<br>September marks our entry into fall; write a poem or piece of creative writing about the concept of changing of seasons. ...</p>
-        </div>
-      </div>
-    
-    <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/june-prompts/'">
-      <a class="card-title times" href="/section/prompts/june-prompts/">June Prompts</a>
-      <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAIDBAUGB//EACcQAAAFAgQGAwAAAAAAAAAAAAABAgMEBQYRITEyBxIVFlShM1Jx/8QAFgEBAQEAAAAAAAAAAAAAAAAABgUE/8QAIBEAAgEDBAMAAAAAAAAAAAAAAAECAwURBBIxMiEzQv/aAAwDAQACEQMRAD8AesW3+qxiZkxVJdQnAiMtQ/WuHE2M08uOrkbc3NmGrPvg4rqVuqLEhNufiAUrmNxxSCV9T09DJp7kpTxnyUq+imllcHJ6rbL8VS2m4hnnmrAU/b8jx1jbzblpKjJL8twzUWpYZCu6tSPOV6CKFzmlwiJUtzk87itp24LqWxQAAAvYM/gxNT+Q/wBEIAAmpdURKnY//9k=" class="content-image lazyload" data-src="/section/prompts/june-prompts.jpeg">
-        <div class="card-info">
-          <div class="card-meta">
-            <span class="card-author">Knightwatch Editors</span>
-          </div>
-          <p class="card-blurb line-clamp">This will be the final edition of Knightwatch for the school year so we hope to finish off strong with lots of submissions! As always, we have prepared some prompts to get the ideas flowing but all appropriate content will be published.<br>Happy Pride Month! We would like to especially encourage submissions from LGBTQ+ members of our school community.<br>June is also Indigenous History Month! Celebrate by sharing your favourite songs, books, movies, or artwork by Indigenous creators.<br>The first day of summer is June 21st. Share your bucket list or exciting plans with us! <br>As we close off another school year, many ...</p>
-        </div>
-      </div>
-    
-    <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/may-prompts/'">
-      <a class="card-title times" href="/section/prompts/may-prompts/">May Writing Prompts</a>
-      <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQgC/8QAKhAAAQMCAgkFAQAAAAAAAAAAAQACAwQFBhIRExYhNmFxgZEVQ1FTVMH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgQDBf/EACERAAEDBAEFAAAAAAAAAAAAAAEAAgMEETEyBSFBgbHw/9oADAMBAAIRAxEAPwB7pcY2V0oGvLRzTVbMXWJsOc1rAwfKy3FUtp66USOcxrN+Ryk0d5MJe+Zh1EmnKCN3ZIZmnK6kdJT3s55HUjt9Zao2xw9OQGV0OjmUbR2D9sHlZap7vSOqAJGgNDd3NdeoQ/Q3yiHA4VDeLicLiRU+LeI6nqpVy4YtnUoQsDlyhO83n2lr3m9v4rRCErMIUupX/9k=" class="content-image lazyload" data-src="/section/prompts/may-prompts.jpeg">
-        <div class="card-info">
-          <div class="card-meta">
-            <span class="card-author">Knightwatch Editors</span>
-          </div>
-          <p class="card-blurb line-clamp">The Nepean Playlist has returned! Our third and final volume will feature upbeat songs to put us in the right mood for summer. You can contribute your favourite songs using this form: https://forms.gle/SgBnehCM9846i7zK8<br>May is Asian Heritage Month. Celebrate this month by writing a review of a book by an Asian author, a movie by an Asian director, or an album by an Asian artist.<br>On May 3rd we celebrate our teachers for National Teacher Appreciation Day! Write about a teacher who had a positive impact on your life.<br>May 8th is Mother’s Day! Tell us about your mom or another important motherly ...</p>
-        </div>
-      </div>
-    
-    <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/april-prompts/'">
-      <a class="card-title times" href="/section/prompts/april-prompts/">April Writing Prompts</a>
-      <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUH/8QALRAAAQMCAwQKAwAAAAAAAAAAAgEDBAAFBhESEyExURUWIzQ1N0FxkdFUc4H/xAAXAQEBAQEAAAAAAAAAAAAAAAADAgAB/8QAHBEAAgIDAQEAAAAAAAAAAAAAAAECEQMhMSIy/9oADAMBAAIRAxEAPwDntxw0M+1xJUUNJkulVXgq7qZr3hkn8KRmhJlqS2SdmJZ61zqpHB7rOzh9h/XDigriLyWsMpz1vuZtOkSuK6qARFmgpnxo5qtoXE4t1Iv45iS7TFtslpVF0QED0/zdS70vK/Bd+Fphv2I2J7Ldsfb2zwmhNOCu7PP1qfayeTfxWTvpTx78sksHmRcP1fdKmM/EnPf6ooqp8Bh9GPC79B96faKK4hEf/9k=" class="content-image lazyload" data-src="/section/prompts/april-prompts.jpeg">
-        <div class="card-info">
-          <div class="card-meta">
-            <span class="card-author">Knightwatch Editors</span>
-          </div>
-          <p class="card-blurb line-clamp">The pandemic gave us lots of time to watch TV shows. Write us a review of your favourite binge-worthy show, or one that you could watch over and over again.<br>April is National Poetry Month! Write us a poem of any kind. <br>Earth Day is April 22nd. How do you contribute to a greener Earth and what advice can you offer others? Do you think enough action is being taken to fight climate change?<br>There are several religious holidays this month including Passover, Ramadan and Easter. Do you and your family have special traditions to celebrate? <br>Happy April Fool’s Day! What is ...</p>
-        </div>
-      </div>
-    
-    <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/march-prompts/'">
-      <a class="card-title times" href="/section/prompts/march-prompts/">March Writing Prompts</a>
-      <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBQcE/8QAKRAAAAUCAwcFAAAAAAAAAAAAAAECAwQFBhESIRUXIjVBUmEjM1Rykf/EABYBAQEBAAAAAAAAAAAAAAAAAAQCA//EACARAAIBAwQDAAAAAAAAAAAAAAABAwIRMRITITIiQYH/2gAMAwEAAhEDEQA/AMuOElugnIJxR1Fa+FBdC8jQrKtNNettibcFYTFnIXi1rqkiCcmE7JczxcVqbPHDuEsyqT2DzS0INlGhttnqQO5tKGUxU38nZDrXrpo9AhPNR0qqlXZP05jpHwn4Cjviu/5LP4Yo0yjmPrxaTkVoWboQ6NiR+5sauRvPBOwn15GCz/deFTVOYTvsAAFX6+DJeiKKPzBAYwAGs2SYMM//2Q==" class="content-image lazyload" data-src="/section/prompts/march-prompts.jpeg">
-        <div class="card-info">
-          <div class="card-meta">
-            <span class="card-author">Knightwatch Editors</span>
-          </div>
-          <p class="card-blurb line-clamp">Here are a few suggestions to get your ideas flowing this month:<br>How is the second semester going? Do you prefer having 4 classes each day, or was just 2 better?<br>March 8 is International Women’s Day! Share a piece of writing or artwork about feminism, or tell us about a strong woman who has inspired you.<br>March 20 is the Spring Equinox, which marks the official start of a new season. Are you excited for the end of winter, or hoping for even more snow?<br>March is Francophonie month. Feel free to submit something you wrote during French class or write us a ...</p>
-        </div>
-      </div>
-    
-    <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/february-prompts/'">
-      <a class="card-title times" href="/section/prompts/february-prompts/">February Writing Prompts</a>
-      <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCBQcI/8QAKhAAAQQABQIEBwAAAAAAAAAAAQACAwQFBxESIQYIExUicTM1N0FygbH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDdbOMx1YJpZ3BsUTC5yQaecuA38QbSrvkc4v8AD1A41Uc0ob1boy/PDI30M3ED7rGsl6VrqWeW09kMFOKQOLWN1Jcg6ehxJ7GabgQeQhVUUbDGNS7jhCKW84sVbDl9i3Hq2bdUhdrcrPJroIaBu5CZ88vpnf8AYfwpJ7Xfl1z8kSN3nsRiUjgfpCr7Hxn+6EV//9k=" class="content-image lazyload" data-src="/section/prompts/february-prompts.jpeg">
-        <div class="card-info">
-          <div class="card-meta">
-            <span class="card-author">Knightwatch Editors</span>
-          </div>
-          <p class="card-blurb line-clamp">For the February issue of Knightwatch we will be focusing on submissions related to Black History Month. We would like to highlight important stories and perspectives and stand in solidarity with Black students at Nepean High School as well as promote Black excellence.<br> <br>We encourage you to make creations that center around Black History Month, such as:​ <br>(We will still accept submissions about other subjects, but they will be saved to publish in March.) ...</p>
-        </div>
-      </div>
-    
-    <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/january-prompts/'">
-      <a class="card-title times" href="/section/prompts/january-prompts/">January Writing Prompts</a>
-      <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcD/8QAKRAAAgECBQIFBQAAAAAAAAAAAQMCAAQFBhESIRMUFiJScZExUVRhgf/EABYBAQEBAAAAAAAAAAAAAAAAAAQDAv/EABsRAAICAwEAAAAAAAAAAAAAAAABAgMEESEi/9oADAMBAAIRAxEAPwB/bllSxrKYHvSxeptA5trxJxiQPtUrFMYLFbe5a0n6bddRVDiFv3E+5gLgMhEkkA88UqzLsfkLXjVrpzyJb2qLG6bfGMAXGOh/tNO/CPUr5rPMlWzMRw+9602SUXy1/XNXPh+1/JZ80LbF6RLyWeqXzZ5pAcE034sdiZiGkQUHgCiikyIQMtyo9ibC8gqZhCTiSB7mpnXb6zRRVa15MSfT/9k=" class="content-image lazyload" data-src="/section/prompts/january-prompts.jpeg">
-        <div class="card-info">
-          <div class="card-meta">
-            <span class="card-author">Knightwatch Editors</span>
-          </div>
-          <p class="card-blurb line-clamp">The Nepean Playlist is back! Use this link to send us your three favourite sad songs, so we can compile them into the ultimate melancholy playlist. https://forms.gle/KeN6hY8eeBgAB3Hy6<br>Write us a book review! It’s lovely to have a good book to read by the fire in the wintertime.<br>January can be a difficult time — tell us your best tips for self-care and wellness, to get through these dark days.<br>Did you travel during the winter break? How was it? Did pandemic restrictions impact your experience? ...</p>
-        </div>
-      </div>
-    
-    <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/december-prompts/'">
-      <a class="card-title times" href="/section/prompts/december-prompts/">December Writing Prompts</a>
-      <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGwAAAQQDAAAAAAAAAAAAAAAAAAIDBQYBBAf/xAAnEAABAgUCBQUAAAAAAAAAAAACAAEDBAUGEQdREhMUITEVMkFhcf/EABcBAAMBAAAAAAAAAAAAAAAAAAACAwH/xAAXEQEBAQEAAAAAAAAAAAAAAAAAARES/9oADAMBAAIRAxEAPwDs+ptyzFuWpFnZFszOeEB3UVpdqDErsGXkqtCKHUTHiz8Oys13UD1ymjL5HsWe6irUsaXos51RE5xR9j7Iu9bGznnKupxuz4TPOf6SCAnbGU3yIm4qibaPw36nH8IQlNSN1hCECP/Z" class="content-image lazyload" data-src="/section/prompts/december-prompts.jpeg">
-        <div class="card-info">
-          <div class="card-meta">
-            <span class="card-author">Knightwatch Editors</span>
-          </div>
-          <p class="card-blurb line-clamp">Share your favourite holiday recipe with us! It can be one your family makes every year for special occasions or just something you enjoy eating.<br>Tell us about your holiday and winter break traditions!<br>What winter activities do you enjoy? Skiing, sledding, skating, etc. Did you try anything new last winter that you enjoyed?<br>Everyone loves good recommendations! Write us a review of a movie.<br>Happy Holidays Nepean :) ...</p>
-        </div>
-      </div>
-    
-    <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/november-prompts/'">
-      <a class="card-title times" href="/section/prompts/november-prompts/">November Writing Prompts</a>
-      <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAL/xAAqEAABAwMBBQkBAAAAAAAAAAACAAEDBAURBhIhUWGREyIjMTIzNlNzgv/EABcBAAMBAAAAAAAAAAAAAAAAAAMEBgL/xAAiEQABAwMDBQAAAAAAAAAAAAACAAEDBCFBEiIxEzJCcZH/2gAMAwEAAhEDEQA/AJGz26KSVp3y8Ue52ZWI2pq6AIwfahDePFuSUWoYLLicjGoo5Nzmz+SzSankjuznRF4GcbPFlNzjLKezCox6bDbOF1f7DJQXNqgCIQIO6xJPifiHVadWajrLxMIEzxDEOB5qP7Sf7H6p2ngMgbW90q9QMO0GdVtN8M/tIKP3nQhFHy9rDcgmt49TfmppCESm7UGp5+r/2Q==" class="content-image lazyload" alt="tilt shift photography of maple leaves" data-src="/section/prompts/november-prompts.jpeg">
-        <div class="card-info">
-          <div class="card-meta">
-            <span class="card-author">Knightwatch Editors</span>
-          </div>
-          <p class="card-blurb line-clamp">Music - what are your three favourite songs right now? We will add them to our Nepean playlist! 🎵<br>(https://forms.gle/FpFWSqcLCc6LqMwTA)<br>We love food! Write a review of a local restaurant, coffee shop, or fast-food joint. 🌭<br>Write a poem about the changing seasons - how does the world feel when fall turns into winter? 🍁<br>Is Remembrance Day important to you? How do you feel it should be commemorated in schools? ...</p>
-        </div>
-      </div>
-    
-    <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/october-prompts/'">
-      <a class="card-title times" href="/section/prompts/october-prompts/">October Writing Prompts</a>
-      <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEAgUI/8QAJRAAAQQBAwIHAAAAAAAAAAAAAgABAwQREiExBVETIzJCYXGB/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAIDBP/EABwRAAMAAQUAAAAAAAAAAAAAAAABAiEDERIiMf/aAAwDAQACEQMRAD8A84hIYbOusFBrUMbxO+r3Z4SKh1CozDPGZW8eU7cN9qYLUwNlpXEOMMppt+HXpqJfc11Wk9G0UJ/jqDDd0+7ZOcmeU/EfG3wo9T9lUt7ZM7a5YLQ9RJBIQgYollCEIZ//2Q==" class="content-image lazyload" data-src="/section/prompts/october-prompts.jpeg">
-        <div class="card-info">
-          <div class="card-meta">
-            <span class="card-author">Knightwatch Editors</span>
-          </div>
-          <p class="card-blurb line-clamp">How are you feeling about being back at school? What do you think of your classes so far?<br>Share your personal experiences of these two important days:<br>	September 7,8 — Rosh Hashanah (Jewish New Year) <br>September 30 — the first National Day for Truth and Reconciliation, and Orange Shirt Day.<br>Halloween is coming! Tell us your favourite scary story, or write your own. 🦇🕷🍬 ...</p>
         </div>
       </div>
     
@@ -313,38 +217,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./index.js"></script>
     <script src="/navbar.js"></script>
+</body>
 
-
-
-<script>
-            (function (selector, src, preferNativeLazyLoad) {
-  var images = document.querySelectorAll(selector);
-  var numImages = images.length;
-
-  if (numImages > 0) {
-    if (preferNativeLazyLoad && 'loading' in HTMLImageElement.prototype) {
-      for (var i = 0; i < numImages; i++) {
-        var keys = ['src', 'srcset'];
-
-        for (var j = 0; j < keys.length; j++) {
-          if (images[i].hasAttribute('data-' + keys[j])) {
-            var value = images[i].getAttribute('data-' + keys[j]);
-            images[i].setAttribute(keys[j], value);
-          }
-        }
-      }
-
-      return;
-    }
-
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = src;
-    document.body.appendChild(script);
-  }
-})(
-              'img',
-              'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
-              false
-            );
-          </script></body></html>
+</html>
