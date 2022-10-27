@@ -23,8 +23,8 @@ import unusedFilename from "unused-filename";
 // Here lies the name of the google drive folder
 // I should be able to figure this our programatically, but that's too much work,
 // So it's a const
-// let ARCHIVE_NAME = "Knightwatch Content 2022-2023";
-let ARCHIVE_NAME = "Knightwatch Content";
+let ARCHIVE_NAME = "Knightwatch Content 2022-2023";
+// let ARCHIVE_NAME = "Knightwatch Content";
 // ====================================================
 
 
@@ -160,6 +160,11 @@ async function docsToHTML(source, docName, cache) {
         author = getParameter(toWrite, "Author:");
         date = getParameter(toWrite, "Date:");
 
+        // Allow for things that should really be allowed
+        // Like 2022-9-23
+        let real_date = new Date(date);
+        date = real_date.toISOString().slice(0, 10);
+
         title = title.replace("&amp;", "&");
         author = author.replace("&amp;", "&");
     } catch (e) {
@@ -280,8 +285,9 @@ async function convert() {
             }
         }
     } catch (e) {
-        throw e;
-        // console.error("[Error] " + e);
+        console.error("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        console.error("[Error] " + e);
+        console.error("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
 
     await saveCache(cache);
@@ -376,7 +382,7 @@ async function init() {
     try {
         const files = await readdir(".");
         for (const file of files) {
-            if (file.startsWith("Knightwatch") && file.endsWith(".zip")) {
+            if (file.startsWith(ARCHIVE_NAME) && file.endsWith(".zip")) {
                 toUnzip = file;
             }
             if (file.startsWith("Archive") && file.endsWith(".zip")) {
