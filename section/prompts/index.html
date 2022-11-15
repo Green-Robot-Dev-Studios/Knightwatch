@@ -19,18 +19,18 @@
     <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <meta name="theme-color" content="#0b0b0b">
 
-    <!-- I'm sorry, I was forced ;( -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <!-- <!-1- I'm sorry, I was forced ;( -1-> -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script> -->
+    <!-- <script> -->
+    <!--     window.dataLayer = window.dataLayer || []; -->
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    <!--     function gtag() { -->
+    <!--         dataLayer.push(arguments); -->
+    <!--     } -->
+    <!--     gtag('js', new Date()); -->
 
-        gtag('config', 'G-Z1KRCWE0R3');
-    </script>
+    <!--     gtag('config', 'G-Z1KRCWE0R3'); -->
+    <!-- </script> -->
 </head>
 
 <body>
@@ -111,6 +111,9 @@
                     
                 </ul>
             </div>
+            <div class="timer" id="timer">
+                Submission deadline for this month is...
+            </div>
             <!-- </nav> -->
 
             <!-- Navbar -->
@@ -187,6 +190,17 @@
 <div class="articles">
   <div class="col" data-columns="">
     
+    <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/november-prompts/'">
+      <a class="card-title times" href="/section/prompts/november-prompts/">November Prompts</a>
+      
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-author">Knightwatch Editors</span>
+          </div>
+          <p class="card-blurb line-clamp">This month, we will be experiencing our first snowfalls of the winter season; write a poem or other creative writing piece about snow or winter!<br>November 30th is national mason jar day! Write a short story involving a jar or container.<br>November is holocaust education month and Remembrance day is November 11th, reflect on the impact World War 2 had on you or someone you know. ...</p>
+        </div>
+      </div>
+    
     <div class="card" data-aos="fade-up" onclick="location.href='/section/prompts/october-prompts/'">
       <a class="card-title times" href="/section/prompts/october-prompts/">October Prompts</a>
       <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASABkDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAUHAwQI/8QALxAAAQMCAgcGBwAAAAAAAAAAAQACAwQFESEGEhMiMUFRFBUWIySTUlNUYXGR0f/EABgBAAIDAAAAAAAAAAAAAAAAAAQGAgMF/8QAHxEAAgIBBAMAAAAAAAAAAAAAAQMAAgQFERIxIUFC/9oADAMBAAIRAxEAPwBLondoYXVAp5dnv4MaOn3VLpL/ABNtbjCQZworovQ1RjkfHSOMjszrZJ05txiaDs3RYnMDkkdtjR/Jd9iIwYjVtoA0e5S4NJ2MZ58TTOc9fot/GA+IKRXC6Tx4tY1z3AcSDxSrva5/LH6P8RS8vNNfF4a5Om8txTeej7ZTwNY/CGMZ8mhdhpoHDehiP5YEIUvqYFOoqqqGk13elg9sLHsNJ9LB7YQhGV6lZn//2Q==" class="content-image lazyload" data-src="/section/prompts/october-prompts.jpeg">
@@ -235,7 +249,7 @@
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./index.js"></script>
+    <script src="/index.js"></script>
     <script src="/navbar.js"></script>
 
 
