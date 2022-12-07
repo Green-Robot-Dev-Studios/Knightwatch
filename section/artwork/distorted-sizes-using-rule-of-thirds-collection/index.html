@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- <!-1- I'm sorry, I was forced ;( -1-> -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script> -->
+    <!-- <script> -->
+    <!--     window.dataLayer = window.dataLayer || []; -->
+
+    <!--     function gtag() { -->
+    <!--         dataLayer.push(arguments); -->
+    <!--     } -->
+    <!--     gtag('js', new Date()); -->
+
+    <!--     gtag('config', 'G-Z1KRCWE0R3'); -->
+    <!-- </script> -->
+</head>
+
+<body>
+    <div class="page-container">
+
+        <div class="content-wrap">
+            <!-- <nav class="navbar"> -->
+            <div class="navbar-top">
+                <div class="mobile-menu" style="user-select: none;">
+                    <span class="menu-icon open" onclick="openMenu()">≡</span>
+                    <span class="menu-icon close" onclick="closeMenu()" hidden="">✕</span>
+                </div>
+                <a class="title times" href="/">
+                    <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+                    <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+                    Knightwatch
+                </a>
+                <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+            </div>
+            <div class="navbar-bottom" hidden="">
+                <ul class="topic-list">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li> -->
+                    
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/archive">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link active" href="/section/artwork">Artwork</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/opinion">Opinion</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/prompts">Prompts</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/recipes">Recipes</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/school-news">School News</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/social-issues">Social Issues</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="timer" id="timer">
+                Submission deadline for this month is...
+            </div>
+            <!-- </nav> -->
+
+            <!-- Navbar -->
+            <!-- <div style="display:flex">
+      <img src="/assets/logo.png" class="content-image" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="/">
+          <h1>Home</h1>
+        </a>
+        
+          
+        
+          
+            <a href="/section/archive">
+              <h1>Archive</h1>
+            </a>
+          
+        
+          
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/school-news">
+              <h1>School News</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
+            </a>
+          
+        
+      </div>
+    </div> -->
+
+            <!-- Seperation -->
+            <!-- <hr> -->
+
+            <!-- Main content -->
+            <main>
+                
+<div class="page">
+  <span class="card-title times" style="font-weight: 500;">Distorted Sizes Using Rule of Thirds Collection</span>
+  <div class="card-meta">
+    <span class="card-author">Multiple Artists</span>&nbsp;/&nbsp;
+    <span class="card-date">Sun, 13 Nov 2022 </span>
+  </div>
+
+  <br><p>Ms. Amenta’s Grade 9 art class Sketchbook assignment</p><br><p>Finnian Gillespie</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUDBAYC/8QAJxAAAQMDAQcFAAAAAAAAAAAAAQACAwQFEQYSFCEiQVFSEzFxkaH/xAAYAQADAQEAAAAAAAAAAAAAAAADBAUBAv/EAB4RAAICAgIDAAAAAAAAAAAAAAECAAMRIQQSBUFR/9oADAMBAAIRAxEAPwB5YaiVrXxF2ecps24NoKaWWZxOznAAymNNpoMDZmEF3uWjuivtE81PPFFCGueMDaHAKUvMoBwWnbb3iU9O3U3IDbhLCDknotb6sHZZzSdiqLLFNvUgfG/jg9Cm+8U/kPtTud5+nj2dK17/AHELXQWGTqQRSPa7lcQq9RXVQkwJn4+UIW31o2yBFKmI9yGeaSUhsjy5p6LjdIPD9KEJyitFQdRiCtJLbn//2Q==" class="content-image lazyload" data-src="/section/artwork/distorted-sizes-using-rule-of-thirds-collection.jpeg"></p><br><p>Ali Cote</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUEBgcI/8QAKBAAAQMCBAQHAAAAAAAAAAAAAQACAwQRBRJBURMhMYEGBxUzcdHw/8QAFwEBAQEBAAAAAAAAAAAAAAAAAwQCBf/EAB4RAAEEAQUAAAAAAAAAAAAAAAABAgMREjEyM0Fh/9oADAMBAAIRAxEAPwDoHFQwzOaTaR/Q/ikMUkdDWcFz7mTm0nVPMehikcWS37dln3i6SSCopHxksbEQLnZcyd6ujrsqiVM68HWMOa4O2Kr9mqVLV8emzF3UcktzrDHZJYtGvVDQ6qqMwBsNeyzLzB95g0v9IQmftUKLkQUxk+lM+VFudyhCmh0Fcf/Z" class="content-image lazyload" data-src="/section/artwork/distorted-sizes-using-rule-of-thirds-collection (1).jpeg"></p><br><p>Milana Lazarenko</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABIDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAYHCAIDBf/EACYQAAIBAwIEBwAAAAAAAAAAAAECAAMEEQUhBhIxchMUIjI1QXH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgQD/8QAGREAAwEBAQAAAAAAAAAAAAAAAAERAiFB/9oADAMBAAIRAxEAPwCx95zNRcKcEjYxSdLddRS0q1j5h15gcxsqsMbxXvbO0Os079wS6DAOZDKVZaVp2FoVQoHidBCaxqdLGxEIYJTK8uQlF2JGAMkxB1XiyzF8LdHUpy7vnYGNWtfFXPYZXa76XXcYMvpokvSRzr65OK64+vVCRinsX8hGEh//2Q==" class="content-image lazyload" data-src="/section/artwork/distorted-sizes-using-rule-of-thirds-collection (2).jpeg"></p><br><p>Lucy Marshall</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASABkDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYHBAX/xAAqEAABAwMDAQcFAAAAAAAAAAABAAIDBAYRBRIhExQVIjFRkfFBUlVhwf/EABYBAQEBAAAAAAAAAAAAAAAAAAIDBP/EABwRAAEEAwEAAAAAAAAAAAAAAAABAgMxBBEhgf/aAAwDAQACEQMRAD8AbdauR+lmnEEbMv4y7yCc7c1dlXpjKp5D8kNOPIFSG7qJj9OjfXyz9FhyHt+E/wBn1zKe0qbs1M6SnDc7j8KnKBpfCijY+HIxysvQHop3WXVDXubE2aWDaeAFr7xZ+Rk91hnxGPVFcXjV2uCpXkyWPPvO7w/XldOyHOFntAJA6Z4z+kIWttgWhXj5rW59T/Uz7G/aPZCEZLKxUf/Z" class="content-image lazyload" data-src="/section/artwork/distorted-sizes-using-rule-of-thirds-collection (3).jpeg"></p><br><p>Layla Shapero</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABEDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCBQcI/8QAKBAAAQQBAQYHAQAAAAAAAAAAAQACAwQRBQYSFTFRcQcTISIyNUFS/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgMB/8QAHBEAAQUBAQEAAAAAAAAAAAAAAQACAxESBGFB/9oADAMBAAIRAxEAPwDolwLWu3flg47rKqWp2ZtopmzuIsNlwAemUyT+IOntc7cie4Y5qkoOr29pY7mAGu96j0c72AFwpW55mkn6nnz7/UoU+Jxf01COPVu/Fn9jZGgLJldK4MzncVc+xHFqJEPo1pwAPxNmocis/P2svdXnmfLkPN0hDCyPRYKtMHEe6FWIRSX/2Q==" class="content-image lazyload" data-src="/section/artwork/distorted-sizes-using-rule-of-thirds-collection (4).jpeg"></p><br><p>Eloise Tikuisis</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBBAYH/8QAKBAAAAYBAwIGAwAAAAAAAAAAAAECAwQFEQYSIRMjFSIxMkFRUmSR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EAB4RAAICAQUBAAAAAAAAAAAAAAACARESAxMxQWGh/9oADAMBAAIRAxEAPwDudhbxqKucmzF7WmyyYX02q6eRAftq5K3Eun3MFzkUn5FfqGtXDnpy05wZCKquqqI0VtenpsuFuLPOTEFfS2pu8vlFpV8/AsdZ01TPZVJcNiVYY2pUXJht4+1+ZDKai01Ctp7c6ZH6zkY+0f0Jx+sYR3Sox57GVZubElO6vrEWeBo6dRyJ75vYVsLy5+AAGaC0j9KjJ5SS9pl6AwX0X8AAEU//2Q==" class="content-image lazyload" data-src="/section/artwork/distorted-sizes-using-rule-of-thirds-collection (5).jpeg"></p><br><p>Evelyne Patriquin</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASABkDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQHAgP/xAAlEAACAgAEBQUAAAAAAAAAAAABAgADBBESUQUGIjFBBxMUITL/xAAWAQEBAQAAAAAAAAAAAAAAAAACBAP/xAAcEQACAgIDAAAAAAAAAAAAAAAAAQIEAxETIWH/2gAMAwEAAhEDEQA/ALCqi7UD0uPG0Y4ZawJqc5OOxnC7Cs5F1P7HcbxqkJequFIsHibpE7Jtylw/mav1NxOIxQs+AXOpm7ES06UiVWpawWH35m/dO0OPHxrRVctu3JScUtJLrwSw46RO9CgWHICEI4ksh5AMpvIbCEIgH//Z" class="content-image lazyload" data-src="/section/artwork/distorted-sizes-using-rule-of-thirds-collection (6).jpeg"></p><br><p>Amanda Stott</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABAcIBv/EACEQAAIBAwUAAwAAAAAAAAAAAAEDAgAEBQYHESExEkFC/8QAFQEBAQAAAAAAAAAAAAAAAAAABQT/xAAaEQEAAwEBAQAAAAAAAAAAAAABAAIDEQSB/9oADAMBAAIRAxEAPwBj7uablnNHXClRMmLPzAFSXk8E23aVx9J8q92MRBy7ZpBm0cCJ+6yeU2q0/krmVw1MoNkeSY0WOlXtYvjp52jTY+kWmrt2FvzOHusI6II4DhL8cnuj9Xb1Ntous8XGJeIxMHjwnjup0V7RAqwoENXs/9k=" class="content-image lazyload" data-src="/section/artwork/distorted-sizes-using-rule-of-thirds-collection (7).jpeg"></p>
+</div>
+            </main>
+
+        </div>
+
+        <footer class="footer">
+            <ul class="footer-list">
+                <li><a href="/about">About Knightwatch</a></li>
+                <li><a href="https://forms.gle/7vWhLBidcXJU4Y7q6">How to Submit an Article</a></li>
+                <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+                <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'top',
+            once: 'true'
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/index.js"></script>
+    <script src="/navbar.js"></script>
+
+
+
+<script>
+            (function (selector, src, preferNativeLazyLoad) {
+  var images = document.querySelectorAll(selector);
+  var numImages = images.length;
+
+  if (numImages > 0) {
+    if (preferNativeLazyLoad && 'loading' in HTMLImageElement.prototype) {
+      for (var i = 0; i < numImages; i++) {
+        var keys = ['src', 'srcset'];
+
+        for (var j = 0; j < keys.length; j++) {
+          if (images[i].hasAttribute('data-' + keys[j])) {
+            var value = images[i].getAttribute('data-' + keys[j]);
+            images[i].setAttribute(keys[j], value);
+          }
+        }
+      }
+
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = src;
+    document.body.appendChild(script);
+  }
+})(
+              'img',
+              'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
+              false
+            );
+          </script></body></html>

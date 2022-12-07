@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- <!-1- I'm sorry, I was forced ;( -1-> -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script> -->
+    <!-- <script> -->
+    <!--     window.dataLayer = window.dataLayer || []; -->
+
+    <!--     function gtag() { -->
+    <!--         dataLayer.push(arguments); -->
+    <!--     } -->
+    <!--     gtag('js', new Date()); -->
+
+    <!--     gtag('config', 'G-Z1KRCWE0R3'); -->
+    <!-- </script> -->
+</head>
+
+<body>
+    <div class="page-container">
+
+        <div class="content-wrap">
+            <!-- <nav class="navbar"> -->
+            <div class="navbar-top">
+                <div class="mobile-menu" style="user-select: none;">
+                    <span class="menu-icon open" onclick="openMenu()">≡</span>
+                    <span class="menu-icon close" onclick="closeMenu()" hidden="">✕</span>
+                </div>
+                <a class="title times" href="/">
+                    <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+                    <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+                    Knightwatch
+                </a>
+                <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+            </div>
+            <div class="navbar-bottom" hidden="">
+                <ul class="topic-list">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li> -->
+                    
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/archive">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/artwork">Artwork</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/opinion">Opinion</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/prompts">Prompts</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/recipes">Recipes</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link active" href="/section/school-news">School News</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/social-issues">Social Issues</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="timer" id="timer">
+                Submission deadline for this month is...
+            </div>
+            <!-- </nav> -->
+
+            <!-- Navbar -->
+            <!-- <div style="display:flex">
+      <img src="/assets/logo.png" class="content-image" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="/">
+          <h1>Home</h1>
+        </a>
+        
+          
+        
+          
+            <a href="/section/archive">
+              <h1>Archive</h1>
+            </a>
+          
+        
+          
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/school-news">
+              <h1>School News</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
+            </a>
+          
+        
+      </div>
+    </div> -->
+
+            <!-- Seperation -->
+            <!-- <hr> -->
+
+            <!-- Main content -->
+            <main>
+                
+<div class="page">
+  <span class="card-title times" style="font-weight: 500;">Treaty Awareness Workshop!</span>
+  <div class="card-meta">
+    <span class="card-author">Ashley Sutherland and Leila Laaziz</span>&nbsp;/&nbsp;
+    <span class="card-date">Sun, 27 Nov 2022 </span>
+  </div>
+
+  <p>The week of November 7th is Treaty Awareness week, so Mrs. McKechnie, the school librarian, organized a workshop for Grade 9 students. On November 10th, 2022, our class marched down to the library and got the chance to experience it for ourselves!</p><br><p>There were several tables, each containing a different activity pertaining to the Indigenous peoples of Canada. One of my personal favorites was station #2, where we read a picture book called Treaty Words by Aimee Craft!</p><br><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABIDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYEBQf/xAAoEAABBAEDAwIHAAAAAAAAAAACAAEDBBEFEjEGIUFCURMUFTNScYH/xAAWAQEBAQAAAAAAAAAAAAAAAAADBAL/xAAaEQACAwEBAAAAAAAAAAAAAAAAAQIDEiJB/9oADAMBAAIRAxEAPwBmo6RTmeyd6ru+YLc4v6XSRq/SUVDXWkDvGb5AfZaBIMgacFoJy2MPHOUrv1pUtyFDPWb4g5Fi8qe3qIkOWSQpwMAs4NwhJs3WhxzSA1KV2EnHOH74dCiwyvEjUZRMKD1gdgjZsM3lJlzQZSsxyxRw7gfn3Tjb+8/6UL1fxDK+xemlXF+FN9P/ACiiz57IVm/LoQbYp//Z" class="content-image lazyload" data-src="/section/school-news/treaty-awareness-workshop!.jpeg"></p><p>The book contained beautiful illustrations and writing, describing the connection between people and their land. We definitely suggest it for readers of all ages!</p><br><p>Another station had a beautiful map that outlined the sad story of Indigenous languages in Canada. Mrs. McKechnie pointed out that the Haida people only occupied one island off the coast of B.C, and the number of Haida speakers still decreases today. </p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZAA8DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABwb/xAAlEAABAwQBAgcAAAAAAAAAAAABAgMEAAUREgYhQQcVFiIzNHH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgT/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIRIf/aAAwDAQACEQMRAD8Ak77aXdWo1sd0cCdjg46UzeHk53yKMxKCt20Y3V3o7EOJNkR5C0rQts5ODjarP1FHt7KUqjkDsAayReUhq3QltnImngoLcI06nFXPBRFvRdM8FTQHtKjihHj/AMr35S1wr6RpYxSJbs//2Q==" class="content-image lazyload" data-src="/section/school-news/treaty-awareness-workshop! (1).jpeg"> </p><br><p>It's important to think about Indigenous languages and how they affected treaties back in the day. We were taught about how English translators confused the Indigenous peoples into signing treaties that would affect them and their descendants for centuries.</p><br><p>We were also educated about the Indigenous people’s philosophy on land. For them, land wasn’t something someone owned. It was something that you took care of and passed along. So in the end, treaties went against them and their lifestyle!</p><br><p>We applaud Ms. McKechnie for her hard work in organizing this workshop. It was an incredible, eye opening activity, so we had to ask her about her journey in organizing it:</p><br><p>“I did a lot of research last year, when I created it. I went to a few workshops led by (Indigenous) Elders in the community to enhance my knowledge!”</p><br><p>“As an educator, I don't feel comfortable teaching students about treaties because I don't really know a lot about them, and one of the Elders told me that, ‘You have to start somewhere. You can learn alongside your students’. That's something I try to keep in mind and say during every workshop.”</p><br><p>We then asked her why she thinks it's important to learn about these treaties and Indigenous history in general.</p><br><p>“It's part of our commitment to the Truth and Reconciliation Commission, and as settlers on this land we have to learn about the history of all people. In the past it hasn't been included in our history curriculum, so I think it's really nice to start embedding that as we learn more and more!”</p><br><p>Some other students who participated had a few words to say:</p><br><p>“I think it's a really important learning point. We get the chance to learn about treaties, and I think I am definitely going to leave this library knowing more about them than I ever knew before. It’s great that I get this opportunity!”, Grade 9 student Ellie smiled.</p><br><p>“It’s important to learn about these treaties because it was part of our Canadian history and  before the europeans came in and took over, Indigenous peoples were here for years and years.”</p><br><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABQcIBv/EACcQAAEDAgUCBwAAAAAAAAAAAAECAwQABQYHERIhIlETFDQ1QnKC/8QAFgEBAQEAAAAAAAAAAAAAAAAABAAB/8QAHBEAAgICAwAAAAAAAAAAAAAAAQIAAxFREyJC/9oADAMBAAIRAxEAPwAqyJBLciy7ks/LQgEUAxnPu8pYkpBktNdKt45rVvYXl2hpTqZ6nCk8JSNKX9/udzhXN1D8lCwR1pA40olVBz1iTaPUfLbRAc8xoU7eSqpqzbL9vuL3hBRQ6vXee3aqUxB6L80hM6/ao32rEuK2Bdy4wULan//Z" class="content-image lazyload" data-src="/section/school-news/treaty-awareness-workshop! (2).jpeg"></p><p>As you can see, the Grade 9’s in our class loved and appreciated this workshop. We encourage you to do your own research and learn as much as you can about Indigenous peoples and treaties!</p><br><br><br><br><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABIDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYIBAX/xAAmEAABAgUDAwUAAAAAAAAAAAABAAIDBAUGERIhMRQyYQcVMzVx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwQF/8QAIBEAAQMEAgMAAAAAAAAAAAAAAQACAxESFCETIiNRUv/aAAwDAQACEQMRAD8A1+qdxxaXRZWHbzX6nvw5wHctdsXsINNp/vcFsF5ONR5KQbghXCyA2W0kOhu1NYRnASlV41fqMxAbNSsVmg6QcYA8o2RXEDSQkWmqqgXNTnAEHY7jdCmxorbWhomBsMdyFViBDyKjqHbErMQjMRZgzMwRguPAXMrFmy7mxOsnsDOWtbyUy2X8Mz+rm1/7FyyXzeISU2rmt7lldJWFsUwDHQMPnI3QmMcBCnzp/pJjx+l//9k=" class="content-image lazyload" data-src="/section/school-news/treaty-awareness-workshop! (3).jpeg"></p><br>
+</div>
+            </main>
+
+        </div>
+
+        <footer class="footer">
+            <ul class="footer-list">
+                <li><a href="/about">About Knightwatch</a></li>
+                <li><a href="https://forms.gle/7vWhLBidcXJU4Y7q6">How to Submit an Article</a></li>
+                <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+                <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'top',
+            once: 'true'
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/index.js"></script>
+    <script src="/navbar.js"></script>
+
+
+
+<script>
+            (function (selector, src, preferNativeLazyLoad) {
+  var images = document.querySelectorAll(selector);
+  var numImages = images.length;
+
+  if (numImages > 0) {
+    if (preferNativeLazyLoad && 'loading' in HTMLImageElement.prototype) {
+      for (var i = 0; i < numImages; i++) {
+        var keys = ['src', 'srcset'];
+
+        for (var j = 0; j < keys.length; j++) {
+          if (images[i].hasAttribute('data-' + keys[j])) {
+            var value = images[i].getAttribute('data-' + keys[j]);
+            images[i].setAttribute(keys[j], value);
+          }
+        }
+      }
+
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = src;
+    document.body.appendChild(script);
+  }
+})(
+              'img',
+              'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
+              false
+            );
+          </script></body></html>

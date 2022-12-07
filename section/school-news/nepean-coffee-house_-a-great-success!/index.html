@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- <!-1- I'm sorry, I was forced ;( -1-> -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script> -->
+    <!-- <script> -->
+    <!--     window.dataLayer = window.dataLayer || []; -->
+
+    <!--     function gtag() { -->
+    <!--         dataLayer.push(arguments); -->
+    <!--     } -->
+    <!--     gtag('js', new Date()); -->
+
+    <!--     gtag('config', 'G-Z1KRCWE0R3'); -->
+    <!-- </script> -->
+</head>
+
+<body>
+    <div class="page-container">
+
+        <div class="content-wrap">
+            <!-- <nav class="navbar"> -->
+            <div class="navbar-top">
+                <div class="mobile-menu" style="user-select: none;">
+                    <span class="menu-icon open" onclick="openMenu()">≡</span>
+                    <span class="menu-icon close" onclick="closeMenu()" hidden="">✕</span>
+                </div>
+                <a class="title times" href="/">
+                    <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+                    <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+                    Knightwatch
+                </a>
+                <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+            </div>
+            <div class="navbar-bottom" hidden="">
+                <ul class="topic-list">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li> -->
+                    
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/archive">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/artwork">Artwork</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/opinion">Opinion</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/prompts">Prompts</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/recipes">Recipes</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link active" href="/section/school-news">School News</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/social-issues">Social Issues</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="timer" id="timer">
+                Submission deadline for this month is...
+            </div>
+            <!-- </nav> -->
+
+            <!-- Navbar -->
+            <!-- <div style="display:flex">
+      <img src="/assets/logo.png" class="content-image" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="/">
+          <h1>Home</h1>
+        </a>
+        
+          
+        
+          
+            <a href="/section/archive">
+              <h1>Archive</h1>
+            </a>
+          
+        
+          
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/school-news">
+              <h1>School News</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
+            </a>
+          
+        
+      </div>
+    </div> -->
+
+            <!-- Seperation -->
+            <!-- <hr> -->
+
+            <!-- Main content -->
+            <main>
+                
+<div class="page">
+  <span class="card-title times" style="font-weight: 500;">Nepean Coffee House: a Great Success!</span>
+  <div class="card-meta">
+    <span class="card-author">Ashley Sutherland and Leila Laaziz</span>&nbsp;/&nbsp;
+    <span class="card-date">Thu, 01 Dec 2022 </span>
+  </div>
+
+  <p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUEBgcD/8QAKRAAAQMCBAMJAAAAAAAAAAAAAQACAwQRBRMhMQZBcRIUMjVRUlSRkv/EABYBAQEBAAAAAAAAAAAAAAAAAAEDAv/EABsRAAMAAgMAAAAAAAAAAAAAAAABAhExEhMh/9oADAMBAAIRAxEAPwDIIJIA4B0jQeqmU1dSPmEQfc+vJUSMiSLNfJ2Xcm31TjDAZmNYbRh2zjuU08FOGTRKeppjhr4GZby4+K+oXHuUfsi+ws6jkno8SdBM4gX3vom+c35Q/SOtMlVNeZKS3YK0Rb0nQIQt3ovGyPxN5hJ0CTIQlGGf/9k=" class="content-image lazyload" data-src="/section/school-news/nepean-coffee-house_-a-great-success!.jpeg"></p><p>On the evening of November 15th, 2022, the first Nepean Coffee house since 2019 was held. Those who attended walked into the cafeteria to behold a small, beautifully lit stage where the night's performances would take place. Rows and rows of students, family, and friends filled the room with warmth and joy. The sense of community was phenomenal.</p><br><p>Our cheerful host Mr. Boulerice started the night off with a speech about the coffee house and its importance. It's an incredible way to bond and share our talents amongst our peers!</p><br><p>The first act was a piano rendition of “Don't Stop Believing” by Journey, performed by the wonderful Kyle Fletcher on the piano. It was a perfect choice to get the crowd ready for the night. Everyone sang along to the familiar lyrics, voices blending and the atmosphere relaxed ahead of the rest of the artists.</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAYFBwECA//EACgQAAEEAQEGBwEAAAAAAAAAAAIAAQMEBREGFTE1UXETFCEjQVRygv/EABcBAAMBAAAAAAAAAAAAAAAAAAIDBAD/xAAhEQACAgAFBQAAAAAAAAAAAAABAgADBAURM4ESITJCof/aAAwDAQACEQMRAD8A4YvGV44nKZxHusVJcZFlGeeYGAeKTtosvkZqIvUicLAto7fGqTaVm2WRdsjrG7ExH2UOH1sKgDxja8P0WNY7a6/JcOXlgszE8Ae3r6P1UX5YOihNos2e7RKm4eE4aCTcVXu+8n9s0TiyxyzGUkhe0s+1w/pJm0PN7H5QhbLd/gxb7fM0m5M3ZKyEJvsYTT//2Q==" class="content-image lazyload" data-src="/section/school-news/nepean-coffee-house_-a-great-success! (1).jpeg"></p><p>Next, the wonderful Maddie Seatter proceeded to perform two songs alongside Angie Zaharieva as the guitarist and let her beautiful voice shine with Pei Pilgrim on the piano.</p><br><p>Despite the amazing covers at the coffeehouse, we had to love the original songs that were performed. The first one we got to experience was Leftovers by Jennifer Ridley. Attendees most definitely went home humming that tune under their breath. It was an emotional and unforgettable ballad. Another original song was the stunning “June” by Maddie Seatter. An attentively written, breathtaking piece, it kept the audience entranced and received a thunderous applause- rightfully so.</p><br><p>Sam LaFontaine followed with a humorous cover of “White Woman’s Instagram” by Bo Burnham. Every audience member enjoyed the lighthearted, comical feel of the performance.</p><br><p>Another thing we adored was the presence of teachers in the set list. First of all, Mr. Boulerice, our host, and the wonderful Mr. Dietx performed a cover of “Million Reasons” by Lady Gaga. The whole audience sang along and it was overall such a good experience! </p><br><p>A second group of teachers, including Mme. Pregent, Mr. Symes, and Mr. Bakelaar made up an amazing “hobby band”, who performed “Wild Horses” by the Rolling Stones and “Fly Like an Eagle” by the Steve Miller Band. Mme. Pregent, the lead singer, had a gorgeous voice that filled the room beautifully. Both of their songs were performed incredibly well!</p><br><p>After several performances there was a break so that people could stretch their legs and purchase from the lovely bake sale.</p><br><p>The sale was chock full of delicious baked goods and free hot chocolate. It's safe to say the line was flooding out the door. The most important thing was that all proceeds from the bake sale would go to support Ukraine during its difficult times. We applaud all those who helped to organize the bake sale and coffeehouse in general, to generate money for such an important cause!</p><br><p>Another notable performer was Lily Sue-Ping with “Angela”, “Enough for you”, and “Champagne Problems” by Taylor Swift on the piano. All of the swifties sang along for that one!</p><br><p>One of my favorite songs, “Brazil” by Declan Mckenna, was played that night. Sophie Chase, Isabelle K-Colby &amp; Claire Anglesey covered the song beautifully! Afterwards, Liam Cordick played “Something in the Orange” by Zack Bryan and “Fast Car” by Tracy Chapman on his guitar. You could feel the audience relax and bop along to the familiar and emotional songs.</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAcCAwYF/8QALBAAAQQBAwEECwAAAAAAAAAAAQACAwQRBQYhcRITFTEWIjM0QUJRUlNhkf/EABcBAAMBAAAAAAAAAAAAAAAAAAEDBAL/xAAbEQADAQADAQAAAAAAAAAAAAAAAQIDERJBIf/aAAwDAQACEQMRAD8Axu39v0oqwmscAYzkLWV49DgLYHSt78jIb+kq6W8Hx1p4rGXFxBaMeSur7hqP1AXHsJeI8Bp+vCzi9Mm6n6y2XHMtjS1CjQkYGNcztOHqjPmuP4FD9qXtTck02oQvtPLGtfxz8Fs/Sep+cf1DdVVdn6OpzT5Qnpvej1VsPtT0QhM8JCU3y9VWhCLCz//Z" class="content-image lazyload" data-src="/section/school-news/nepean-coffee-house_-a-great-success! (2).jpeg"></p><p>The closing performance was by Nepean High School’s own Color Red! The band was incredible, with an air of professionalism that left us shocked they were local. They performed “Take it or Leave it” and “Back door”, two original songs! We look forward to their next performance at the United Way Breakfast.</p><br><p>In conclusion, this event was such a wonderful idea and we were so glad Nepean was able to host it once more! The event raised money for Ukraine and provided students and friends with amazing entertainment. We certainly hope this can happen again sometime soon.</p><br><p>All Photos By @_armys_photography_ on Instagram.</p>
+</div>
+            </main>
+
+        </div>
+
+        <footer class="footer">
+            <ul class="footer-list">
+                <li><a href="/about">About Knightwatch</a></li>
+                <li><a href="https://forms.gle/7vWhLBidcXJU4Y7q6">How to Submit an Article</a></li>
+                <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+                <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'top',
+            once: 'true'
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/index.js"></script>
+    <script src="/navbar.js"></script>
+
+
+
+<script>
+            (function (selector, src, preferNativeLazyLoad) {
+  var images = document.querySelectorAll(selector);
+  var numImages = images.length;
+
+  if (numImages > 0) {
+    if (preferNativeLazyLoad && 'loading' in HTMLImageElement.prototype) {
+      for (var i = 0; i < numImages; i++) {
+        var keys = ['src', 'srcset'];
+
+        for (var j = 0; j < keys.length; j++) {
+          if (images[i].hasAttribute('data-' + keys[j])) {
+            var value = images[i].getAttribute('data-' + keys[j]);
+            images[i].setAttribute(keys[j], value);
+          }
+        }
+      }
+
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = src;
+    document.body.appendChild(script);
+  }
+})(
+              'img',
+              'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
+              false
+            );
+          </script></body></html>

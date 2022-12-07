@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- <!-1- I'm sorry, I was forced ;( -1-> -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script> -->
+    <!-- <script> -->
+    <!--     window.dataLayer = window.dataLayer || []; -->
+
+    <!--     function gtag() { -->
+    <!--         dataLayer.push(arguments); -->
+    <!--     } -->
+    <!--     gtag('js', new Date()); -->
+
+    <!--     gtag('config', 'G-Z1KRCWE0R3'); -->
+    <!-- </script> -->
+</head>
+
+<body>
+    <div class="page-container">
+
+        <div class="content-wrap">
+            <!-- <nav class="navbar"> -->
+            <div class="navbar-top">
+                <div class="mobile-menu" style="user-select: none;">
+                    <span class="menu-icon open" onclick="openMenu()">&#x2261;</span>
+                    <span class="menu-icon close" onclick="closeMenu()" hidden>&#x2715;</span>
+                </div>
+                <a class="title times" href="/">
+                    <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+                    <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+                    Knightwatch
+                </a>
+                <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+            </div>
+            <div class="navbar-bottom" hidden>
+                <ul class="topic-list">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li> -->
+                    
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/archive">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/artwork">Artwork</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link active" href="/section/creative-writing">Creative Writing</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/opinion">Opinion</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/prompts">Prompts</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/recipes">Recipes</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/school-news">School News</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/social-issues">Social Issues</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="timer" id="timer">
+                Submission deadline for this month is...
+            </div>
+            <!-- </nav> -->
+
+            <!-- Navbar -->
+            <!-- <div style="display:flex">
+      <img src="/assets/logo.png" class="content-image" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="/">
+          <h1>Home</h1>
+        </a>
+        
+          
+        
+          
+            <a href="/section/archive">
+              <h1>Archive</h1>
+            </a>
+          
+        
+          
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/school-news">
+              <h1>School News</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
+            </a>
+          
+        
+      </div>
+    </div> -->
+
+            <!-- Seperation -->
+            <!-- <hr> -->
+
+            <!-- Main content -->
+            <main>
+                
+<div class="page">
+  <span class="card-title times" style="font-weight: 500;">A &quot;Loveless&quot; Marriage</span>
+  <div class="card-meta">
+    <span class="card-author">N. Mazerolle</span>&nbsp;/&nbsp;
+    <span class="card-date">Fri, 25 Nov 2022 </span>
+  </div>
+
+  <p>Tabitha heaved a sigh, picking at a stray thread on their sweater. The sweater in question was dreadfully itchy, Tabitha didn’t know if they could have beared wearing it if not for its rich green colour. Though they might have gotten some nasty looks from their mother-in-law for not delighting in the gift that her Nana worked so hard to make for them. At least Tabitha had a soft chemise they could wear underneath.</p>
+<p>“Is Agatha finally gone?” A voice said from behind them. They turned to see Silas enter the parlour.</p>
+<p>Tabitha snorted, taking a seat on the warm grey couch. “What, did you run out of good hiding places for my sister’s visits?”</p>
+<p>Silas held up their hands in a defensive gesture. “Woah, that’s not what I meant!”</p>
+<p>Tabitha chuckled. “I know,” They smirked as Silas came to stand near the coffee table just to the side of them. “I don’t really blame you, me and my sister’s discussions haven’t been as interesting since she took up accounting.”</p>
+<p>“Really?” Silas inquired, turning away from their inspection of the platter of now cold biscuits on the table. “I would have assumed there were more interesting things people in this township were doing with their money.”</p>
+<p>“Like what?” Tabitha asked, plucking a small chocolate biscuit from the platter. </p>
+<p>Silas hummed. “I don’t know, things like bribery or embezzlement that would raise some interesting questions with the accountant. With all the rich buffoons living here, one would think there’s one or two secrets that they’re working to hide.”</p>
+<p>Tabitha stopped chewing their biscuit. “Rich people aren’t the only ones with things to hide, Silas.” </p>
+<p>They spoke quietly, as if there was a nosy crowd hiding just around the corner trying to eavesdrop on them.</p>
+<p>Silas went still, looking at their partner sitting across from them and fiddling with one of the buttons on their sweater. </p>
+<p>“You’re right,” They said, their voice now without any jovial tone. Awkwardly, they sat down next to Tabitha, stretching their hands out behind them to lean on. “Did… did your sister ask anything today? About… us?”</p>
+<p>Tabitha considered the question. “Nothing that she didn’t ask the last time she visited two weeks ago. Though… now that we’ve been married for a few months, people are going to start wondering about heirs.”</p>
+<p>Silas intook a sharp breath, leaning forward and placing their hands on their knees. The partly-filled bookcase standing at the far wall suddenly became a much more interesting place to cast their gaze.</p>
+<p>Tabitha glanced at their partner, finally swallowing the last of their biscuit. “I didn’t want to think about it, and I know you didn’t really want to as well, but… we probably won’t be able to avoid it.”</p>
+<p>Silas sighed. “I know.”</p>
+<p>Silas was still looking away, their only movement was a finger tapping absentmindedly against their thigh. Tabitha bit the inside of their lip, feeling terrible for bringing it up.</p>
+<p>Slowly, they moved their right hand over to Silas’s left, touching their pinkies. They waited patiently for Silas to acknowledge, before the two wrapped their hands together. After a few seconds, Silas gave a gentle squeeze, letting Tabitha know they were still paying attention.</p>
+<p>“I can’t say I didn’t know this was coming,” Tabitha started, swallowing. “My family always wanted descendants to have descendants, no matter if they were in line for any actual inheritance or not. Me being a middle child wasn’t going to stop my parents from keeping an eye on me to see if I had brought any new members into our family line.”</p>
+<p>Tabitha glanced over at Silas, who still had their eyes trained on the opposite side of the room, perhaps now taking in the olive and mint green patterns of the wallpaper.</p>
+<p>Tabitha continued, “Though, that doesn’t mean that I like these comments either, I hate them just as much as you do. To be perfectly honest, I just wish we could have been left alone after the ceremony had finished. We did our part in marrying, after all, why should they expect any more?”</p>
+<p>“It’s not just that,” Silas finally spoke up. “I’ve told my parents several times that I just don’t… feel that way. I don’t feel any attraction in that way nor in that softer, more lovey-dovey way that they kept telling me I’d feel. Not for anyone, never at all.”</p>
+<p>Tabitha nodded. “Let me guess, your parents told you that-”</p>
+<p>“You’ll meet the right person,” The two said in unison, groaning in time as well.</p>
+<p>Silas chuckled a little at their action. </p>
+<p>“Well,” They continued, looking at Tabitha. “They weren’t completely wrong, I did meet the right person. Just not how they think.”</p>
+<p>Tabitha smiled, blushing a little at the praise. “They were so suspicious of how often we spent time together when we were younger. No one would have ever thought it was just because I wanted to pester you about your silly bow ties.”</p>
+<p>“Oh hey now,” Silas defended. “My brother picked those out for me, it’s not my fault that they all had brick patterns on them!”</p>
+<p>“Who on earth makes bow ties with brick patterns? Who on earth would buy them?” Tabitha asked incredulously.</p>
+<p>“My brother apparently,” Silas grumbled, smiling.</p>
+<p>“You’re lucky you became friends with me then, I was enough of an influence to help you get a better fashion taste,” Tabitha affectionately touched Silas’s dark green waistcoat in reference, flicking at its lapel.</p>
+<p>“Yes, I’m lucky to have you as a friend,” Silas squeezed Tabitha’s hand, meeting their partner’s eyes.</p>
+<p>“And now,” Tabitha started, leaning away from Silas to grab another biscuit from the platter. “You have me as a spouse, and you’ll forever have to put up with my poorly made pastries forever.”</p>
+<p>Silas snatched the biscuit Tabitha had been holding and popped it into their mouth. “Well rest assured, dear spouse of mine, that no pastry you make could ever beat my younger sister’s birthday salads.”</p>
+<p>“I still don’t understand why Lacy makes those, I thought your household had a cook who did meal prep.”</p>
+<p>“You choose to focus on the fact that it was Lacy making the meal and not that she makes salads for birthdays?!” Silas exclaimed incredulously, staring at Tabitha with a look somewhere between playful mockery and abject horror.</p>
+<p>Tabitha shrugged.</p>
+<p>Silas gave a dramatic sigh worthy of a distinguished stage actor and jumped to their feet. They took a brisk stride over to the doorway they had come in from, their footsteps loud and theatrical.</p>
+<p>Tabitha chuckled. “Where are you going?”</p>
+<p>Silas stopped on the threshold and turned on their heel, gleaming at Tabitha, who was still sitting. “I just thought of a marvelous trick to play on my parents for all the back they’ve been giving us lately. Though,” They extended a hand outwards. “I don’t think I’ll be able to get away with it without the help of my loving spouse. Want in?”</p>
+<p>Tabitha arose just as quickly as Silas, wearing a grin even more mischievous. They glided over to their partner, linking their arms. </p>
+<p>“Lead the way,” They said.</p><br>
+
+</div>
+            </main>
+
+        </div>
+
+        <footer class="footer">
+            <ul class="footer-list">
+                <li><a href="/about">About Knightwatch</a></li>
+                <li><a href="https://forms.gle/7vWhLBidcXJU4Y7q6">How to Submit an Article</a></li>
+                <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+                <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'top',
+            once: 'true'
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/index.js"></script>
+    <script src="/navbar.js"></script>
+</body>
+
+</html>

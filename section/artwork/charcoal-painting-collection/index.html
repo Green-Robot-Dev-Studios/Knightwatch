@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- <!-1- I'm sorry, I was forced ;( -1-> -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script> -->
+    <!-- <script> -->
+    <!--     window.dataLayer = window.dataLayer || []; -->
+
+    <!--     function gtag() { -->
+    <!--         dataLayer.push(arguments); -->
+    <!--     } -->
+    <!--     gtag('js', new Date()); -->
+
+    <!--     gtag('config', 'G-Z1KRCWE0R3'); -->
+    <!-- </script> -->
+</head>
+
+<body>
+    <div class="page-container">
+
+        <div class="content-wrap">
+            <!-- <nav class="navbar"> -->
+            <div class="navbar-top">
+                <div class="mobile-menu" style="user-select: none;">
+                    <span class="menu-icon open" onclick="openMenu()">≡</span>
+                    <span class="menu-icon close" onclick="closeMenu()" hidden="">✕</span>
+                </div>
+                <a class="title times" href="/">
+                    <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+                    <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+                    Knightwatch
+                </a>
+                <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+            </div>
+            <div class="navbar-bottom" hidden="">
+                <ul class="topic-list">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li> -->
+                    
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/archive">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link active" href="/section/artwork">Artwork</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/opinion">Opinion</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/prompts">Prompts</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/recipes">Recipes</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/school-news">School News</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/social-issues">Social Issues</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="timer" id="timer">
+                Submission deadline for this month is...
+            </div>
+            <!-- </nav> -->
+
+            <!-- Navbar -->
+            <!-- <div style="display:flex">
+      <img src="/assets/logo.png" class="content-image" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="/">
+          <h1>Home</h1>
+        </a>
+        
+          
+        
+          
+            <a href="/section/archive">
+              <h1>Archive</h1>
+            </a>
+          
+        
+          
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/school-news">
+              <h1>School News</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
+            </a>
+          
+        
+      </div>
+    </div> -->
+
+            <!-- Seperation -->
+            <!-- <hr> -->
+
+            <!-- Main content -->
+            <main>
+                
+<div class="page">
+  <span class="card-title times" style="font-weight: 500;">Charcoal Painting Collection</span>
+  <div class="card-meta">
+    <span class="card-author">Multiple Artists</span>&nbsp;/&nbsp;
+    <span class="card-date">Wed, 16 Nov 2022 </span>
+  </div>
+
+  <p>Ms. Amenta’s grade 10s charcoal paintings. </p><br><p>Stan Lee in Charcoal </p><p>Felix Delage</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABIDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAYHBAID/8QAJRAAAQMDAwQDAQAAAAAAAAAAAQIDBAAFBgcRMRIhNVEUQXGB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQMEBf/EABwRAAMBAAIDAAAAAAAAAAAAAAABAhEDIhMUMf/aAAwDAQACEQMRAD8A40UxmDPD10nNBwpVs2k8ftPOcybezDRGkRm1sOq6Cn1U90zmymcWcVFeI7dkgd96w5nLms29LlxkhaxsQkc71n026+lspKT1c0ztLi1LQ8QlRKgN+AaKWW9QOhtKfiqPSAN96Kd2F9Rqx62yMStUlTzqXmjwQOKQMpur98lojQkqcUTzVXyTwUr8qU4j57+Gp+N7tsfazJRkGE3AgEyEgn69UVTqKHsUDwyf/9k=" class="content-image lazyload" data-src="/section/artwork/charcoal-painting-collection.jpeg"></p><br><p>Silken Laumann in Charcoal</p><p>Eden Ramunas</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABIDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBwj/xAAqEAABAwMEAAMJAAAAAAAAAAADAQIEAAUhBhESMQcVcjIzNUFCUXGxwf/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8Adapk3nUMw9osjVaEWDFd1WfEttx0dKcZxmMlb7pwXtKvRTwSYc2cGQ8JMpwZ9S1GXyFFuA4pRnK53RFIuUWso1M2eJt/RjU5jwn3oqHJZ46PciXIaZXG9FMiav8ARNsOxT+YjcOO5OTeWM0h1JLt8GQdsc/NXKqOTrZa0/V3sD/P8rn7WXxKb66qWqQVqsRBse9iq9yIqrv86KSA9wP0p+qKD//Z" class="content-image lazyload" data-src="/section/artwork/charcoal-painting-collection (1).jpeg"></p><br><p>Lewis Hamilton in Charcoal</p><p>Zachary Pantarotto</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABMDASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAQFBgcIAv/EACwQAAEDAgUBBgcAAAAAAAAAAAECAwQABQYREhMxBxQXITIzcSIjNVFSYcH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAgD/xAAYEQADAQEAAAAAAAAAAAAAAAAAARECEv/aAAwDAQACEQMRAD8AfemlugmzC4ydvcJ8FKPlpZiyPbrtaHo78trcJ+W5+NUzh/EDpgCG68pLCFaikHLOn6RdoZjSm2F6kbRI1Hg0HennUSGZynmkMuEZmNNeZTMQ4EKy1Dg0VGTIKiTnyTRSoHpaVv6Xz12sPdoSiYfEoPGX2rru9nvw3ojikMSFD4FZ+b9Vb7PpCkM36vb/AH/tRLGXZUZ4k4AxAw+trshXpOWocGitGveqr3ordk8H/9k=" class="content-image lazyload" data-src="/section/artwork/charcoal-painting-collection (2).jpeg"></p><br><p>Simu Liu in Charcoal</p><p>William Jiang</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABMDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABwAGBf/EACgQAAEDBAEDAgcAAAAAAAAAAAEAAgMEBQYREhMxcUHBBxQhMzQ1gf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAwDAQACEQMRAD8A2HxavV7uN5GPY9L0HCPnLJ7Ilob1k2C3uBtbO58MrwHNPYjaeMms0cN5qLm6TRmZx2O4Qjm80dwvZgZJ1XscOJPp9Vk0MMWZskiY/lrk0HX8UjKnlDII2nW2tAUohlvIqoXKgGidN769Ea2HCnzZHU1cpd8u4b5uC31N+BUePcrpUH6oeFQY52Etc4lk5DT2CltY/tt8KQb/2Q==" class="content-image lazyload" data-src="/section/artwork/charcoal-painting-collection (3).jpeg"></p><br><p>Jennifer Aniston in Charcoal</p><p>Kayla McIlhagga</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABEDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYHBQP/xAAsEAABAwIDBgUFAAAAAAAAAAABAAIDBAYFERIHFBUhQVETMTQ2U2Jyc5HB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAASH/2gAMAwEAAhEDEQA/AJcd6um6YX10mkSHkOjQqvWWnDgWHQYhSzeNNGQHA+elTq0JYHVTZJmayRkMu+at1fNRC3mtlGU8sQAa48ypKxicbpfq/aFhbi74ghMCds9wMVeLNp3Oex7RqAPdOd409ZS4zTCaVz2sYNPQZLhYvvEfYmTaR66l/H/ECxxNnZ6FkIQf/9k=" class="content-image lazyload" data-src="/section/artwork/charcoal-painting-collection (4).jpeg"></p><br><p>Marilyn Monroe in Charcoal</p><p>Keely Geoffrion</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABMDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAcEBQYI/8QAKBAAAQMCBAUFAQAAAAAAAAAAAQIDBAAFBhESIQcUMVFhExUzcYE0/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEDAv/EABcRAQEBAQAAAAAAAAAAAAAAAAABETH/2gAMAwEAAhEDEQA/AL7gzNiC2uIfXrlqUc1VtWbg9IuSoEs5IWCAgDbL7pCcN57dtddLjytDiCpknYZjvTVwjjP3YoYDWp8gpKgO1SqjO3lq4xrpJZZCC2hZCT4oq+nmHzjvquJ16t96KNGOfcFxJV/ZjsNOqbLJzSRTUhc5hgIZhQwZUg6VPq6J81h+BvzftNzGPRv8p3oi0i2aCuO2p9xLjpGal59TRUaD/G19UVk3/9k=" class="content-image lazyload" data-src="/section/artwork/charcoal-painting-collection (5).jpeg"></p>
+</div>
+            </main>
+
+        </div>
+
+        <footer class="footer">
+            <ul class="footer-list">
+                <li><a href="/about">About Knightwatch</a></li>
+                <li><a href="https://forms.gle/7vWhLBidcXJU4Y7q6">How to Submit an Article</a></li>
+                <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+                <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'top',
+            once: 'true'
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/index.js"></script>
+    <script src="/navbar.js"></script>
+
+
+
+<script>
+            (function (selector, src, preferNativeLazyLoad) {
+  var images = document.querySelectorAll(selector);
+  var numImages = images.length;
+
+  if (numImages > 0) {
+    if (preferNativeLazyLoad && 'loading' in HTMLImageElement.prototype) {
+      for (var i = 0; i < numImages; i++) {
+        var keys = ['src', 'srcset'];
+
+        for (var j = 0; j < keys.length; j++) {
+          if (images[i].hasAttribute('data-' + keys[j])) {
+            var value = images[i].getAttribute('data-' + keys[j]);
+            images[i].setAttribute(keys[j], value);
+          }
+        }
+      }
+
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = src;
+    document.body.appendChild(script);
+  }
+})(
+              'img',
+              'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
+              false
+            );
+          </script></body></html>

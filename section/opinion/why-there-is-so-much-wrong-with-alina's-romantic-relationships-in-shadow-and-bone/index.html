@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- <!-1- I'm sorry, I was forced ;( -1-> -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script> -->
+    <!-- <script> -->
+    <!--     window.dataLayer = window.dataLayer || []; -->
+
+    <!--     function gtag() { -->
+    <!--         dataLayer.push(arguments); -->
+    <!--     } -->
+    <!--     gtag('js', new Date()); -->
+
+    <!--     gtag('config', 'G-Z1KRCWE0R3'); -->
+    <!-- </script> -->
+</head>
+
+<body>
+    <div class="page-container">
+
+        <div class="content-wrap">
+            <!-- <nav class="navbar"> -->
+            <div class="navbar-top">
+                <div class="mobile-menu" style="user-select: none;">
+                    <span class="menu-icon open" onclick="openMenu()">≡</span>
+                    <span class="menu-icon close" onclick="closeMenu()" hidden="">✕</span>
+                </div>
+                <a class="title times" href="/">
+                    <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+                    <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+                    Knightwatch
+                </a>
+                <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+            </div>
+            <div class="navbar-bottom" hidden="">
+                <ul class="topic-list">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li> -->
+                    
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/archive">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/artwork">Artwork</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link active" href="/section/opinion">Opinion</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/prompts">Prompts</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/recipes">Recipes</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/school-news">School News</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/social-issues">Social Issues</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="timer" id="timer">
+                Submission deadline for this month is...
+            </div>
+            <!-- </nav> -->
+
+            <!-- Navbar -->
+            <!-- <div style="display:flex">
+      <img src="/assets/logo.png" class="content-image" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="/">
+          <h1>Home</h1>
+        </a>
+        
+          
+        
+          
+            <a href="/section/archive">
+              <h1>Archive</h1>
+            </a>
+          
+        
+          
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/school-news">
+              <h1>School News</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
+            </a>
+          
+        
+      </div>
+    </div> -->
+
+            <!-- Seperation -->
+            <!-- <hr> -->
+
+            <!-- Main content -->
+            <main>
+                
+<div class="page">
+  <span class="card-title times" style="font-weight: 500;">Why there is so much wrong with Alina’s romantic relationships in Shadow and Bone</span>
+  <div class="card-meta">
+    <span class="card-author">Melina Sainis</span>&nbsp;/&nbsp;
+    <span class="card-date">Sun, 20 Nov 2022 </span>
+  </div>
+
+  <p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABkDASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAMEBQYHAf/EACkQAAIBAwIEBQUAAAAAAAAAAAECAwAEBRESBxRBUQYhJDGREyJSU1T/xAAXAQEBAQEAAAAAAAAAAAAAAAAEBQID/8QAHxEAAgEDBQEAAAAAAAAAAAAAAQIAAxEhBBIiMVFB/9oADAMBAAIRAxEAPwB1xtmuMbgcSlhdPCyD7WT2JHes1zGfvvEFnbjIOrJEuzaOpGvmanOKWRnly11ZXDM8Ubbo06KaokJmtcdzIVWTfoe4rlpV5AGH1Fgot8nXiCMuxULL7adKX9T/AGP80nlna2jieMj1IB17Uy+mfzPzVY0tuGhFqhxdepfeKTsMpK2p3MdSe9Z7iWM13cRyksgGoUnyooqVS7EUuUzJZo0lKLINyqdAD0qU5G2/SlFFK3H2ZKjyf//Z" class="content-image lazyload" data-src="/section/opinion/why-there-is-so-much-wrong-with-alina's-romantic-relationships-in-shadow-and-bone.jpeg"><strong>Why there is so much wrong with Alina’s romantic relationships in Shadow and Bone</strong></p><h2><a id="_zawyjhdj61o7"></a>Mal-The childhood best friend</h2><p>At the beginning of this book we learn that Alina, a 16 year old girl, has only ever had Mal to rely on. While reading Shadow and Bone, you see the obvious with Mal. He is wholesome, strong and represents home, heart and morale. By first impression Mal seems to be the perfect person for Alina. You see Alina and Mal bonded at an early stage in their lives, which explains why they depend on each other so much. For example, in the book Mal is assigned to go into the Shadow Fold, but Alina makes sure she accompanies him on this trip (Bardugo 25-34).  This is a perfect example of how Alina and Mals decisions will be defined by the others' presence or absence. Their decisions are motivated by the fact that neither of them can bear to lose one another. You see this would be sweet… but Mal leaves Alina feeling unimportant compared to the new people in his life. I learned how much this really affected her confidence and understanding of worth. Alina craves acceptance being Shu-Han and an orphan. Since Mal grew up with Alina in the orphanage, you would think he would know how to make her feel included and never left behind. This relationship is obviously not at all healthy nor positive. </p><br><p>I bet we can all relate to the Mal dilemma. I can understand that we’ve all had instances where we have grown apart from family members, friends and/or significant others. It can really be a confusing time in someone's life…or the opposite. In the book <em>And Then There Were None</em> by Agatha Christie, we see that Ethel passes away and it looks to be that Mr. Rogers was never seemingly that concerned. The lack of love Mr. Rogers shows towards his wife made me realize just how much Mal doesn’t care or love Alina. Mr. Rogers seems to show concern on the outside to others, but it still leaves the question: does he really care or did he ever feel the same? This brushes the topic of how distance in their friendship may not be affecting Mal as much as it is Alina. While talking about this with colleagues, I realized just how much Alina starts to blame herself for the distance between the two of them, and refuses to let go of the friendship (163). In the book she seems to speak to Genya about how she's trying to forget Mal, she states how she doesn’t have a relationship with him anymore “Genya talked so easily about David, but I never confided in her about Mal. That's because there is nothing to confide in, I reminded myself harshly and added more sugar to my tea.” It's seen to be so self damaging for Alina, as well hurtful. </p><br><p>The biggest problem in their relationship is that it lacks a strong base. Mal is immature, while Alina is struggling to let him go. Especially with the stress of becoming Grisha. While Alina is holding on to everything by a thread, Mal seems to find a sort of infatuation for another Grisha named Zoya. He doesn’t ever imply he loves her, however he does engage in sexual relations with her. The same sort of situation applies with the book a fellow classmate of mine was reading, <em>The Setting Sun</em> by Osamu Dazai. In this book, Kazuko has affairs with others while still being in a marriage with her husband. Mal seems to still be loyal to his friendship with Alina but in reality he's focused on Zoya and other people around him. It is unbelievably obvious in how that makes Alina feel unsupported or unloved when she talks about the last letter she sent (176). The tracker even has the audacity to be jealous of her and General Kirigan, when he went around with Zoya in the start of the book(14-15). The lack of a strong relationship is quite apparent.</p><br><p>I also found Mal to be unbelievably selfish. Alina believes in fighting and saving the Grisha, although Mal doesn't care. Mal only cares about what he wants. It goes beyond just their relationship too. Alina correctly says that the captain of her guard shouldn't be brawling in a stable and Mal gets pissy at her. Mal was a soldier. He should understand that there are responsibilities that go along with that, including not participating in a fighting ring in the back of a stable. The worst part is he almost convinces Alina to leave the cause she actually cares about and not do what she believes in.</p><h2><a id="_cgnjos2ke1df"></a>Aleksander- The Darkling</h2><p>The second potential love interest is Aleksander, also known as The Darkling. He is seductive, older, problematic, brooding and mysterious. The fandom refers to The Darkling as the typical bad boy villain, although I believe his dynamic is quite compelling. After Alina meets The Darkling she falls quite quickly. He is powerful and ridiculously attractive, which leads to her being, for lack of a better word, whipped. Alina has this gorgeous man, who is unapproachable to anyone else, yet seemingly courting her (111-114). Aleksander kisses her with passion and keeps life at the Little Palace exhilarating (196). He gives her security and makes Alina feel like an equal. A Grisha. At first glance, that seems pretty great… until it isn’t, of course. </p><br><p>The more you read, you start to realize Aleksander is toxic. He is undoubtedly obsessed with Alina and falls for her, due to his obsession for power. This leads him to develop into a cruel and forceful man. He uses Alina for her Grisha abilities, being the Sun Summoner, which then with his malevolent ways leaves Alina feeling betrayed and heartbroken. After finally trusting someone other than Mal, the feeling of being taken advantage of destroys Alina and leaves her furious. The Darkling has helped her understand how powerful she is, however this all came with a bad cost. I learned how much this really affected Alina. It pushed her off the edge. Every thought and decision was filled with anger and frustration. </p><br><p>Having the Darkling use Alina, really made her understand the desire of having power and how she's been holding herself back. This was a confusing road but in the end we all know this was the Darklings fault. In my classmate's novel, the book's concept of love is shown through victimization, cruelty and power. The book,<em> Crime and Punishment</em> by Fyodor Dostoevsky relates how The Darklings hunger for power leads to how he victimizes himself with Alina, lies and betrays her. In the book, Aleksander lies to Alina and acts out a heartfelt sob story of how his ancestors created the fold, which then left him with a bad reputation that he's “worked so hard” to recover (80-83). He attempts to guilt the Sun Summoner into pitying him, when in reality, his story is all lies. He was the creator of the fold, the volcra, and the killing of many citizens. He caused genocide. All he constantly tells Alina is that they will fix the fold together, using her summoner abilities to help the people she loves and cares for. I noticed early on that he never intended to fix this problem, but to instead make the fold further destructive.</p><br><p>When Baghra reveals to Alina that Aleksander is a power-hungry megalomaniac trying to enslave her, it’s not hard for us to believe her, despite Alina and Kirigan sharing a heated make-out session earlier in the book. These two have a straightforward yin-yang dichotomy on the surface level: she is light and he is darkness, therefore it’s easy to accept the conventional storytelling that if she is good, he must be evil, and we don’t need more convincing than that. We see the small factors that reveal to us the type of person he is.</p><br><p>I fully believe that these are useful topics to tackle, and can be relatable to teens, or adults. Unfortunately, lots of teens will encounter (predatory) older men, who make them feel special and unique, and the Darkling, however much he is beloved as a villain, can very well be considered an example of that. Alina is 16-17 and the Darking is over 100 years old (79).  However, I feel that the book makes him detestable just to take a step back and humanize him. It's wrong and he is a terrible human being.</p><br><br>
+</div>
+            </main>
+
+        </div>
+
+        <footer class="footer">
+            <ul class="footer-list">
+                <li><a href="/about">About Knightwatch</a></li>
+                <li><a href="https://forms.gle/7vWhLBidcXJU4Y7q6">How to Submit an Article</a></li>
+                <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+                <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'top',
+            once: 'true'
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/index.js"></script>
+    <script src="/navbar.js"></script>
+
+
+
+<script>
+            (function (selector, src, preferNativeLazyLoad) {
+  var images = document.querySelectorAll(selector);
+  var numImages = images.length;
+
+  if (numImages > 0) {
+    if (preferNativeLazyLoad && 'loading' in HTMLImageElement.prototype) {
+      for (var i = 0; i < numImages; i++) {
+        var keys = ['src', 'srcset'];
+
+        for (var j = 0; j < keys.length; j++) {
+          if (images[i].hasAttribute('data-' + keys[j])) {
+            var value = images[i].getAttribute('data-' + keys[j]);
+            images[i].setAttribute(keys[j], value);
+          }
+        }
+      }
+
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = src;
+    document.body.appendChild(script);
+  }
+})(
+              'img',
+              'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
+              false
+            );
+          </script></body></html>

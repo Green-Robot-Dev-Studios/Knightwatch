@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- <!-1- I'm sorry, I was forced ;( -1-> -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script> -->
+    <!-- <script> -->
+    <!--     window.dataLayer = window.dataLayer || []; -->
+
+    <!--     function gtag() { -->
+    <!--         dataLayer.push(arguments); -->
+    <!--     } -->
+    <!--     gtag('js', new Date()); -->
+
+    <!--     gtag('config', 'G-Z1KRCWE0R3'); -->
+    <!-- </script> -->
+</head>
+
+<body>
+    <div class="page-container">
+
+        <div class="content-wrap">
+            <!-- <nav class="navbar"> -->
+            <div class="navbar-top">
+                <div class="mobile-menu" style="user-select: none;">
+                    <span class="menu-icon open" onclick="openMenu()">≡</span>
+                    <span class="menu-icon close" onclick="closeMenu()" hidden="">✕</span>
+                </div>
+                <a class="title times" href="/">
+                    <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+                    <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+                    Knightwatch
+                </a>
+                <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+            </div>
+            <div class="navbar-bottom" hidden="">
+                <ul class="topic-list">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li> -->
+                    
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/archive">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/artwork">Artwork</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link active" href="/section/opinion">Opinion</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/prompts">Prompts</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/recipes">Recipes</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/school-news">School News</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/social-issues">Social Issues</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="timer" id="timer">
+                Submission deadline for this month is...
+            </div>
+            <!-- </nav> -->
+
+            <!-- Navbar -->
+            <!-- <div style="display:flex">
+      <img src="/assets/logo.png" class="content-image" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="/">
+          <h1>Home</h1>
+        </a>
+        
+          
+        
+          
+            <a href="/section/archive">
+              <h1>Archive</h1>
+            </a>
+          
+        
+          
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/school-news">
+              <h1>School News</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
+            </a>
+          
+        
+      </div>
+    </div> -->
+
+            <!-- Seperation -->
+            <!-- <hr> -->
+
+            <!-- Main content -->
+            <main>
+                
+<div class="page">
+  <span class="card-title times" style="font-weight: 500;">Ottavence Exchange</span>
+  <div class="card-meta">
+    <span class="card-author">Brianna</span>&nbsp;/&nbsp;
+    <span class="card-date">Fri, 25 Nov 2022 </span>
+  </div>
+
+  <p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABMDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUEBgcI/8QAJxAAAQMEAQMDBQAAAAAAAAAAAQIDBAAFBhEhBzFxEyI0IzNRYXL/xAAYAQADAQEAAAAAAAAAAAAAAAACAwQAAf/EABoRAQADAQEBAAAAAAAAAAAAAAEAAhESMQP/2gAMAwEAAhEDEQA/AMJxzHjeZiWkLcQgn3L0dCp8rGYSLe6lqSVTG3igk9tVuPTSyW5zHW2/QUQobK0jknzTOTglhVEkMiO79YklW+QamT6WdPJVWgVxNZzi3h0hxAUH0EH90VYZpi2uW7CDqtMqKOaK70xXM0jpdlkKzYnGbuc1tt4q0UHuBVvc6j4/HaKzJaUd8gVylevmK80ze+Ef4o9wIfb5JmSzRPv06VFKSy64VJ3+KKRM/bT4opKs2E//2Q==" class="content-image lazyload" data-src="/section/opinion/ottavence-exchange_.jpeg"></p><p>Last year I learned about a great new opportunity to join the International Certificate Program (ICP) run by Mr. Oussoren. It can open many doors including the exchange program, possible careers, and unique experiences around Ottawa. The program is about increasing global awareness and becoming a global citizen by thinking about different cultures and immersing oneself in a new language, and possibly a different outlook on life. </p><br><p>I chose to participate in an exchange program because I love to travel, learn about different perspectives through a new cultural lens, and immerse myself in new cultures. The ICP offered a 5 week exchange to France, later named Ottavence (Ottawa and Aix-en-Provence), where I would be able to host a student and then later that same school year stay with the student’s family. </p><br><p>Fast forward to early October when my family and I invited our France exchange partner Emma into our home. The excitement was building for 6 months until her arrival and I was smiling ear to ear with my welcoming sign in hand when she arrived. That same weekend we celebrated Thanksgiving with Emma, which was something she had never done before. She enjoyed the food, the family gathering, and the small traditions like sharing what we were grateful for that day. I learned about her love of handball, which is a famous sport in France similar to Canada’s borden ball, her love of travel, and her close relationships with her friends and family.  </p><br><p>Coming to a new country, she told me she wasn’t that nervous and found it pretty easy to integrate. However, she found the language pretty difficult and it was hard being away from her family and friends. The 6 hour time difference was challenging as well. Trying to call her before she arrived was tricky, as one person is sleeping while the other is at school! I found the most difficult part between us at first was the communication, though Emma was eager to get better at speaking English and her ability to speak and comprehend both improved over time. I will no doubt struggle with the same issues when I go to France, but hopefully I will experience the same outcome.</p><p> </p><p>Emma found that Canadian culture and school life is completely different from that in France. She thought that everyone was so kind, compassionate, and non-judgemental. She loves the teachers at our school and how they care for their students. Emma loved Nepean and the friends that she met in gym class. She enjoyed trying many different sports and treasures her Nepean hoodie. Her first day at Nepean, she mentioned she would never see the flannel pants and crocs she observed in Canada, and she noticed everyone with pants from Roots. Some other differences include taking fewer courses in Ottawa, while in France she has to take 12 courses per year. In Ottawa, students go to class for fewer hours per day (France has more holidays because of it) and we eat dinner earlier. Some advice she would give to exchange students is that it's hard to be away from home and far from everyone you know, but the experience is amazing and well worth it.</p><br><p>Some of Emma's favorite things were squirrels, Reese's Pieces (her new favorite thing), the color of the leaves, the trees, ketchup chips, Bulk Barn, and the scary baby we bought at Halloween. Some of our favorite memories were anything to do with Halloween: decorating, carving pumpkins, Saunders farms, as well as hanging out with some of her French friends and their exchange partners. She also enjoyed the trips to Montreal and Niagara Falls, which were some of the only things she knew about Canada before arriving here. We took a boat ride to Niagara Falls called <em>Maid of the Mist,</em> and went to a haunted house called “Dracula's Haunted Castle”, which was terrifying; she and I couldn't stop talking about it!</p><br><p>Emma always looked forward to certain routines, like at dinner; she would always insist on the “question of the day” (pick a card and everyone answers). On long roadtrips we listened to each other's music, which helped me get to know her. That also meant me trying to understand French rap, which is super fast! I learned that we didn’t always need to keep her busy doing different things and that even the simplest of things like bonding over a movie, music, or sport, can mean a lot. I loved hearing about her travels, her life in France and talking about our different cultures. I showed her the movie Mean Girls which is more similar to western culture, and we went to see the musical at the NAC (National Arts Centre Corporation) which was amazing. We hiked in Gatineau at Pink Lake, visited Park Omega where I watched Emma get excited to see animals she’s never seen before, feeding carrots to deer, and being shocked as they poked their faces inside the cars. We took her to see a Sens game and the Carleton Ravens at the beginning of their seasons, which she enjoyed. I can’t wait to see her play handball in France! </p><br><p>Throughout this experience I’ve met many incredible people, made new friendships, become a tourist in my own city, and learned so much about Emma and myself. My whole family embraced her as an extension to our family. I will never forget her kindness, amazing fashion sense, open nature, and love of life. I would recommend an exchange to anyone who loves to travel and is curious to learn about the world in a truly unique way. The adventure doesn’t end here for me, because I'm off to the South of France for five weeks in the spring of 2023 for Phase 2 of the Ottavence Exchange. </p><br><p> </p><br><br><br>
+</div>
+            </main>
+
+        </div>
+
+        <footer class="footer">
+            <ul class="footer-list">
+                <li><a href="/about">About Knightwatch</a></li>
+                <li><a href="https://forms.gle/7vWhLBidcXJU4Y7q6">How to Submit an Article</a></li>
+                <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+                <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'top',
+            once: 'true'
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/index.js"></script>
+    <script src="/navbar.js"></script>
+
+
+
+<script>
+            (function (selector, src, preferNativeLazyLoad) {
+  var images = document.querySelectorAll(selector);
+  var numImages = images.length;
+
+  if (numImages > 0) {
+    if (preferNativeLazyLoad && 'loading' in HTMLImageElement.prototype) {
+      for (var i = 0; i < numImages; i++) {
+        var keys = ['src', 'srcset'];
+
+        for (var j = 0; j < keys.length; j++) {
+          if (images[i].hasAttribute('data-' + keys[j])) {
+            var value = images[i].getAttribute('data-' + keys[j]);
+            images[i].setAttribute(keys[j], value);
+          }
+        }
+      }
+
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = src;
+    document.body.appendChild(script);
+  }
+})(
+              'img',
+              'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
+              false
+            );
+          </script></body></html>
