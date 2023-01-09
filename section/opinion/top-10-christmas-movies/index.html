@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- <!-1- I'm sorry, I was forced ;( -1-> -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script> -->
+    <!-- <script> -->
+    <!--     window.dataLayer = window.dataLayer || []; -->
+
+    <!--     function gtag() { -->
+    <!--         dataLayer.push(arguments); -->
+    <!--     } -->
+    <!--     gtag('js', new Date()); -->
+
+    <!--     gtag('config', 'G-Z1KRCWE0R3'); -->
+    <!-- </script> -->
+</head>
+
+<body>
+    <div class="page-container">
+
+        <div class="content-wrap">
+            <!-- <nav class="navbar"> -->
+            <div class="navbar-top">
+                <div class="mobile-menu" style="user-select: none;">
+                    <span class="menu-icon open" onclick="openMenu()">≡</span>
+                    <span class="menu-icon close" onclick="closeMenu()" hidden="">✕</span>
+                </div>
+                <a class="title times" href="/">
+                    <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+                    <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+                    Knightwatch
+                </a>
+                <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+            </div>
+            <div class="navbar-bottom" hidden="">
+                <ul class="topic-list">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li> -->
+                    
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/archive">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/artwork">Artwork</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link active" href="/section/opinion">Opinion</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/prompts">Prompts</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/recipes">Recipes</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/school-news">School News</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/social-issues">Social Issues</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="timer" id="timer">
+                Submission deadline for this month is...
+            </div>
+            <!-- </nav> -->
+
+            <!-- Navbar -->
+            <!-- <div style="display:flex">
+      <img src="/assets/logo.png" class="content-image" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="/">
+          <h1>Home</h1>
+        </a>
+        
+          
+        
+          
+            <a href="/section/archive">
+              <h1>Archive</h1>
+            </a>
+          
+        
+          
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/school-news">
+              <h1>School News</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
+            </a>
+          
+        
+      </div>
+    </div> -->
+
+            <!-- Seperation -->
+            <!-- <hr> -->
+
+            <!-- Main content -->
+            <main>
+                
+<div class="page">
+  <span class="card-title times" style="font-weight: 500;">Top 10 Christmas movies</span>
+  <div class="card-meta">
+    <span class="card-author">Brianna</span>&nbsp;/&nbsp;
+    <span class="card-date">Sat, 24 Dec 2022 </span>
+  </div>
+
+  <br><p>Christmas movies bring so many people together in joy and in sorrow. They bring the Christmas spirit and celebration of a new year into our lives, and as  timeless as they may be there are many to choose from. I compiled a list of 10 of my favorite Christmas movies. Without further ado, let's get into it!</p><br><p><strong>A Christmas Story</strong></p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABMDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYHBQT/xAAsEAABAwMDAgILAAAAAAAAAAABAgMEAAURBiExBxMSFDM1NkFhcXJzgZHB/8QAFgEBAQEAAAAAAAAAAAAAAAAABAMF/8QAHxEAAQQCAgMAAAAAAAAAAAAAAQACAwQRQRRRIVKh/9oADAMBAAIRAxEAPwC3vXWFCWtEkLC08bc0v6gvTkJpU9D2IWwBI4Jrheus+VP8+8mOYTfDR5UKX9YX8XxtmNJAh2xSvCG07ZPxojpxsrSZAMYDfONqm29p2TCZeyFdxIVke+ipU0oxm0sovsltKBgJB2A/dFUFhqmaZ7+LXZvVmlz5caBhfY5Ocj8VFuoFzIvXk3nVtNpdC8pPAzW50w9cTPtGkvqj7TPfT/aW2nG0korrsjgAmYal0qAA7NeKwACciiohI9Mv50UUwDsq3KPqF//Z" class="content-image lazyload" data-src="/section/opinion/top-10-christmas-movies.jpeg"></p><p>This 1983 movie starring Peter Bilinsky and Melinda Dillon describes Ralphie wanting to win a Christmas present from his father and mother and a good deal of what it was like to be young in pre-World War II Indiana showing a different time. Follow Ralphie through his adventures, humor and lightheartedness that might not fly in this day and age, but I definitely recommend for being one of the first of its kind. </p><br><p><strong>Deck the Halls </strong></p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABEDASIAAhEBAxEB/8QAGQABAQEAAwAAAAAAAAAAAAAABwAEBQYI/8QALhAAAAUDAAYKAwAAAAAAAAAAAAECAwQFBhEHEhQWMVEVITQ1UlVjcXKRc8Hh/8QAFwEAAwEAAAAAAAAAAAAAAAAAAgMFBP/EACERAAICAQIHAAAAAAAAAAAAAAECAAMTEVISFCEiMVFx/9oADAMBAAIRAxEAPwBFYvtqqV6Y1GcdQiQWqyZ8EnzHJw2rq2lhWTkMtqweDPCiAO++7THsEo0qQeclxCnohu6oJZUc9ZuwlH7mRjHxaHvMtKhWosig/RFfaZ/lp/Yhn3yp3qfQg7Im6T8T7J5luJvpi75EKKg1RHXCS24guJdf8C/odt+PHo0hh3WUuO+aFZ5A+sTvSn/MMOjvt9d/N+zDDUrDqIL2MPBnY936f4RDcIBy1W0Reaz3P//Z" class="content-image lazyload" data-src="/section/opinion/top-10-christmas-movies (1).jpeg"></p><p>This 2006 quintessential family comedy hits the ball right out of the park. Starring Matthew Broderick and Danny DeVito, two hilarious, competitive neighbors. Which family is going to have the best house and win the hearts of the town?</p><br><p><strong>National Lampoon's Christmas Vacation</strong></p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABIDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAQBAgMGB//EACUQAAEEAgIBAwUAAAAAAAAAAAIAAQMEERIFITEGFGEyQVGBsf/EABYBAQEBAAAAAAAAAAAAAAAAAAUEBv/EACARAAICAQQDAQAAAAAAAAAAAAECAAMRBBIhYQUTMVH/2gAMAwEAAhEDEQA/AOd0od7LSTWyjBz10x5T/qWrDBaaKrcIMBs4/lTwNwrpNVkgjYY5MtK/66dO+suUj4u2BlUgM5Y9W18N8q+mus7FCgnHUu1F16u5LkAE/s18TPVu3fpCxjYIhYsN22UINkGTNSrttHMa4JpqktkxYTc/An/VPPRvNUg9wwFKLZy33+FeP62VLXkVXTr/AEqAqQ/U+INzlmsPPUQES1brHSE4hHG3J+RgUYGMz//Z" class="content-image lazyload" data-src="/section/opinion/top-10-christmas-movies (2).jpeg"></p><p>A true Christmas classic released in 1989 starring Chevy Chase. This is no ordinary christmas. It’s a goofy Christmas movie, written by John Hugh  who also wrote Home Alone in the 80’s, with Chevy Chase who embodies the Christmas spirit. Watch as big plans for Christmas turn into a big disaster.</p><br><p><strong>Home Alone</strong></p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABIDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAQDBQYCB//EACgQAAEEAgECBAcAAAAAAAAAAAEAAgMEBREhBhITMUFRFDIzNGFxof/EABcBAQEBAQAAAAAAAAAAAAAAAAYEAgP/xAAgEQACAgEEAwEAAAAAAAAAAAABAgADBBESIVIUFSIx/9oADAMBAAIRAxEAPwDA4apZmEPxNZsVR4Opj6qDOObjYon16zrDZCW8NVn0Xk2ZTMw0w54jhZrsd5b91vuroYTiIJqphBgJdrWt/jyWLcuxLikprw6mx94PE8TLyTsxlpPOvZCantxyTyP7Ndzif6hIgx0h8qNZHjbElG421Ud4coPLh6p7IZ+1lmGvak2xh+UcKsh+kP2l4fu5UWP024/sdhFrVVA4MeEUOghcIVHl3dpx9fjdBP/Z" class="content-image lazyload" data-src="/section/opinion/top-10-christmas-movies (3).jpeg"></p><p>Starring none other than Macaulay Culkin is a timeless movie from 1990. I will never get over the witty comebacks and hilarious sequence of events. Follow Kevin’s adventures when he is accidentally left home after missing the plane with his family. Will he be able to survive alone? </p><br><p><strong>Polar Express</strong></p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABEDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAcIBv/EACcQAAEEAgEDAgcAAAAAAAAAAAIAAQMFBAYREiGRE1IHFBYxM0FT/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIEBf/EACARAQACAQMFAQAAAAAAAAAAAAEAAhEDBBMUQVFSYZH/2gAMAwEAAhEDEQA/AMfoNhDb5bQETRRG3Dv+mTLq9DrzsyYMkJI4W9SQhflmU9VVbbVU7gccoxM/J9Ld+FqK/wCIFlXYOTVVMRD8xyxGbv1v5WzuMiFXCyDTqOe5H/6Wt/3j8oUs9ew+2byhHpX2Y2TwRy1ez61hg5Zhx5ZccCXZZe+HWMy9xrPHyRgcC6pAHsxMk/F+IUSfdU222muWCtGpgZRX1vp3sZCm5Cbhp9/YOL7P/9k=" class="content-image lazyload" data-src="/section/opinion/top-10-christmas-movies (4).jpeg"></p><p>This is a 2004 animated fantasy adventure film starring Tom Hanks, Nona Gaye, Peter Scolari and Eddie Deezen. The movie follows a boy skeptical of Santa hoping on the polar express headed for the North Pole only to experience the most amazing journey filled along the way. This movie has delighted all age groups with its appeal. </p><br><p><strong>Klaus</strong></p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABEDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAYHBAMI/8QALBAAAQMDAQYEBwAAAAAAAAAAAgABAwQFEQYHCBITITEVIjY3UVJTcYGCkf/EABcBAAMBAAAAAAAAAAAAAAAAAAACAwT/xAAcEQACAgMBAQAAAAAAAAAAAAABEQACBCIxEiH/2gAMAwEAAhEDEQA/AI3s1jev1Vb6eIOIzmF/wzpx2/2UbNqoydiEZwZwfHTstm7xaofFprjPGwtAPkkLsLqgbxNpO6aWprm8kMjwPhnHGXUbENDspRpnk8s/shduXUfRf+IQjH9iUKzXOqHTEcFt5kRBJxyO3Ti7p7qjkl2cVE9exnIbZy55bOPgknSvp5NVx9upPu6a2OK7uZaZRtouSQc0PnNCwoQzL/J//9k=" class="content-image lazyload" data-src="/section/opinion/top-10-christmas-movies (5).jpeg"></p><p>A beautiful animated film from 2019 that captivated so many. It all starts when Jesper, a postman, is sent to the North and befriends a certain toy maker Claus. The unlikely pair work together to make Christmas a success once more. Showing us the magic behind Christmas in such a lovely way.</p><br><p><strong>Arthur Christmas</strong></p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABEDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAQGAwUH/8QAKhAAAAUDAQYHAQAAAAAAAAAAAAECAwQFERITBgcWITFUMzVBUnFykZL/xAAXAQEAAwAAAAAAAAAAAAAAAAAFAQIG/8QAJBEAAQIEBgMBAAAAAAAAAAAAAQACAwQRExIUQVGhsSIxUnH/2gAMAwEAAhEDEQA/AImnoQ0XOOlw1dMhpW2NBOk5GbQZlldI60uA9QSjsz2lKNRkRLIugenUpFVczppOOtkgsrl62D2bY6Zskmv7wg7UYSmaEMYN6cleeaTftALXhOV2jn4AMeO3SFzTfrtUu8x6fLqTRttIJsuarWtYI7qKlOi1aYlcbJBndvK1iIUm1vhs/UKbEeYOfAzrZJhFzVPun4lRC09K44lk9g3/ACQBqAVwKajZf//Z" class="content-image lazyload" data-src="/section/opinion/top-10-christmas-movies (6).jpeg"></p><p>This 2011 animated Christmas movie Starring James McAvoy extends the concepts of Christmas. Showing us how Christmas changed over the years with new technology and some of the values lost along the way. We see just how Santa delivers all the presents in one night! Just as Santa's son Arthur sets out on a mission to give out a present they misplaced a young girl's present less than two hours prior.</p><br><p><strong>A Christmas Carol </strong></p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABEDASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAAcFCAECBAb/xAAoEAABBAIBAgQHAAAAAAAAAAABAAIDBAUGEQdRFyFBkRQVIjEyY6H/xAAXAQADAQAAAAAAAAAAAAAAAAADBAUB/8QAHxEAAQQCAgMAAAAAAAAAAAAAAgABAxEUURIhBEFS/9oADAMBAAIRAxEAPwCZ1zonqmW1nGWw50Ujm8yOJ4JKhNl6PaxUvtrUbMks/rGOyYmBuwQa9SHPxFVo+oxn8Sul0uLsWn5GjVcbgYQ9zj5AJmTyDimcBLq9LYBeWJpTH0lN4OYzs7+oTD+fQ/r90KhcmklkD9Lfp3q2cxMklO1W5puHBDvVegy2p5iahPWx7Yq8bgQAD5lNAfZZU0p7LnTWjtHQ8b6Vb/Cnae8fuhWQQi5siFijtf/Z" class="content-image lazyload" data-src="/section/opinion/top-10-christmas-movies (7).jpeg"></p><p>This adaptation is inspired by a book written by Charles Dickens. Although there are many adaptations I chose the animated 2009 adaptation with voice actor Jim Carrey. I found it to be a compelling movie with a spooky twist with Christmas spirit and ghosts. Ebenezer Scrooge (Jim Carrey) learns the true value of Christmas, finds joy and becomes a better person for it.</p><br><p><strong>Gremlins</strong></p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABEDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAcDBQYI/8QAKxAAAQQBAgQDCQAAAAAAAAAAAQACAwQFBiEHEhQxExZBNTZRU1Ryc5Kx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAwQFAf/EACERAAEDAwQDAAAAAAAAAAAAAAEAAxECBBMSYWKRI1FS/9oADAMBAAIRAxEAPwBH4+rXPI9kZ8Ru4Kmu0opJHSzxOLiN08MLo7T+Pw9JlqvLbmtjaWPsxK7iHg7GKy1mvi5zNHGOctPcBM295bGmHqSDsVrzVwDLemNwsh0Vf5bkKp6y58ShEzsej2hebj0m9w717ZxN6PH5sSNqN2DXDdpVtxgpwQiO7QEpmugcpaPQ+ixOvvfif8jf6mrrz2Fpz7o1FgTMKjJ0xKRnljL/AEk/6oXT6EznHyELByK//9k=" class="content-image lazyload" data-src="/section/opinion/top-10-christmas-movies (8).jpeg"></p><p>This black comedy horror film from 1984 leaves an impression all right. A gadget salesman turns to a store in Chinatown for a special gift. He was given the ‘mogwai' with a warning to not expose it to bright light, water or to feed him after midnight. Results in these miniature green monsters that tear through the small town of Kingston Falls causing mayhem. They might look cute, but they are mischievous.</p><br><p><strong>Die Hard</strong></p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABEDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYHBAX/xAAqEAABBAEEAAILAAAAAAAAAAABAAIDBAUGERMhNEESFSIxUlNUcXKR0f/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAHBEBAAICAwEAAAAAAAAAAAAAAQACAxESITGh/9oADAMBAAIRAxEAPwCF6PyVi9kYad2zYaxx69EJz1Fgr1hzY9PzzOkY0vlc89dJdrmLHWaz27EHzDewFSdCWYJbt7md7AiLt9/LYfxBx7sW3GZWpx0SS8GqfnvQrB60wHwu/SE9MPUl0leWaONrIwBt2ekY6fJYZ0r6h53SNLC0n3ArdX8GfxWer46L7ogj7KuWiIUPs5fLnPpihPiEpGf/2Q==" class="content-image lazyload" data-src="/section/opinion/top-10-christmas-movies (9).jpeg"></p><p>Is it really a Christmas movie? Released in 1988 this movie has taken the world by storm. A high action and stunt movie with Bruce Willis who plays John McClane, a New York City / Los Angeles police detective who finds himself in a crisis yet again. </p><br><br>
+</div>
+            </main>
+
+        </div>
+
+        <footer class="footer">
+            <ul class="footer-list">
+                <li><a href="/about">About Knightwatch</a></li>
+                <li><a href="https://forms.gle/7vWhLBidcXJU4Y7q6">How to Submit an Article</a></li>
+                <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+                <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'top',
+            once: 'true'
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/index.js"></script>
+    <script src="/navbar.js"></script>
+
+
+
+<script>
+            (function (selector, src, preferNativeLazyLoad) {
+  var images = document.querySelectorAll(selector);
+  var numImages = images.length;
+
+  if (numImages > 0) {
+    if (preferNativeLazyLoad && 'loading' in HTMLImageElement.prototype) {
+      for (var i = 0; i < numImages; i++) {
+        var keys = ['src', 'srcset'];
+
+        for (var j = 0; j < keys.length; j++) {
+          if (images[i].hasAttribute('data-' + keys[j])) {
+            var value = images[i].getAttribute('data-' + keys[j]);
+            images[i].setAttribute(keys[j], value);
+          }
+        }
+      }
+
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = src;
+    document.body.appendChild(script);
+  }
+})(
+              'img',
+              'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
+              false
+            );
+          </script></body></html>

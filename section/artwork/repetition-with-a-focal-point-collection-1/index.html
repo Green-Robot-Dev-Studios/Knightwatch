@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knightwatch</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- <!-1- I'm sorry, I was forced ;( -1-> -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1KRCWE0R3"></script> -->
+    <!-- <script> -->
+    <!--     window.dataLayer = window.dataLayer || []; -->
+
+    <!--     function gtag() { -->
+    <!--         dataLayer.push(arguments); -->
+    <!--     } -->
+    <!--     gtag('js', new Date()); -->
+
+    <!--     gtag('config', 'G-Z1KRCWE0R3'); -->
+    <!-- </script> -->
+</head>
+
+<body>
+    <div class="page-container">
+
+        <div class="content-wrap">
+            <!-- <nav class="navbar"> -->
+            <div class="navbar-top">
+                <div class="mobile-menu" style="user-select: none;">
+                    <span class="menu-icon open" onclick="openMenu()">≡</span>
+                    <span class="menu-icon close" onclick="closeMenu()" hidden="">✕</span>
+                </div>
+                <a class="title times" href="/">
+                    <!-- <img src="/assets/logo.png" alt="" width="30" height="30"
+            class="" style="filter: invert(100%); image-rendering: crisp-edges;"> -->
+                    <!-- <svg viewBox="0 0 295 58">
+              <text x="0" y="50">Knightwatch</text>
+            </svg> -->
+                    Knightwatch
+                </a>
+                <p class="subtitle">Nepean High School's<br>Online Newspaper</p>
+            </div>
+            <div class="navbar-bottom" hidden="">
+                <ul class="topic-list">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li> -->
+                    
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/archive">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link active" href="/section/artwork">Artwork</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/creative-writing">Creative Writing</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/opinion">Opinion</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/prompts">Prompts</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/recipes">Recipes</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/school-news">School News</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-style">
+                        <a class="nav-link " href="/section/social-issues">Social Issues</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="timer" id="timer">
+                Submission deadline for this month is...
+            </div>
+            <!-- </nav> -->
+
+            <!-- Navbar -->
+            <!-- <div style="display:flex">
+      <img src="/assets/logo.png" class="content-image" style="background: purple; margin-right: 30px;" />
+      <div>
+        <a href="/">
+          <h1>Home</h1>
+        </a>
+        
+          
+        
+          
+            <a href="/section/archive">
+              <h1>Archive</h1>
+            </a>
+          
+        
+          
+            <a href="/section/artwork">
+              <h1>Artwork</h1>
+            </a>
+          
+        
+          
+            <a href="/section/creative-writing">
+              <h1>Creative Writing</h1>
+            </a>
+          
+        
+          
+            <a href="/section/opinion">
+              <h1>Opinion</h1>
+            </a>
+          
+        
+          
+            <a href="/section/prompts">
+              <h1>Prompts</h1>
+            </a>
+          
+        
+          
+            <a href="/section/recipes">
+              <h1>Recipes</h1>
+            </a>
+          
+        
+          
+            <a href="/section/school-news">
+              <h1>School News</h1>
+            </a>
+          
+        
+          
+            <a href="/section/social-issues">
+              <h1>Social Issues</h1>
+            </a>
+          
+        
+      </div>
+    </div> -->
+
+            <!-- Seperation -->
+            <!-- <hr> -->
+
+            <!-- Main content -->
+            <main>
+                
+<div class="page">
+  <span class="card-title times" style="font-weight: 500;">Repetition With a Focal Point Collection</span>
+  <div class="card-meta">
+    <span class="card-author">Zach Pantarotto</span>&nbsp;/&nbsp;
+    <span class="card-date">Thu, 08 Dec 2022 </span>
+  </div>
+
+  <p>Ms. Amenta’s Gr. 10 students’ “repetition with a focal point” art collection.</p><br><p>Zach Pantarotto</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBAYH/8QAJxAAAQMBBwMFAAAAAAAAAAAAAgABAxEEBRITIlGRBiExIzJBUlP/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgMB/8QAGhEBAQACAwAAAAAAAAAAAAAAAQACIRExQf/aAAwDAQACEQMRAD8A6oFrJ8b4jZ1SK1zM2sipVIG6ggjAykw1du1VRj6ihNvUZmavajKGVRW3rTEUIM5F4+VHV+jpJYr2injAQpR92THMDYOEC8bmOt3LL1AatpbhQsUYZnsHhCEvsNsrjAM0dI+NlpcA/UeEIWzF/9k=" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1.jpeg"></p><br><p>William Jiang</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABkDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAwf/xAAoEAABAwQBAwIHAAAAAAAAAAACAAEEAwUGESESFSIUkTFBUVJTVGH/xAAWAQEBAQAAAAAAAAAAAAAAAAAGBQP/xAAkEQABAwMCBwEAAAAAAAAAAAABAAIRAwQhMUEFEhMiQmFxwf/aAAwDAQACEQMRAD8A6rOkuxcNw7qNyq8HAuMOQNPrIX0w/VNpE0yqNvWlF5WUqXco4RabVDZuBQuwHNddxdE7j0sbxx6eSRkJnj+R3KVeZ1SJEYzIfIX+Sa9+yP8ARH2UPi9W8QrtKCMAjXdvMS+DKl7jlP2glLTBMKK2o6DDn6nQYW9Yi6m5U5XrVAvtLpN240hCMcIcXVGyfL8Vm9Jx9CVW+bJHLJGqxtttP/VSevlfnP3QhMKIwfqnUXuAOdyv/9k=" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1 (1).jpeg"></p><br><p>Maria Coates</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAUGAwQH/8QAMhAAAQMCAwMICwAAAAAAAAAAAQIDBAAFERIhBjFhExQVMkFRcdEWFyIjU1RVkqGi4f/EABgBAAMBAQAAAAAAAAAAAAAAAAEDBAIF/8QAHxEAAgEDBQEAAAAAAAAAAAAAAAECETFBEiFhobHx/9oADAMBAAIRAxEAPwCkdn391/aF1u45QdEpKuoOOlZnZ966RsoFzUWiwUq9rrGoiEYAgbRPqm5W3F5V8PDSnkWTbRNscZNwRmLXuxgdfHSuVJyx7yWxSd9jeTIubWzjqOlgFszMxOfcMd1PvSa4fUf3PnUO5GtSrNf0pkrUkPZnAAcQeGlRHPbP8eX+fKg5ac9gpX4WF9tMSJZJMZhBDctWdzXXHgeypi2kpukKWCeWhnk2u7DiO2iiqYWENs6fZrPEdQ6haV5bgol8A7/Dupx6rdmPlXfv/lFFKcYu6NqTWT//2Q==" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1 (2).jpeg"></p><br><p>Lily Cooper</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABkDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQAHBv/EACoQAAEDBAEBBgcAAAAAAAAAAAECAwQABRExBiESExVUYbEWQVFVkpOh/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIEA//EABkRAQEBAQEBAAAAAAAAAAAAAAEAAhEhcf/aAAwDAQACEQMRAD8A0fj1ifZnCYLupaM5P0PpTRtEpy8iS3cyUHrj5D01Rlrj2WOybemS4kqOs6NNNM22E6I4lqStQ0VVLoQ8PatieQ2m5vSw+xcEpQNDpj2ozubr52L+Qp3k8eKq3qi+ImOpwbCuvvWd/Crf3539hrPPU7o4x+WqQLfEL4UWEdrecUm5b4q5KFLZSTjdVVNFiOSW2G4lKlsJUrWSTXNeEwfLI/tVVJpiX//Z" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1 (3).jpeg"></p><br><p>Lauren Ortiz</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABIDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYBBAcF/8QALRAAAQMDAgQCCwAAAAAAAAAAAQIDBQAEIRESEzFBUQYUIjI0NXFzgaHBwuH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAwD/xAAYEQEBAAMAAAAAAAAAAAAAAAAAEQEhMf/aAAwDAQACEQMRAD8Ai3iolpmPdVwypkgA7sk4/tVr9uHauJUEshT6QT2BBFLTE3GLjbI8N3Rp3Qa9TpUyEnFLlb5tVoriOAZUMcwaiq7DErCtsNo2IO1IHXtRXKal4JtpCFWCNyQEnA5iisF66jX7OyG2OUpAfAwDg9/vS54vcv25N9pFgoLSAonQ55Vtb/safm/ik7xp74e+n60zZzxjxtJJ0lzyzg3elpnrRWmo9RPwopgj/9k=" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1 (4).jpeg"></p><br><p>Lila Pare Lutfi</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASABkDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAYFBwECBP/EACUQAAEEAQMDBQEAAAAAAAAAAAEAAgMRBAUSMRMhUgYUIjNBUf/EABgBAAIDAAAAAAAAAAAAAAAAAAIDAQQF/8QAHxEAAgIBBAMAAAAAAAAAAAAAAAECEUEDITGRQmGB/9oADAMBAAIRAxEAPwC2sOo/cAZW91c+K2fJt0U78sbi7tIovTM3Ayn5DYOT9i65mYb9HaYHNbFE67dwsqKVpP3kuybwSWnwmYY7mZXxbyPJMFNS1prMSNkEj5rL+7aNBMHWj8gmxpN0BJvayqvTLQMmegBZ7plexo0WRoaKP5SEJWOxvl0Zx2joYYoUCKTLQ/gQhHp5+ES4R//Z" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1 (5).jpeg"></p><br><p>Kayla McIlhagga</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABkDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAYBBwIEBf/EAC0QAAAFAQQHCQAAAAAAAAAAAAABAgMEEgUGESIHFiExNUFRFDRUcnOBkqHB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQMGBf/EACARAAIBAwQDAAAAAAAAAAAAAAACAQMRQQQjMTNhcZH/2gAMAwEAAhEDEQA/AFlhCIKCQhpRkfJIY7i2RDftxx51nPRUWPXAxowGkxqW33ixLepR7w03MsNEu85L7Q4lFFRUns5iv1UbLRbHwazWyddqMqbIcjy4Kyi7SNS9xkI1Tu94Nr6DE88ldoHCrUpB5TymM9T4vV75Ccm0+QK8rmYKCvP3lPsLS0Y8TY9H8MABu1eavobX6lHWPxU/MGcABOimwf/Z" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1 (6).jpeg"></p><br><p>Julianne Tran</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAIDBAUGB//EACgQAAEDAgQEBwAAAAAAAAAAAAEAAgMEERITFCExMkFRBSJSVJGhsf/EABYBAQEBAAAAAAAAAAAAAAAAAAACAf/EABgRAQEAAwAAAAAAAAAAAAAAAAABITFB/9oADAMBAAIRAxEAPwDqUU5x5pJxEWIVxWva+Gm2BF7gArNTBzXSOzAA7a3ZIdO5lLG2GU+V29zxUzKmnNWDFIWvEhB5b8FC1cnt/wAUHwKSMCeXqTuLq31LO32lbGQrHltdK0AYcQFrJmVodG88tn9NkIUzbeEUtRJG6RjDZqezpPWflCEo/9k=" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1 (7).jpeg"></p><br><p>Isabel Ramirez Hennesy</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBAYH/8QAIhAAAgEEAQQDAAAAAAAAAAAAAQIAAwQRIRIUMUFSIlFh/8QAFwEBAQEBAAAAAAAAAAAAAAAAAgMEBf/EACcRAAECBAILAAAAAAAAAAAAAAEAAgMEEjERgQUhMkGRkqGiseHw/9oADAMBAAIRAxEAPwDnVDp1yFUneo1sa6qxVlOcdoktUuaeDwBJ8RzZityy4XHkwg4aseq7FIcaqez70q1zZ1at470KTcPEl0dX0aO6bXJZMcQAdfsu8bn1WVa5ws4cUnNhEAOhnlWYu9XOtfGRtWOX2YQggbSjPWOad2JJCZJ7xrk/cIQzG5a9HWdl4X//2Q==" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1 (8).jpeg"></p><br><p>Faris Elkanzi</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMFBgcE/8QAKBAAAgECAwYHAAAAAAAAAAAAAQIAAxEEBRITFCExQVIVIlGRodHh/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABcRAQEBAQAAAAAAAAAAAAAAAAABESH/2gAMAwEAAhEDEQA/ANyoAK1x0M66fmxVIjp+yDTGIpGl73j6GYr4hTHIafuZbFO6tm0VACzBQTYXjdA7pW8514rB0xQJ1pUDWB6SQu/efeLKOM/UkKCOcWtZ98DX4heHzCEaqVJ5fmGIbHCkzAoZYto3qYQiUI//2Q==" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1 (9).jpeg"></p><br><p>Fiona Kelm</p><p><img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUH/8QAIRAAAgICAQQDAAAAAAAAAAAAAQIAAxESIQQUUWETI1L/xAAXAQADAQAAAAAAAAAAAAAAAAACAwQB/8QAGhEBAQEAAwEAAAAAAAAAAAAAAQARAiFBIv/aAAwDAQACEQMRAD8A6kMbOVDxalSEfBc5PMaBGzDLkYlNabI2hce5HxPmrd2tBO9RbYCaeV8GZbA/UdnJHqObnw0IgdsXpOosZ7QW4x4kuntf4XbbkGEIgep6GzN1z9rW2eZV3N37MIQvWzy//9k=" class="content-image lazyload" data-src="/section/artwork/repetition-with-a-focal-point-collection-1 (10).jpeg"></p><br><br>
+</div>
+            </main>
+
+        </div>
+
+        <footer class="footer">
+            <ul class="footer-list">
+                <li><a href="/about">About Knightwatch</a></li>
+                <li><a href="https://forms.gle/7vWhLBidcXJU4Y7q6">How to Submit an Article</a></li>
+                <li><a href="https://www.instagram.com/nepeanknightwatch/">Instagram</a></li>
+                <li><a href="https://nepeanknightwatch.wixsite.com/knightwatch">Archives</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'top',
+            once: 'true'
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/salvattore/1.0.9/salvattore.min.js" integrity="sha512-RN0948EoGo15YyqYSUZt1Fumksvs3nzX7sGblhBnGjPC+tgXlH7idM8o5hQsrRgvJpDRyi6asP9OaZ1OHkHylw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/index.js"></script>
+    <script src="/navbar.js"></script>
+
+
+
+<script>
+            (function (selector, src, preferNativeLazyLoad) {
+  var images = document.querySelectorAll(selector);
+  var numImages = images.length;
+
+  if (numImages > 0) {
+    if (preferNativeLazyLoad && 'loading' in HTMLImageElement.prototype) {
+      for (var i = 0; i < numImages; i++) {
+        var keys = ['src', 'srcset'];
+
+        for (var j = 0; j < keys.length; j++) {
+          if (images[i].hasAttribute('data-' + keys[j])) {
+            var value = images[i].getAttribute('data-' + keys[j]);
+            images[i].setAttribute(keys[j], value);
+          }
+        }
+      }
+
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = src;
+    document.body.appendChild(script);
+  }
+})(
+              'img',
+              'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
+              false
+            );
+          </script></body></html>
