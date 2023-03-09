@@ -41,7 +41,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 // Control the timer
 // TODO: Fix bug
-const SUBMISSION_DATE = new Date(2023, 3 - 1, 24, 23, 59);
+const SUBMISSION_DATE = new Date(2023, 3 - 1, 27, 23, 59);
 // const SUBMISSION_DATE = new Date("2022-11-25");
 // const SUBMISSION_DATE = Date.
 // const SUBMISSION_DATE = new Date("2022-11-2");
