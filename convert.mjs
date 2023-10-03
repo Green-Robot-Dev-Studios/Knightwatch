@@ -165,7 +165,7 @@ async function docsToHTML(source, docName, cache) {
         let real_date = new Date(date);
         date = real_date.toISOString().slice(0, 10);
 
-        title = title.replace("&amp;", "&");
+        title = title.replace("&amp;", "&") // .replace("\"", "\\\"");
         author = author.replace("&amp;", "&");
     } catch (e) {
         console.log("[Error] " + e);
